@@ -5,7 +5,52 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>rotateImg</title>
  <link rel="stylesheet" href="./css/style.css">
+ <style>
+ 	.rl-rotate{
+           margin-top: 50px;
+ 	}
+ 	.rotate-wrap{
+ 		list-style: none;
+ 		position: relative;
+ 		background: #ccc;
+ 		width: 100%;
+ 		height: 400px;
+ 		padding-left: 0;
+ 	}
+	.rotate-wrap li img{
+		max-width: 320px;
+	}
+ 	.rotate-wrap li{
+ 		position: absolute;
+ 		top: 50%;
+ 		transform: translateY(-50%)
+ 	}
+ 	.rotate-wrap li.rotate-active{
+ 		transform: scale(1.1);
+ 		z-index: 2;
+        transition: 0.3s;
+ 	}
+ 	.rotate-wrap li.rotate-left,.rotate-wrap li.rotate-right{
+ 		z-index: 1;
+ 		transform:scale(0.8); 
+ 		transition: 0.3s;
+ 		filter: blur(3px);/* 做兼容 */
+ 	}
 
+ 	@media only screen and ( max-width: 500px ){
+	 	.rotate-wrap{
+	 		list-style: none;
+	 		position: relative;
+	 		background: #ccc;
+	 		width: 100%;
+	 		height: 300px;
+	 		overflow: hidden;
+	 	}
+		.rotate-wrap li img{
+			max-width: 180px;
+		}
+ 	}
+ </style>
 </head>
 <body>
 	<div class="rl-rotate">
@@ -24,9 +69,132 @@
 	<a href="javascript:void(0)" id="rotate-prev">prev</a>
 	<a href="javascript:void(0)" id="rotate-next">next</a>
 
-	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="./js/jquery-3.2.1.min.js"></script>
 	<script src="./js/main.js"></script>
 
+	  <script>
+	  	$(function(){
+	  	var posObj={}; 
+	  	var activeWidth;
+	  	if($(window).width()<=500){
+	  		activeWidth=180*1.1;
+	  	}else{
+			activeWidth=320*1.1;
+		}
+	  	//动态计算中间以及右边的图需要在那个位置
+	  	var halfLeft=Math.floor($('.rotate-wrap').width()/2-activeWidth/2);
+	  	var maxLeft=halfLeft*2;
+	  	console.log(halfLeft);
+	  	console.log(maxLeft);
+
+
+	  	//三张图的位置
+          function leftStr(el){
+          		el.style.transition='0.3s';
+          		el.style.left='0px';
+          		el.style.transform='scale(0.8)';
+          }
+          function rightStr(el){
+
+          		el.style.transition='0.3s';
+          		el.style.left=maxLeft+'px';
+          		el.style.transform='scale(0.8)';
+          }
+
+          function activeStr(el){
+  
+          		el.style.transition='0.3s';
+          	    el.style.left=halfLeft+'px';
+          		el.style.transform='scale(1.1)';
+          }
+
+	  		var $active=$('.rotate-active');
+	  		var $left=$('.rotate-left');
+	  		var $right=$('.rotate-right');
+  		//初始化三张图的位置
+		leftStr($left.get(0));
+		activeStr($active.get(0));
+		rightStr($right.get(0));
+	  	$('#rotate-prev').click(function(){
+	  		//每次click需要重新获取节点
+	  		$active=$('.rotate-active');
+	  		$left=$('.rotate-left');
+	  		$right=$('.rotate-right');
+
+	  		//三张图的动画
+			leftStr($active.get(0));
+			activeStr($right.get(0));
+			rightStr($left.get(0));
+
+			//各节点交换位置，class为位置标志。
+			$active.addClass('rotate-left').removeClass('rotate-active');
+			$right.addClass('rotate-active').removeClass('rotate-right');
+			$left.addClass('rotate-right').removeClass('rotate-left');
+	  	});
+
+	  	$('#rotate-next').click(function(){
+	  		$active=$('.rotate-active');
+	  		$left=$('.rotate-left');
+	  		$right=$('.rotate-right');
+			leftStr($right.get(0));
+			activeStr($left.get(0));
+			rightStr($active.get(0));
+  			$active.addClass('rotate-right').removeClass('rotate-active');
+  			$left.addClass('rotate-active').removeClass('rotate-left');
+  			$right.addClass('rotate-left').removeClass('rotate-right');
+	  	});
+
+	  	function touchS(event){
+	  		posObj.startX=event.touches[0].clientX;
+
+	  		$active=$('.rotate-active');
+	  		$left=$('.rotate-left');
+	  		$right=$('.rotate-right');
+
+	  		posObj.activeX=$active.offset().left;
+	  		posObj.leftX=$left.offset().left;
+	  		posObj.rightX=$right.offset().left;
+    
+	  	}
+	  	function touchM(event){
+	  		var tmpDis=event.touches[0].clientX - posObj.startX;
+	  		if(tmpDis<2&&tmpDis>-2){//移动的距离很小就不移动
+	  				return ;
+	  		}
+	  		if(posObj.activeX+ tmpDis<5 || posObj.activeX+ tmpDis>maxLeft){//不能移出去
+	  			return ;
+	  		}
+	  		
+	  		if( tmpDis>0){//向右滑动
+	  			$active.get(0).style.left=posObj.activeX+ tmpDis + 'px';//右
+	  			$left.get(0).style.left=posObj.leftX - tmpDis + 'px';//左
+	  			$right.get(0).style.left=posObj.rightX - tmpDis + 'px';//左
+
+	  		}else{//小于0 ， 向左
+	  			$active.get(0).style.left=posObj.activeX+ tmpDis + 'px';//
+	  			$left.get(0).style.left=posObj.leftX - tmpDis + 'px';
+	  			$right.get(0).style.left=posObj.rightX - tmpDis + 'px';
+	  		}
+	  	}
+	  	function touchE(event){
+	  		var tmpDis=event.changedTouches[0].clientX-posObj.startX;
+  				if(tmpDis<2&&tmpDis>-2){
+	  				return ;
+	  			}
+		  		if(tmpDis<0){//左划
+		  			$('#rotate-prev').trigger('click');
+		  		}else{
+		  			$('#rotate-next').trigger('click');
+	  			}
+	  	}
+        document.querySelector('.rotate-wrap').addEventListener('touchstart',touchS,false);
+        document.querySelector('.rotate-wrap').addEventListener('touchmove',touchM,false);
+        document.querySelector('.rotate-wrap').addEventListener('touchend',touchE,false);
+
+	  	})
+
+
+	  </script>
 
 </body>
 </html>
