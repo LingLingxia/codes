@@ -19,6 +19,8 @@
 				$('.per').html(Math.floor(100*evt.loaded/evt.total)+'%');
 			}
 			$('button').click(function(){
+
+
 				var fd = new FormData();
 				fd.append('file',$('#file').get(0).files[0]);
 				$.ajax({
@@ -30,7 +32,7 @@
 						success:function(data){
 						$('.data').html(data);
 					},
-						fail:function(err){
+						error:function(err){
 						$('.data').html(err);
 					},
 					xhr:function(){
@@ -41,6 +43,9 @@
 						}
 					}
 				});
+
+
+				
 			});
 
 		});

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.blinking{
+			width: 80px;
+			height: 80px;
+			background: white;
+			border-radius: 5px;
+			position: relative;
+			padding: 8px;
+			margin: 0 auto;
+		}
+		.blinking span{
+			width: 20px;
+			height: 8px;
+			display: inline-block;
+			border-radius: 20px;
+			background: #00ade5;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			animation: 1s blink infinite;
+			transform-origin: left top;
+		}
+		@keyframes blink{
+			0%{
+				opacity: 0.4;
+			}
+			30%{
+				opacity: 0.6;
+			}
+			60%{
+				opacity: 0.8;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+
+	    .blinking span:first-child{
+	    	transform:rotate(45deg) translateX(18px);
+	    	animation-delay: 0.125s;
+	    }
+	    .blinking span:nth-child(2){
+	    	transform:rotate(90deg) translateX(18px);
+	    	animation-delay: 0.25s;
+	    }
+	    .blinking span:nth-child(3){
+	    	transform:rotate(135deg) translateX(18px);
+	    	animation-delay: 0.375s;
+	    }
+	    .blinking span:nth-child(4){
+	    	transform:rotate(180deg) translateX(18px);
+	    	animation-delay: 0.5s;
+	    }
+	    .blinking span:nth-child(5){
+	    	transform:rotate(225deg) translateX(18px);
+	    	animation-delay: 0.625s;
+	    }
+	    .blinking span:nth-child(6){
+	    	transform:rotate(270deg) translateX(18px);
+	    	animation-delay: 0.75s;
+	    }
+	    .blinking span:nth-child(7){
+	    	transform:rotate(315deg) translateX(18px);
+	    	animation-delay: 0.875s;
+	    }
+	    .blinking span:nth-child(8){
+	    	transform:rotate(360deg) translateX(18px);
+	    	animation-delay: 0s;
+	    }
+
+
+	</style>
+</head>
+<body>
+	<div class="blinking">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+</body>
+</html>
