@@ -1,1 +1,0 @@
-Response.jscolor.jsanimate.js
