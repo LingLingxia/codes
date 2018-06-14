@@ -9,7 +9,11 @@ fs.mkdirSync('dist/assets/css');
 fs.mkdirSync('dist/assets/js');
 
 var filess = fs.readdirSync('page');
-const lang=CONFIG.lang,regL=/{L\[(.+?)\]}/g,regP=/{P\[(.+?)\]}/g;
+const lang=CONFIG.lang,
+      globalP=COMMON.page,
+      globalL=COMMON.lang,
+      regL=/{L\[(.+?)\]}/g,
+      regP=/{P\[(.+?)\]}/g;
 
 for(let l of lang){
       fs.mkdirSync(`dist/${l}`);
@@ -22,48 +26,55 @@ filess.forEach((item, index) => {
             var multiLang=false;
             var m={},//所有的资源链接
             L={};//页面内语言包
+            
             //以页面的多语言为准生成页面
             let pageLang=replaceLang(`page/${item}`);
             let data=evalCode(`page/${item}/page.js`);
             m.cssLoader=[],m.jsLoader=[],m.cssLink=[],m.jsLink=[];
+            var { components ,pageAssets, P } = data;
+            P=P||{};//页面配置
+            let componentP={};
+            if(fs.readdirSync(`page/${item}`).indexOf('component.js')>=0){
+                  componentP=evalCode(`page/${item}/component.js`);
+            }
 
-            
-            var { components ,pageAssets,P } = data;
             if(pageAssets){
                   mergeAsserts(m,pageAssets,`page/${item}`);
             }
-
             if(pageLang.length>0){//这个页面有多语言
                   multiLang=true;
                   for(let l of pageLang){
                         fs.mkdirSync(`dist/${l}/${item}`);
                         L[l]=getLangPack(`page/${item}`,l);
+                        copyNotExist(L[l],globalL[l]);
                         generateMultiLanPage(components,item,m,l,L);
                   }
             }else{
                   generateMultiLanPage(components,item,m,'en',L);
                   fs.mkdirSync(`dist/en/${item}`)
             }
-
-
+            copyNotExist(P,globalP);
             if(multiLang){
                   for(let l of pageLang){
-                        replaceLinks(item,m,l)
+                        replaceLinksAndPages(item,m,l,P,componentP,regP,`page/${item}/components.js`);
                   }
             }else{
-                  replaceLinks(item,m,'en');
+                  replaceLinksAndPages(item,m,'en',P,componentP,regP,`page/${item}/components.js`);
             }
+
       }
 });
 
 
-function replaceLinks(item,m,l){
+function replaceLinksAndPages(item,m,l,firstData,secondData,reg,path){
       let indexHtml= fs.readFileSync(`dist/${l}/${item}/index.html`).toString();
 
       let css=createLink(unique(m.cssLink),'css',true) + createLink(unique(m.cssLoader),'css',false);
       let js=createLink(unique(m.jsLink),'js',true) + createLink(unique(m.jsLoader),'js',false);
 
       var k= indexHtml.replace('{{link}}',css).replace('{{script}}',js);
+      k=replaceContent(firstData,secondData,k,reg,path);
+
       fs.writeFileSync(`dist/${l}/${item}/index.html`,k);
 }
 
@@ -84,19 +95,8 @@ function generateMultiLanPage(components,item,m,l,L){
                          currentLangPack= getLangPack(path,l);
                   }
 
-                  var matches=regL.exec(content);//检测需要替换的key
-                  while(matches){
-                        let target=matches[1];
-                        let targetLang;
-                        console.log(target,L[l][target],currentLangPack[target]);
-                        if(L[l][target]&&currentLangPack[target]){
-                              throw new Error(`undefined ${target} in ${path}/template.html`);
-                        }else{
-                              targetLang=L[l][target]||currentLangPack[target];
-                              content=  content.replace(matches[0],targetLang);
-                        }
-                        matches=regL.exec(content)
-                  }
+             content=  replaceContent(L[l],currentLangPack,content,regL,`${path}/template.html`);
+             
    
             fs.appendFileSync(`dist/${l}/${item}/index.html`, content);
 
@@ -111,7 +111,25 @@ function generateMultiLanPage(components,item,m,l,L){
 
 }
 
+function replaceContent(firstData,secondData,content,reg,path){
+      let ret=content;
+      var matches=reg.exec(ret);//检测需要替换的key
+      while(matches){
+            let target=matches[1];
+            let targetLang;
+  
+            if(!firstData[target]&&!secondData[target]){
 
+                  throw new Error(`undefined ${target} in ${path}`);
+            }else{
+                  targetLang=firstData[target]||secondData[target];
+                  ret= ret.replace(matches[0],targetLang);
+            }
+            matches=reg.exec(ret)
+      }
+
+      return ret;
+}
 function evalCode(path){
       let chunk = fs.readFileSync(path, 'utf-8');
       let data = eval(chunk);
@@ -179,7 +197,6 @@ function  mergeAsserts(dist,origin,path){
             }
 }
 
-
 function getLangPack(path,lang){
 
       let ret;
@@ -190,7 +207,6 @@ function getLangPack(path,lang){
             throw err;
       }
 }
-
 function replaceLang(path){
       let tmp=fs.readdirSync(path);
       if(tmp.indexOf('lang')<0) return [];
@@ -200,4 +216,12 @@ function replaceLang(path){
             return item.split('.')[0];
       });
       return ret;
+}
+
+function  copyNotExist(firstObj,secondObj){
+      for(let i in secondObj){
+            if(!firstObj[i]){
+                  firstObj[i]=secondObj[i];
+            }
+      }
 }
