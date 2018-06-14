@@ -8,5 +8,6 @@
     ret.localJs={
         'header':['header-h.js'],
     };
+
     return ret;
  })();

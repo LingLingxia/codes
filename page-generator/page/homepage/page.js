@@ -10,6 +10,9 @@
             'homepage':['homepage.css']
         }
    };
+   ret.P={
+       age:25
+   }
    return ret;
 })();
 
