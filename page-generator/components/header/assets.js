@@ -1,4 +1,12 @@
-const linkCss=[];
-const linkJs=[];
-const localCss=[];
-const localJs=[];
+
+(function(){
+    var ret={};
+
+    ret.localCss={
+        'header':['header-h.css'],
+    };
+    ret.localJs={
+        'header':['header-h.js'],
+    };
+    return ret;
+ })();

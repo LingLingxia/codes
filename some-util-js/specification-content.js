@@ -113,21 +113,6 @@ var beforeFixed=null;//防抖计时器
 
 }
 
-  /*  绑定touchend事件*/
-/*function fixedButton(event){
-      $('.ctrl-button').addClass('fixed');
-    event.stopPropagation();
-}
-
-function  releaseButton(event){
-  $('.ctrl-button').removeClass('fixed');
-}
-
-var specificationContent=$('.specification-content');
-
-    $('.specification-content').get(0).addEventListener('touchend', fixedButton,false);
-    $('body').get(0).addEventListener('touchend', releaseButton,false);
-    */
 
 var first=true;
 
@@ -141,85 +126,3 @@ $('.tab-specifications').click(function(){
 
 
 
-
-/*css
-
-
-.table td[class*='moved'] ,.newTable td.fixed0{
-  color: white;
-  opacity: 0;
-}
-
-.table{
-  z-index: 10;
-  table-layout: fixed;
-}
-.table td.fixed0{
- background: white;
-}
-
-.specification-content{
-  position: relative;
-}
-
-.newTable{
-  position: absolute;
-  top: 136px;
-  left: 0;
-  table-layout: fixed;
-}
-.table td,.newTable td{
-  width:50%;
-}
-
-.absolute{
-  position: absolute;
-}
-
-
-
-.specification-content  .table-control{
-  position:absolute;
-  top:30%;
-  z-index:20;
-  display:inline-block;
-  width:64px;
-  height:80px;
-  background:rgba(0,0,0,0.3);
-  color:white;
-   border-radius:50%; 
-   cursor: pointer;
-}
-.specification-content  .table-control:before{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  color: white;
-}
-.specification-content  .prev:before{
-  right: 10%;
-}
-.specification-content  .next:before{
-  left: 10%;
-}
-.specification-content  .prev{
-  left:0;
-  transform:translateX(-50%);
-}
-.specification-content  .next{
-  right:0;
-  transform:translateX(50%);
-}
-
-.ctrl-button{
-  position: absolute;
-  width: 100%;
-
-}
-
-.fixed-table{
-  position: fixed;
-  top: 100px;
-  z-index: 20;
-} */
