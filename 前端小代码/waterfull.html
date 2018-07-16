@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>waterfull</title>
+    <style>
+    .a{
+        border: 1px solid #ccc;
+        margin: 5px;
+        width: 30%;
+        height: 200px;
+        display:inline-block;
+        position: absolute;
+    }
+    .wrap{
+        width: 700px;
+        margin: 0 auto;
+        background: #eee;
+        text-align: center;
+        position: relative;
+        height: 1000px;
+    }
+    .a:nth-of-type(1){
+        height: 200px;
+    }
+    .a:nth-of-type(2){
+        height: 300px;
+    }
+    .a:nth-of-type(3){
+        height: 150px;
+    }
+    .a:nth-of-type(4){
+        height: 250px;
+    }
+    .a:nth-child(5){
+        height: 150px;
+    }
+    .a:nth-child(6){
+        height: 130px;
+    }
+
+    .a:nth-of-type(3n+1){
+        left: 0;
+    }
+    .a:nth-of-type(3n+2){
+        left: calc(30% + 5px);
+    }
+    .a:nth-of-type(3n){
+        left: calc(60% + 10px);
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="a">
+            1
+        </div>
+        <div class="a">
+            2
+        </div>
+        <div class="a">
+            3
+        </div>
+
+    </div>
+    <script>
+        function makeWaterFull(){
+
+           // var newA='<div class="a"></a>';
+            
+            for(var i=0;i<10;i++){
+                 var newNode= document.createElement('div');
+                    newNode.classList.add('a');
+                    newNode.style.height=getHeight()+'px';
+                    document.querySelector('.wrap').appendChild(newNode);
+            }
+           
+            var a= document.querySelectorAll('.a');
+            if(a.length<=3) return ;
+            for(var i=0;i<3;i++){
+                a[i].style.top=0;
+                console.log(a[i].style.top);
+            }
+            for(var i=3;i<a.length;i++){
+
+                a[i].style.top =a[i-3].offsetHeight+parseInt(a[i-3].style.top) + 10+'px';
+
+                console.log(a[i].style.top,a[i-3].offsetHeight,parseInt(a[i-3].style.top))
+    
+            }
+       
+        }
+         function getHeight(){
+            return  Math.floor(Math.random()*18+12)*10-2;  //130~300的10的倍数,减去两个像素的边框
+         }
+        makeWaterFull()
+
+    </script>
+</body>
+</html>
