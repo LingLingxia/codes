@@ -52,15 +52,15 @@
                 newStr= newStr.replace(matches[0],template1+key+template2);
             }
             i++;
-            console.log(i);
+
         }
         matches=reg.exec(str);
 
      }
-     fs.writeFile('lang.php',newStr,(err)=>{
+     fs.writeFile('code.php',newStr,(err)=>{
         if(err) throw err;
      });
-     fs.writeFile('code.php',lang,(err)=>{
+     fs.writeFile('lang.php',lang,(err)=>{
         if(err) throw err;
      });
  })
