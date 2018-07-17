@@ -1,13 +1,10 @@
 
-(function(){
-    var ret={};
 
-    ret.localCss={
+ module.exports={
+    localCss:{
         'header':['header-h.css'],
-    };
-    ret.localJs={
+    },
+    localJs:{
         'header':['header-h.js'],
-    };
-
-    return ret;
- })();
+    }
+ }

@@ -1,18 +1,16 @@
-(function(){
-   var ret={};
-   ret.components={
+
+module.exports={
+    components:{
        'header':'global/header',
        'homepage':'global/homepage',
        'footer':'global/footer',
-   };
-   ret.pageAssets={
+    },
+    pageAssets:{
         'localCss':{
             'homepage':['homepage.css']
         }
-   };
-   ret.P={
-       age:25
-   }
-   return ret;
-})();
-
+    },
+    P:{
+         age:25
+    }
+}

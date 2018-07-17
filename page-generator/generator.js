@@ -29,13 +29,13 @@ filess.forEach((item, index) => {
             
             //以页面的多语言为准生成页面
             let pageLang=replaceLang(`page/${item}`);
-            let data=evalCode(`page/${item}/page.js`);
+            let data=require(`./page/${item}/page.js`);
             m.cssLoader=[],m.jsLoader=[],m.cssLink=[],m.jsLink=[];
             var { components ,pageAssets, P } = data;
             P=P||{};//页面配置
             let componentP={};
             if(fs.readdirSync(`page/${item}`).indexOf('component.js')>=0){
-                  componentP=evalCode(`page/${item}/component.js`);
+                  componentP=require(`./page/${item}/component.js`);
             }
 
             if(pageAssets){
@@ -104,7 +104,7 @@ function generateMultiLanPage(components,item,m,l,L){
             let componentsDir=fs.readdirSync(path);
 
             if(componentsDir.indexOf('component.js')>=0){
-                  let a=evalCode(`${path}/component.js`);
+                  let a=require(`./${path}/component.js`);
                   mergeAsserts(m,a,path);
             }
       }
@@ -119,8 +119,12 @@ function replaceContent(firstData,secondData,content,reg,path){
             let targetLang;
   
             if(!firstData[target]&&!secondData[target]){
+                  try{
+                        throw new Error(`undefined ${target} in ${path}`);
+                  }catch(err){
+                        console.log(err);
+                  }
 
-                  throw new Error(`undefined ${target} in ${path}`);
             }else{
                   targetLang=firstData[target]||secondData[target];
                   ret= ret.replace(matches[0],targetLang);
@@ -130,11 +134,7 @@ function replaceContent(firstData,secondData,content,reg,path){
 
       return ret;
 }
-function evalCode(path){
-      let chunk = fs.readFileSync(path, 'utf-8');
-      let data = eval(chunk);
-      return data;
-}
+
 
 function createLink(links,type,source){
       let ret='';

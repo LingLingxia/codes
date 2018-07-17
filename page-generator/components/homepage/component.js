@@ -1,10 +1,6 @@
 
-(function(){
-    var ret={};
-
-    ret.P={
-        'age':23
-    };
-
-    return ret;
- })();
+ module.exports={
+     P:{
+         'age':23
+     }
+ }
