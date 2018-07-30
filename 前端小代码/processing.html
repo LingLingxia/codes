@@ -74,6 +74,54 @@
 	    }
 
 
+
+
+
+
+
+ 
+	.uploading-tips p{
+		position: relative;
+		display: inline-block;
+	   top:2px;
+	}
+	.uploading-tips{
+		font-size: 14px;
+		color:#00aed5;
+		font-family: 'Quicksand';
+	}
+	.uploading-tips span{
+		animation:loopshow infinite 2.4s ;
+		position:absolute;
+	}
+	.uploading-tips span:before{
+		content: "●";
+		font-size: 10px;
+	}
+	@keyframes loopshow{
+		0%{
+			left:0px;
+			top:0;
+		}
+		50%{
+			left:30px;
+		}
+		100%{
+			left:0px;
+		
+			top:0;
+		}
+
+	}
+
+	.uploading-tips span:nth-of-type(2){
+		animation-delay:0.8s;
+	}
+
+	.uploading-tips span:nth-of-type(3){
+		animation-delay:1.6s;
+	}
+
 	</style>
 </head>
 <body>
@@ -87,6 +135,10 @@
 		<span></span>
 		<span></span>
 	</div>
+
+  <div class="uploading-tips">lalala<p > <span></span><span></span><span></span></p></div>
+	
+	
 
 </body>
 </html>
