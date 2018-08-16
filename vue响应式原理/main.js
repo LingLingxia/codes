@@ -9,7 +9,7 @@ function Watcher(vm, exp, cb) {
 
     //本watcher的value被赋值为  vm.value
 }
- 
+ //难道这个是订阅者
 Watcher.prototype = {
     update: function() {
         this.run();
@@ -43,12 +43,12 @@ Dep.prototype = {
     },
     notify: function() {
         this.subs.forEach(function(sub) {
-            sub.update(); //执行update观察者的函数
+            sub.update(); //执行update订阅者的函数
         });
     }
 };
 
-//observer
+//observer 观察者
 function defineReactive(data, key, val) {
 
     observe(val); // 递归遍历所有子属性
@@ -63,7 +63,7 @@ function defineReactive(data, key, val) {
             //每次获取这个值的时候，判断是否需要添加订阅者  (可是target为什么是一个全局的呢，这样如何绑定属性和订阅者的关系)
             //因为每次绑定完会立刻执行get函数，划重点 js是单线程，可以这么干
             if (Dep.target) { // 判断是否需要添加订阅者
-                dep.addSub(Dep.target); // 在这里添加一个订阅者
+                dep.addSub(Dep.target); // 在这里添加一个订阅者  一个watcher的实例
             }
             return val;
         },
