@@ -95,13 +95,33 @@ function observe(data) {
 
 // 关联
 function SelfVue (data, el, exp) {
+    var self=this;
     this.data = data;//这是一个data对象  exp是data里面的一个key
+    
+    Object.keys(data).forEach(function(key){
+        self.proxyKeys(key);
+    })
     observe(data);
+    
     el.innerHTML = this.data[exp];  // 初始化模板数据的值
     new Watcher(this, exp, function (value) {
         el.innerHTML = value;//回调函数?
     });
     return this;
+}
+
+SelfVue.prototype.proxyKeys=function(key){
+    var self=this;//调用对象
+    Object.defineProperty(this,key,{
+        enumerable:false,
+        configurable:true,
+        get(){
+            return self.data[key];
+        },
+        set(newVal){
+            self.data[key]=newVal;
+        }
+    })
 }
 
 //使用
@@ -112,5 +132,5 @@ var selfVue = new SelfVue({
 
 window.setTimeout(function () {
     console.log('name值改变了');
-    selfVue.data.name = 'canfoo';
+    selfVue.name = 'canfoo';
 }, 2000);

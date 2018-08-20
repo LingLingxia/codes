@@ -1,78 +1,94 @@
+function Subscriber(vm,exp,cb){
+        this.cb=cb;
+        this.exp=exp;
+        this.vm=vm;
 
-//订阅者的功能，每一次  对每一个属性添加一个函数,储存旧值 
-function Watcher(vm,exp,cb){
-    this.cb=cb;
-    this.vm=vm;
-    this.exp=exp;
-    this.value=this.get();
+        sub.target=this;
+        this.value=this.vm.data[exp];
+        sub.target=null;
+
+        return this;
 }
 
+Subscriber.prototype.update=function(){
+       var newValue = this.vm.data[this.exp];
+       if(newValue!=this.value){
+           var oldValue=this.value;
+           this.value=newValue;
+           this.cb.call(this,newValue,oldValue);
+       }
+}
 
-Watcher.prototype={
-    update:function(){
-        this.run();
-    },
-    run:function(){
-        var value=this.vm.data[this.exp];
-        var oldVal=this.value;
-        if(value!==oldVal){
-            this.value=value;
-            this.cb.call(this.vm,value,oldVal);
-        }
-    },
-    get:function(){
-        Dep.target=this;
-        //每次新建一个watcher就要监听它的关联数据
-        var value=this.vm.data[this.exp];
-        Dep.target=null;
-        return value;
-    }
-};
-
-
-function Dep(){
+function sub(){
     this.subs=[];
 }
-//观察者的功能   存储订阅者，通知订阅者 ,
-Dep.prototype={
-    addSub:function(sub){
-        this.subs.push(sub);
-    },
-    notify:function(){
-        this.subs.forEach(element => {
-            element.update();//原来这是一个watcher
-        });
+
+sub.prototype.addSub=function(s){
+    this.subs.push(s);
+}
+
+sub.prototype.notify=function(){
+    for(var i=0;i<this.subs.length;i++){
+        this.subs[i].update();
+
     }
 }
 
-function observe(data){
-     
-   if(!data||typeof data!=='object') return ;
-   Object.keys(data).forEach(key=>{
-       defineReactive(data ,key, data[key]);
-   });
-
+sub.prototype.addSub=function(t){
+    this.subs.push(t);
 }
 
-function defineReactive(data,key,val){
-    var dep=new Dep();
-     observe(val);
-    Object.defineProperty(data,key,{
+sub.target=null;
+
+function  defineReactive(obj,i,val){
+    if(typeof obj[i] =='object'){
+        observe(obj[i]);
+         return ;
+    }
+
+    var s=new sub();
+     Object.defineProperty(obj,i,{
         enumerable:true,
         configurable:true,
         get(){
-            if(Dep.target){
-                dep.addSub(Dep.target);
+            if(sub.target){
+                s.addSub(sub.target);
+
             }
             return val;
         },
-        set(newval){
-            if(newval===val) return ;
+        set(newV){
 
-            val=newval;
-            dep.notify();
+            if(val!==newV){
+                val=newV;
+                s.notify();
+            }
         }
-    });
+     });
 }
 
-Dep.target=null;
+
+function observe(obj){
+    if(obj==null||typeof obj !='object') return ;
+    for(var i in obj){
+        defineReactive(obj,i,obj[i]);
+    }
+}
+
+
+function selfVue(data,el,exp){
+    this.data=data;
+    observe(data);
+    el.innerHTML=this.data[exp];
+  new  Subscriber(this,exp,function(val){
+       el.innerHTML=val;
+    })
+
+}
+var ele=document.getElementById('name');
+
+var sv= new selfVue({name:'hello world'},ele,'name');
+
+setTimeout(() => {
+    sv.data.name='llx';
+}, 0);
