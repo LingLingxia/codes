@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .table {
+            counter-reset: name 0;
+        }
+
+        .table tr {
+            counter-increment: name;
+        }
+
+        .table td::before {
+            content: counter(name);
+        }
+        .checkbox{
+            counter-reset: num 0;
+        }
+        .checkbox input[type=checkbox]:checked{
+            counter-increment: num;
+        }
+        .checkbox span::before{
+            content:counter(num);
+        }
+        a::after{
+            content: attr(href) ;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <div class="checkbox">
+        <input type="checkbox" value="1">1
+        <input type="checkbox" value="2">2
+        <input type="checkbox" value="3">3
+        <input type="checkbox" value="4">4
+        <input type="checkbox" value="5">5
+       <p> 被选中了<span></span>个</p> 
+    </div>
+    <a href="www.baidu.com"></a>
+</body>
+
+</html>

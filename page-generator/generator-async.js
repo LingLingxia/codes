@@ -4,7 +4,7 @@ const fs = require('fs');
 const path=require('path');
 
 
-function chunk(fn){
+function chunk(fn){//分离参数
       var self=this;
       return function(){
          var arg=Array.prototype.slice.call(arguments,0) ;
@@ -31,8 +31,8 @@ var readFile=chunk(fs.readFile);
 
 
 
-     const regL=/{L\[(.+?)\]}/g,
-         regP=/{P\[(.+?)\]}/g;
+const regL=/{L\[(.+?)\]}/g,
+regP=/{P\[(.+?)\]}/g;
 
 function *gen(){
       for(var i=0;i<mkArr.length;i++){
@@ -268,7 +268,7 @@ function  copyNotExist(firstObj,secondObj){
 
 var it=gen();
 
-function run( d ){
+function run( d ){ 
       let k= it.next(d);
       if(k.done){
          return ;

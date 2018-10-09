@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap{
+            display: flex;
+            background: #f5f7f9;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .wrap li{
+            display: inline-block;
+            width: 400px;
+            height: 40px;
+            background: #ccc;
+            border: 1px solid #333;
+        }
+        .wrap li:nth-of-type(1){
+            flex-basis: 300px;/* 根据这个值来计算空间 */
+           
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <ul class="wrap">
+            <li>3</li>
+            <li>1</li>
+            <li>2</li>
+            <li>4</li>
+        </ul>
+    </div>
+</body>
+</html>

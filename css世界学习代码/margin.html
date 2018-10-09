@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+        }
+        .wrap{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            border: 1px solid #333;
+            color: red;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border: 1px solid;
+        }
+        .img{
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100px;
+        }
+        .input{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100px;
+        }
+
+        .border.one{
+            width: 10px;
+            height: 10px;
+            border:10px solid;
+            border-color: #f30 #00f #396 #0f0;
+        }
+        .border.two{
+            width: 0;
+            border-width:  20px 10px;
+            border-style: solid;
+            border-color:  #333 #333 transparent transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="inner"></div>
+
+    </div>
+    <div class="border one"></div>
+    <div class="border two"></div>
+</body>
+</html>

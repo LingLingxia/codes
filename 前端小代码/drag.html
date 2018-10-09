@@ -48,6 +48,16 @@
     </div>
 
 <script>
+
+
+    /*
+    拖动元素 
+     1,html设置draggable=true
+     2,element(需要拖动的元素)  element.ondragstart=function(ev){ ev.dataTransfer.setData(key,value);}
+     3,拖动源的容器  startWrap.ondragover=function(ev){return false};
+     4,需要放置的容器  endErap.ondrop=function(ev){ev.dataTransfer.getData(key)}
+     
+     */
      var labels=document.getElementsByTagName('label');
 
      for(var i=0;i<labels.length;i++){
@@ -65,9 +75,9 @@
         //     console.log(ev.target.id);
         // }
 
-        labels[i].ondragexit=function(ev){
-            console.log('exit');
-        }
+        // labels[i].ondragexit=function(ev){
+        //     console.log('exit');
+        // }
      }
 
 

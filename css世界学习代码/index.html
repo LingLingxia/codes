@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .textarea{
+            border: 1px solid #333;
+            padding: 20px;
+           
+            background: #eee;
+            
+            min-width: 300px;
+            width: 200px;
+        }
+        .textarea textarea{
+            border: 0;
+          
+            padding: 0;
+        }
+        .wrap{
+            position: relative;
+            height: 300px;
+        }
+        .animate{
+            background: #777;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s ease-out;
+        }
+        input[type=checkbox]:checked + .animate{
+            max-height: 120px;
+        }
+        input[type=checkbox]{
+            position: absolute;
+            clip: rect(0,0,0,0);
+        }
+    </style>
+</head>
+<body>
+    <!-- <input type="search"/>
+    <input type="text"> -->
+    
+    <div class="wrap">
+        <div class="textarea">
+            <textarea name="" id="" rows="10"></textarea>
+        </div>
+    </div>
+    
+    <input type="checkbox" id="clickme">
+    <div class="animate">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum blanditiis esse eaque aut, molestiae nihil accusantium numquam, est fuga doloremque similique repellat, exercitationem tempora soluta quod enim qui delectus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, pariatur dolores! Sit eveniet dolor earum quis corporis quia molestias, qui blanditiis voluptatibus architecto illum quasi nam sunt enim laborum animi.
+    </div>
+    <label for="clickme">clickme</label>
+</body>
+<script>
+
+</script>
+</html>

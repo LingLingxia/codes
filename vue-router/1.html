@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Hello App!</h1>
+        <p>
+            <router-link to="/foo">Go to Foo</router-link>
+            <router-link to="/bar">Go to Bar</router-link>
+            <router-link to="/user/4">Go to User4</router-link>
+            <router-link to="/user/5">Go to User5</router-link>
+        </p>
+        <router-view></router-view>
+        <button @click='pushHistory'>click push</button>
+        <button @click='replaceHistory'>click replace</button>
+        <button @click='forward'>click forward</button>
+        <button @click='backup'>back up</button>
+
+        <router-view name="a"></router-view>
+        <router-view name="b"></router-view>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script>
+
+        const Foo = { template: '<div>foo</div>' }
+        const Bar = {
+            template: '<div>bar<router-view></router-view></div>',
+            beforeRouteUpdate(to, from, next) {//这是个啥
+                next();
+                console.log(to.path, from.path);
+            }
+        }
+        // const a={
+        //     template: '<p>i am a router</p>'
+        // }
+        // const b={
+        //     template: '<p>i am b router</p>'
+        // }
+        const User = {
+            template: `<div>
+                         User{{$route.params.id}} 
+                         <router-view></router-view>
+                       </div>`,
+        }
+        const routes = [
+            {
+                path: '/',
+                components: {
+                    default: Foo,
+                    a: {
+                        template:'<p>i am a router</p>'
+                    },
+                    b: {
+                        template:'<p>i am b router</p>'
+                    }
+                }
+            },
+            {
+                path: '/foo',
+                component: Foo,
+                name: 'foo'
+            },
+            {
+                path: '/bar',
+                component: Bar,
+                children: [
+                    {
+                        path: 'p',
+                        component: {
+                            template: '<p>pp</p>'
+                        }
+                    },
+
+                ]
+            },
+            {
+                path: '/user/:id',
+                component: User,
+                children: [
+                    {
+                        path: '',
+                        component: {
+                            template: '<p>empty user</p>'
+                        }
+                    }
+                ]
+            },
+        ]
+        const router = new VueRouter({
+            routes
+        })
+        const app = new Vue({
+            router: router,
+            methods: {
+                pushHistory() {
+                    this.$router.push({ name: 'foo' });
+                },
+                replaceHistory() {
+                    this.$router.replace({ name: 'foo' });//替换了当前的记录,也就是自己加入了记录.
+                },
+                forward() {
+                    this.$router.go(1);
+                },
+                backup() {
+                    this.$router.go(-1);
+                }
+            }
+        }).$mount('#app')
+
+
+    </script>
+</body>
+
+</html>

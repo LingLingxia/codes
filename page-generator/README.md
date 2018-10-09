@@ -7,7 +7,7 @@
 ### 页面结构
 *page/\*\*/文件夹 由以下文件/文件夹组成*
 - page.js(必需)
-`
+```
 module.exports={
     components:{//必需
        'header':'global/header',
@@ -23,7 +23,7 @@ module.exports={
          age:25 //key:value
     }
 }
-`
+```
 
 - assets文件夹(如果page.js中定义了pageAssetes.localCss或者pageAssets.localJs则为必需)
   本页面私有的css和js文件

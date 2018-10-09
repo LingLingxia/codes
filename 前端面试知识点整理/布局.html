@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>左边定宽,右边自适应</title>
+    <style>
+        .right {
+            height: 300px;
+            background: #333;
+        }
+
+        .left {
+            width: 300px;
+            height: 300px;
+            background: #eee;
+        }
+        .wrap{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one wrap">
+        <div class="left">
+
+        </div>
+        <div class="right">
+        </div>
+        <style scoped="scoped">
+  
+
+           .one .left {
+                float: left;
+            }
+        </style>
+    </div>
+
+    <div class="two wrap">
+        <div class="left">
+
+        </div>
+        <div class="right">
+
+        </div>
+        <style scoped="scoped">
+           .two .left {
+                position: absolute;
+            }
+            .two .right{
+                margin-left: 300px;
+                /* border-left:300px; */
+            }
+        </style>
+    </div>
+    <div class="three  wrap">
+            <div class="left">
+    
+            </div>
+            <div class="right">
+    
+            </div>
+            <style scoped="scoped">
+                .three{
+                    display: flex;
+                    justify-content:space-between;
+                }
+                .three .left {
+                   flex-basis: 300px;
+
+                }
+                .three  .right{
+                    flex-grow: 2;
+                }
+            </style>
+        </div>
+        <div class="four wrap">
+                <div class="left"></div>
+                 <div class="right"></div>
+                <style scoped="scoped">
+                    .four{
+                        display:table;
+                        width: 100%;
+                    }
+                    .four .left{
+                        display: table-cell;
+    
+                    }
+                    .four .right{
+                        display: table-cell;
+                    }
+                 </style>
+        </div>
+</body>
+
+</html>

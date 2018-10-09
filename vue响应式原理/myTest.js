@@ -76,19 +76,83 @@ function observe(obj){
 }
 
 
-function selfVue(data,el,exp){
-    this.data=data;
-    observe(data);
-    el.innerHTML=this.data[exp];
-  new  Subscriber(this,exp,function(val){
-       el.innerHTML=val;
-    })
+function selfVue(config){
+    for(var i in config){
+        this[i]=config[i];
+    }
+    new Compile(this);
+    return this;
+}
+
+function Compile(vm){
+    this.el=document.querySelector(vm.el);
+    this.vm=vm;
+    this.fragment=null;
+    this.init();
+}
+Compile.prototype={
+    init(){
+        this.fragment=document.createDocumentFragment();
+        var child=this.el.firstChild;
+        while(child){
+            this.fragment.append(child);
+            child=this.el.firstChild;
+        }
+        this.compileNode(this.fragment)
+        this.el.append(this.fragment);
+    },
+    compileNode(node){
+     var self=this;
+     Array.prototype.forEach.call(node.childNodes,function(item,index){
+
+         if(item.nodeType==1){//元素节点
+            self.compileElementNode(item);
+         }else if(item.nodeType==3){//文本节点
+            self.compileTextNode(item);
+         }
+         if(item.childNodes&&item.childNodes.length){
+            self.compileNode(item);      
+         }
+     })   
+    },
+    compileElementNode(node){
+        var self=this;
+        Array.prototype.forEach.call(node.attributes,function(item,index){
+                if(item.name=='v-html'){
+                    self.updateView(node,self.vm.data[item.value]);
+                    new Subscriber(self.vm,item.value,function(newV){
+                        self.updateView(node,newV);
+                   });
+                }
+        }); 
+    },
+    compileTextNode(node){
+        var reg=/\{\{(.+?)\}\}/;
+        var matches=reg.exec(node.nodeValue);
+        var self=this;
+        if(matches){
+
+            self.updateView(node,self.vm.data[matches[1]]);
+            new Subscriber(this.vm,matches[1],function(newV){
+                 self.updateView(node,newV);
+            });
+        }
+    },
+    updateView(node,value){
+        node.textContent=value;
+    }
 
 }
-var ele=document.getElementById('name');
 
-var sv= new selfVue({name:'hello world'},ele,'name');
-
-setTimeout(() => {
-    sv.data.name='llx';
-}, 0);
+new selfVue({
+    el:'#app',
+    data:{
+        name:'hello world',
+        age:14
+    },
+    method:{
+        sayHello(){
+            alert('hello!');
+        }
+    },
+});

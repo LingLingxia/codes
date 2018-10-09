@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       .father img{
+           float: left;
+           width: 100px;
+       }
+       .animal{
+           background: #eee;
+       }
+       .animal::first-line{
+           background: #333;
+           color: white;
+       }
+       h3 a{
+           float:right;
+       }
+       body{
+           height: 1000px;
+       }
+       ::-webkit-scrollbar{
+           width: 8px;
+           height: 8px;
+       }
+       ::-webkit-scrollbar-thumb{
+           background-color:rgba(0,0,0,0.3);
+           border-radius: 6px;
+       }
+       ::-webkit-scrollbar-track{
+           background: #ddd;
+           border-radius: 6px;
+       }
+       .container{
+           position: relative;
+       }
+       .box{
+           position:absolute;
+       }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <img src="demo.png" alt="">
+    </div>
+    <p class="animal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, mollitia. Recusandae dolores est fugiat accusamus at ad similique ipsam tempora, mollitia consequuntur beatae ea explicabo laudantium hic ex numquam amet!</p>
+    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic voluptatum veniam animi, illo cum dolorem nostrum porro nesciunt expedita minima ex consequatur. Sed provident beatae disti <a href="">more</a></h3>
+    <div class="container">
+        <div class="box">文字内容</div>
+    </div>
+</body>
+</html>

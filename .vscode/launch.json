@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
              "name": "启动程序",
-            "program": "${workspaceFolder}\\page-generator\\generator-async-await.js"
+            "program": "${workspaceFolder}\\剑指offer练习代码\\其他算法\\kmp.js"
         }
     ]
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .textarea:focus{
+            border: 1px solid #00ade5;
+        }
+        .textarea{
+            resize: both;
+            overflow: auto;
+            border: 1px solid #333;
+          
+        }
+        /* .textarea:empty::before{
+            content:attr(placeholder);
+            color:#ddd;
+        } */
+        .textarea:empty:before {
+        content: attr(placeholder);
+        color: #bbb;
+        }
+
+    </style>
+</head>
+<body>
+    <div contenteditable="true" class="textarea" placeholder="can i use"></div>
+
+    
+</body>
+</html>
