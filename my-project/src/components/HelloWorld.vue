@@ -3,15 +3,26 @@
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <h2>Ecosystem</h2>
+    <model-demo v-model="msg" @input="check()" @change="check()"></model-demo>
+    <model-demo ></model-demo>
   </div>
 </template>
 
 <script>
+import modelDemo from './modelDemo';
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  components:{
+    modelDemo,
+  },
+  methods:{
+    check(val){
+      console.log(val);
     }
   }
 }
