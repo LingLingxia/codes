@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>七夕</title>
+	<link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class='inner'>
+			<div class="bg bg1">
+				<img src="./asset/img/cloud2.png" alt="cloud2" class="cloud cloud-big">
+				<img src="./asset/img/cloud1.png" alt="cloud1" class="cloud cloud-small">
+				<img src="./asset/img/sun.png" alt="sun"  class="cloud sun"> 
+			</div><div
+			 	 class="bg bg2">
+			 	 <div class="bird"></div>
+			 	 <div class="door">
+			 	 	<img src="./asset/img/door-left.png" alt="door">
+					<img src="./asset/img/door-right.png" alt="door"> 
+			 	 </div>
+			 	 </div><div
+			 	 class="bg bg3">
+			 	 	<span class="star"></span>
+			 	 	<span class="star"></span>
+			 	 	<span class="star"></span>
+			 	 	<span class="star"></span>
+			 	 	<span class="star"></span>
+
+			 	 	<span class="water"></span>
+			 	 	<span class="water"></span>
+			 	 	<span class="water"></span>
+			 	 	<span class="water"></span>
+			 	 </div>
+		<div class="girl person">
+		</div> 	 
+		</div>
+		<div class="boy walk-boy person">
+		</div>
+
+	</div>
+ <script src="./js/jquery-latest.js"></script> 
+ <script>
+var position_x=0;
+ 	var left=1;
+ 	var Walktimeout=null;
+ 	var walkAroundtimeout=null;
+ 	var turn=null;
+ 	var clearboywalk=false;
+ 	var backTimeout=null;
+ 	var bridgeEnd=null;//桥结束的位置
+ 	var boyEnd=null;//boy行走结束的位置
+ //	$('.boy').get(0).style.top=$('.inner').height()-$('.boy').height()+'px';
+ 	var scale=$(window).width()/1440;//根据屏幕大小改变人物的大小
+ 	//$('.girl').css('transform','scale('+scale+')');
+ 	//$('.boy').css('transform','scale('+scale+')');
+ 	var h=900/1440*$(window).width();//根据屏幕大小修正高度
+
+ 	$('.wrap').height(h);
+ 	$('.bg').height(h);
+ 	$('.inner').width($(window).width()*3);
+
+var roses=[];
+var rose=function(){
+	generateRose();
+	setTimeout(removeRose,11000);
+}
+var generateRose=function(){
+	var wrap=$('.bg3');
+	var roseID=Math.floor(Math.random()*6)+1;//产生1到6的随机数
+	var randomDis=Math.floor(Math.random()*400)-200;//产生-200到+199的随机数
+	var rose=$('<img src="./asset/img/rose'+roseID+'.png" class="rose"/>');
+	rose.get(0).style.left=(Math.abs(randomDis)/200*$(window).width())+'px';
+	roses.push(rose);
+    wrap.append(rose);
+    rose.animate({
+    	left:'+='+randomDis+'px'
+    },12000);
+    setTimeout(generateRose,200);
+}
+
+var removeRose=function(){
+	var i=0;
+	while(i<roses.length){
+		if(roses[i].offset().top>0.9*$(window).height()){
+			roses[i].remove();
+			roses.splice(i,1);
+		}else{
+			i++;
+		}
+	}
+	setTimeout(removeRose,4000);
+}
+
+
+var goToshopping=function(){
+ 		var dtd=$.Deferred();//走到花店门口
+ 				$('.inner').animate({
+ 					left:'-104%'
+ 				},6000,function(){
+ 					dtd.resolve();
+ 				});
+ 		return dtd;
+ 	} 
+
+ 	var openDoor=function(){//开门
+ 		var dtd=$.Deferred();
+ 		$('.door img').eq(0).animate({
+ 			left:'-100%'
+
+ 		},1000);
+ 		$('.door img').eq(1).animate({
+ 			left:'100%'
+ 		},1000,function(){
+ 			$('bg.bg2').removeClass('bg2').addClass('bg2-2');
+ 		
+ 			dtd.resolve();
+ 		});
+ 		return dtd;
+ 	}
+ 	var buyFlowers=function(){//进门买花
+ 		var dtd=$.Deferred();
+ 				$('.boy').addClass('buyFlowers');
+ 					setTimeout(function(){
+                      dtd.resolve();
+ 					},1000);
+ 		return dtd;
+ 	}
+ 	var closeDoor=function(){
+ 		var dtd=$.Deferred();
+		 		$('.door img').eq(0).animate({
+		 			left:'0'
+		 		},1000);
+		 		$('.door img').eq(1).animate({
+		 			left:'0'
+		 		},1000,function(){
+		 			$('bg.bg2-2').removeClass('bg2-2').addClass('bg2');
+		 			dtd.resolve();
+		 		});
+ 		return dtd;
+ 	}
+ 	var hasFlowers=function(){
+ 		var dtd=$.Deferred();
+ 		$('.boy').removeClass('walk-boy').addClass('flower-boy');
+ 		$('.boy').removeClass('buyFlowers').addClass('hasFlowers');
+ 					setTimeout(function(){
+                      dtd.resolve();
+ 					},1000);
+ 		return dtd;
+ 	}
+ 
+ 
+ 	var gotoCenter=function(){//6秒的时间从花店走到桥中间，
+ 		//其中运动的函数需要判断是不是到了桥的位置，以移动纵坐标
+ 	     var dtd=$.Deferred();
+ 	     //人物开始移动,此时人物应该向后移动
+ 	     //用动画让它后退
+ 	     var boyLeft=0.251*$('.bg').width()+151;
+ 	     left-=boyLeft;
+ 	     $('.boy').animate({left:'-='+boyLeft+'px'},2500);
+ 				$('.inner').animate({
+ 					left:'-200%'
+ 				},3000,function(){
+ 					bridgeEnd=0.3666*$(window).width();
+ 					boyEnd=$('.girl').get(0).offsetLeft-2*$(window).width()-100
+ 					dtd.resolve();
+ 				});
+ 		return dtd;
+ 	}
+ 	 	var upBridge=function(){
+ 	 	     var dtd=$.Deferred();
+ 					$('.boy').animate({
+ 						bottom:0.32*h+'px',
+ 						left:bridgeEnd+'px'
+ 					},2000,function(){
+ 						dtd.resolve();
+ 					});
+ 	 		return dtd;
+ 	 	}
+ 	    var goTOGirl=function(){
+ 	    	 	     var dtd=$.Deferred();
+ 					$('.boy').animate({
+ 						left:boyEnd+'px'
+ 					},1000,function(){
+ 						dtd.resolve();
+ 					});
+ 	 		       return dtd;
+ 	    }
+ 
+ 	var turnAround=function(){
+ 		 var dtd=$.Deferred();
+ 		 clearTimeout(walkAroundtimeout);
+ 		 $('.boy').removeClass('flower-boy').addClass('rotate-boy');
+ 		 position_x=0;
+ 		 aroundInterval();
+ 		 setTimeout(function(){
+            dtd.reject();
+ 		 },1000);
+ 		 return dtd;
+ 	}
+  	var boywalk=function(step_distance){	//相对于屏幕移动
+ 			left+=step_distance;
+ 			if(left>=parseInt($(window).width())*0.5){//走到屏幕一半的时候小男孩不移动，背景移动
+ 				clearTimeout(Walktimeout);
+ 				var anim=goToshopping();
+ 				anim.then(function(){
+ 					return openDoor();
+ 				}).
+ 				then(function(){
+ 					return buyFlowers();
+ 				}).
+ 				then(function(){
+ 					return hasFlowers();
+ 				}).
+ 				then(function(){
+ 					return closeDoor();
+
+ 				}).
+ 				then(function(){
+ 					return gotoCenter();
+ 				}).
+ 				then(function(){
+ 					return upBridge();
+ 				}).
+ 				then(function(){
+ 					return goTOGirl();
+ 				}).
+ 				then(function(){
+ 					 turnAround();
+ 				}).then(function(){
+ 					rose();
+ 				});
+ 			}
+ 			else{
+ 				$('.boy').get(0).style.left=left+'px';
+ 				setTimeout(boywalk(step_distance),300);
+ 			}
+ 	}
+ 	var walkAround=function(){//走路动作
+ 		$('.boy').css('background-position-x',position_x+'px');
+ 			position_x-=151;
+ 		if(position_x==-604){
+ 			position_x=0;
+ 		}
+ 		if(clearboywalk){
+ 			clearTimeout(walkAroundtimeout);
+ 		}
+ 	walkAroundtimeout=setTimeout(walkAround,300);
+ 	};
+ 
+ 
+ 	var aroundInterval=function(){
+ 		$('.boy').css('background-position-x',position_x+'px');
+ 		$('.girl').css('background-position-x',position_x+'px');
+ 			position_x-=151;
+ 		if(position_x==-906||position_x<-906){
+ 			clearTimeout(turn);
+ 		}else{
+ 			
+        turn=setTimeout(aroundInterval,500);
+ 		}
+ 	}
+ 	walkAround();
+ 	boywalk(30);
+
+ </script> 
+</body>
+</html>
