@@ -1,0 +1,204 @@
+
+.bg1{
+  background: url('./../img/QixiA.png');
+  left: 0;
+}
+
+
+.bg2{
+background: url('./../img/QixiB-dark.png');
+}
+.bg2-2{
+background: url('./../img/QixiB-bright.png');
+}
+
+.bg3{
+background: url('./../img/QixiC.png');
+}
+
+.bg{
+	display: inline-block;
+	height: 700px;
+	background-size:100%;
+	width: 33.33%;
+	background-repeat: no-repeat;
+	position: relative;
+	vertical-align: top;
+}
+.inner{
+	width:300%;
+	position: absolute;
+	left: 0;
+}
+.boy{
+	bottom: 18%;
+}
+.goToshopping{/* 全程20s比较合适 */
+	left: -104%;
+	animation:goToshopping 3s linear; 
+}
+.buyFlowers{
+	opacity: 0;
+	transform: scale(0,0);
+	animation: buyFlowers 3s ;
+}
+.wrap{
+	width:100%;
+	overflow: hidden;
+	position: relative;
+	 height: 901px;
+}
+.person{
+	width:151px;
+	height:291px;
+	position: absolute;
+}
+.girl{
+  background:url('./../img/girl.png');
+   right:calc(16.67% - 151px);
+  bottom: 32%;
+
+}
+.walk-boy{
+	background: url('./../img/boy-walk.png');/* 605*291 */
+}
+.flower-boy{
+	background: url('./../img/boy-flower.png');/* 605*291 */
+}
+.rotate-boy{
+	background: url('./../img/boy-rotate.png');
+}
+.hasFlowers{
+	opacity:1;
+	transform: scale(1,1);
+	animation:hasFlowers 3s;
+}
+ .cloud{
+	position: relative;
+}
+.cloud-big{
+	left: 50%;
+	animation:8s cloudBig linear;
+}
+.cloud-small{
+	top:14%;
+    left: 2%;
+	animation:12s cloudSmall linear;
+}
+.sun{
+	left:98%;
+	animation:10s sun linear;
+} 
+.bird{
+	width:91px;
+	height: 71px;
+	background: url('./../img/bird.png');
+	background-position-x:0; 
+	animation:1s birdfly linear infinite,10s  birdmove linear;
+	position: absolute;
+	top: 10%;
+	left: 60%;
+	animation-fill-mode: forwards;
+
+
+}
+.door{
+	position: absolute;
+    left: 51%;
+    top: 48%;
+    width: 14%;
+    height: 24%; 
+	display: flex;
+	align-items: stretch;
+	overflow: hidden;
+
+}
+.door img{
+	width:50%;
+	position: relative;
+}
+.star{
+	display: inline-block;
+	position: absolute;
+	background-image: url('./../img/stars.png');
+	width:30px;
+	height: 30px;
+	opacity: 1;
+ 	animation: stars 3s infinite;  
+}
+.star:nth-child(1){left: 30%;top: 25%; animation-delay: 0.2s}
+.star:nth-child(2){left: 20%;top: 38%;animation-delay: 1.35s}
+.star:nth-child(3){left: 32%;top: 49%;animation-delay: 1s}
+.star:nth-child(4){right: 20%;top: 30%;animation-delay: 0.9s}
+.star:nth-child(5){right: 29%;top: 40%;animation-delay: 0.7s}
+.water{
+	display: inline-block;
+	position: absolute;
+	background: rgb(129,180,212);
+	border-radius: 20px;
+	animation:water 4s alternate infinite;
+}
+.water:nth-child(6){left: 37%;top: 82%;width:10%;height: 2.1%;animation-delay:0.2s;} /* 37-54 */
+.water:nth-child(7){left: 34%;top: 85%;width: 12.2%;height: 1.2%;animation-delay:1.4s;}/* 34-53 */
+.water:nth-child(8){left: 32%;top: 90%;width: 18%;height: 3%;animation-delay:2s;} /* 32-51 */
+.water:nth-child(9){ left: 31%;top: 93.8%;width:10%;height: 1.5%;animation-delay:2.8s;} /* 31-59 */
+
+.rose{
+	position: absolute;
+	top: -10%;
+	animation: roseDropdown 12s ,roseRotate 3s infinite;
+	animation-fill-mode:forwards;
+}
+@keyframes roseDropdown{
+    to{top:100%;opacity: 0.3}
+}
+@keyframes roseRotate{
+	to{
+		transform:rotate3d(0,0,1,360deg);
+	}
+}
+@keyframes water{
+   to{
+   	left: 51%;
+   }
+}
+@keyframes stars{
+	from{opacity: 1}
+	to{opacity: 0}
+}
+@keyframes birdfly{
+  from{background-position-x:0; }
+  49.9%{background-position-x:0; }
+  50%{ background-position-x:-91px;}
+  99.9%{background-position-x:-91px;}
+  100%{background-position-x:-182px;}
+}
+@keyframes birdmove{
+from{left:60%; }
+to{ left: 0%;}
+}
+@keyframes sun{
+   from{right:2%;top:2%;}
+   to{right: 45%;top:14%;}
+}
+@keyframes cloudSmall{
+   from{left:2%;}
+   to{left: 90%}
+}
+@keyframes cloudBig{
+   from{left:50%;}
+   to{left: 2%}
+}
+@keyframes hasFlowers{
+	from {opacity: 0;transform: scale(0,0)}
+	to{opacity: 1;transform: scale(1,1)}
+}
+@keyframes goToshopping{
+	from {left:0;}
+	to{left:-104%;}
+}
+
+@keyframes buyFlowers{
+	from {opacity: 1;transform: scale(1,1)}
+	to {opacity: 0;transform: scale(0,0)}
+}
