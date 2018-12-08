@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dialog</title>
+	<style>
+		main.dialogshow{
+			filter: blur(10px);
+		}
+		main{
+			max-width: 800px;
+			/* transition: filter 2s; */
+		}
+         .dialog{
+         	display: none;
+         	position: absolute;
+         	z-index: 1;
+         	top: 0;
+         }
+         figure{
+         	padding: 10px;
+         	border: 1px solid #333;
+         	/* display:inline-block; */
+         	width:min-content;
+         	margin: auto;
+
+         }
+	</style>
+</head>
+<body>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque beatae minima totam, consectetur maiores reiciendis optio sequi aspernatur autem similique eos odit laudantium velit reprehenderit laboriosam sunt earum ut fuga?</p>
+	<figure>
+		<img src="./cart.jpg" alt="cart">
+		<figcaption>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, reiciendis!
+		</figcaption>
+	</figure>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quia ullam ea eos, quos molestias dicta delectus quibusdam dolor placeat.</p>
+
+	<!-- *************************************************************************** -->
+	<main>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit saepe provident dicta repellat illo et in totam voluptates! Nobis laudantium fuga, temporibus provident animi ipsam. Minima harum eum voluptatibus, distinctio.
+		<img src="" alt="">
+		<button id="showDialog">click</button>
+	</main>
+	<div class="dialog" id="dialog">
+		这是一个对话框
+		<button id="hideDialog">yes</button>
+	</div>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		$('#showDialog').click(function(){
+			$('#dialog').show();
+			$('main').addClass('dialogshow');
+		});
+		$('#hideDialog').click(function(){
+			$('#dialog').hide();
+			$('main').removeClass('dialogshow');
+		});
+	</script>
+</body>
+</html>
