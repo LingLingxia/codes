@@ -12,7 +12,8 @@
     "production": "webpack --config webpack.prod.js",
     "development": "webpack --config webpack.dev.js",
     "http": "http-server dist",
-    "build":"webpack --env.production=local"
+    "build":"webpack --env.production=local",
+    "debugger": "node --inspect-brk  build/dev-server"
   },
   "author": "",
   "license": "ISC",

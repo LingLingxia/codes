@@ -29,7 +29,6 @@ return {
   devServer: {
        contentBase: './dist',
        hot:true,
-       allowedHosts:['baidu.com']
   },
   plugins:[
     new CleanWebpackPlugin(),
