@@ -1,0 +1,3 @@
+vuex-class
+vue-router   钩子函数的注册。
+与后台交互的库的学习
