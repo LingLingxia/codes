@@ -1,8 +1,8 @@
 import './style.css';
 import printMe from './print.js';
 import { cube } from './math.js';
-import 'xyz/file.js';//此处解析为  node_modules/xyz/file.js
-import  './modu/dir'
+//import 'xyz/file.js';//此处解析为  node_modules/xyz/file.js
+//import  './modu/dir'
 
 // if ('serviceWorker' in navigator) {
 //    window.addEventListener('load', () => {

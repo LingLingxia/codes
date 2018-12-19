@@ -1,47 +1,26 @@
 {
   "name": "my-project",
-  "sideEffects": false,
   "version": "1.0.0",
-  "description": "",
-  "main": "webpack.config.js",
+  "description": "A Vue.js project",
+  "author": "LingLingxia <llxlansing@qq.com>",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --config webpack.config.js --watch",
-    "dev": "webpack-dev-server --open",
-    "server": "node server.js",
-    "production": "webpack --config webpack.prod.js",
-    "development": "webpack --config webpack.dev.js",
-    "http": "http-server dist",
-    "build":"webpack --env.production=local",
-    "debugger": "node --inspect-brk  build/dev-server"
+    "dev": "webpack-dev-server ",
+    "start": "npm run dev",
+    "build": "webpack webpack.config.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^1.0.0",
-    "express": "^4.16.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^2.0.1",
     "file-loader": "^2.0.0",
-    "handle-thing": "^1.2.5",
+    "fs": "^0.0.1-security",
     "html-webpack-plugin": "^3.2.0",
-    "http-deceiver": "^1.2.7",
-    "http-server": "^0.11.1",
-    "select-hose": "^2.0.0",
-    "send": "^0.16.2",
-    "sockjs": "^0.3.19",
-    "spdy": "^3.4.7",
-    "spdy-transport": "^2.1.0",
+    "lodash": "^4.17.11",
     "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.0.1",
-    "util-promisify": "^2.1.0",
-    "utils-merge": "^1.0.1",
-    "webpack": "^4.22.0",
+    "webpack": "^3.12.0"
+  },
+  "devDependencies": {
     "webpack-cli": "^3.1.2",
-    "webpack-dev-middleware": "^3.4.0",
-    "webpack-dev-server": "^3.1.10",
-    "webpack-merge": "^4.1.4",
-    "workbox-webpack-plugin": "^3.6.3",
-    "modu":"1.1.1"
+    "webpack-dev-server": "^3.1.10"
   }
 }

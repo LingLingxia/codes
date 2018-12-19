@@ -18,7 +18,7 @@ export default class App extends Vue {
   sayHello(param1: string, param2: number){
     console.log(`hello ${param1} ${param2}`);
   }
-   @Provide() fooo:string = 'plplpl';
+   @Provide() fooo:string = 'plplpl00000000000';
 
   testProvide():void{
     // this.foo = '1234567';

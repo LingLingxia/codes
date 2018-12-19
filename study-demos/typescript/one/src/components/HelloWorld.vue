@@ -34,9 +34,9 @@ import MyMixin from './../mix/mix.js'
 })
 export default class HelloWorld extends mixins(MyMixin) {
 
-  public name: string = '';
+  name: string = '';
   public lorem: string = 'lorem';
-  public num: number = 3;
+  public num: number =3;
 
   testProvideAndInject():void {
     
@@ -54,7 +54,7 @@ export default class HelloWorld extends mixins(MyMixin) {
     sayHello(n1: string, n2: number){
       n1+='asdfasdf'
     }
-   @Inject({ from: 'fooo', default: 'default' }) 'foo'!: string;
+   @Inject({ from: 'fooo', default: 'default' }) 'foo'!: string
 
    get veryGood(){
      return this.foo + this.lorem

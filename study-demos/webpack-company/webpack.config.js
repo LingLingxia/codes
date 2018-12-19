@@ -1,11 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
-const WorkboxPlugin = require('workbox-webpack-plugin');
+const webpack = require('webpack');;
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports= (env) => {
 
 return {
-  mode:'development',
   entry:{
      bundle: './src/main.js',
     // another:'./src/another-entry.js'
@@ -35,13 +33,8 @@ return {
     new HtmlWebpackPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    // new WorkboxPlugin.GenerateSW({
-    //     clientsClaim:true,
-    //     skipWaiting:true
-    // })
   ],
   module:{
-   // noParse:/test\.png\.jpg/,
     rules:[
       {
          test: /\.css$/,
@@ -54,28 +47,12 @@ return {
       },
     ]
   },
-  resolve:{
-    alias:{
-      xyz: "modu/dir"
-    }
-  }
+  // resolve:{
+  //   alias:{
+  //     xyz: "modu/dir"
+  //   }
+  // }
 }
 
 
 };
-
-// module.exports = [{
-//   output: {
-//     filename: './dist-amd.js',
-//     libraryTarget: 'amd'
-//   },
-//   entry: './src/main.js',
-//   mode: 'production',
-// }, {
-//   output: {
-//     filename: './dist-commonjs.js',
-//     libraryTarget: 'commonjs'
-//   },
-//   entry: './src/main.js',
-//   mode: 'production',
-// }]
