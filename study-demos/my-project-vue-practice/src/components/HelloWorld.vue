@@ -10,7 +10,6 @@
 
 <script>
 import modelDemo from './modelDemo';
-import TypeScriptDemo from './TypeScriptDemo';
 export default {
   name: 'HelloWorld',
   data () {
@@ -19,8 +18,7 @@ export default {
     }
   },
   components:{
-    modelDemo,
-    TypeScriptDemo
+    modelDemo
   },
   methods:{
     check(val){
