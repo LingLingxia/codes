@@ -194,7 +194,15 @@ moduleExtensions: [ '-loader' ]
 
 ## 插件 plugins
 一个数组。待详细解说。
-
+- DefinePlugin:创建一个全局变量，浏览器运行时的全局变量。
+- HotModuleReplacementPlugin热模块替换，用于开发环境。
+- NamedModulesPlugin 当开启 HMR 的时候使用该插件会显示模块的相对路径，建议用于开发环境。
+- NoEmitOnErrorsPlugin 跳过编译时出错的代码并记录，使编译后运行时的包不会发生错误。
+- ExtractTextPlugin 
+  - ExtractTextPlugin.extract(options:loader|object)用在css-loader中的
+  - 1.options.use:指需要什么样的loader去编译文件
+  - 2.options.fallback:编译后用什么loader来提取css文件
+  - 3.options.publicfile:用来覆盖项目路径,生成该css文件的文件路径
 
 ## 开发服务器 devServer
 描述影响 webpack-dev-server(简写为：dev-server) 行为的选项。 <br>

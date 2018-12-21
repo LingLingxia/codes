@@ -5,6 +5,7 @@
     <h2>Ecosystem</h2>
     <model-demo v-model="msg" @input="check()" @change="check()"></model-demo>
     <model-demo ></model-demo>
+    <button @click="loadLodash()">动态加载</button>
   </div>
 </template>
 
@@ -23,7 +24,15 @@ export default {
   methods:{
     check(val){
       console.log(val);
-    }
+    },
+    loadLodash(){
+      import(/* webpackChunkName: "lodash" */ 'lodash').then(_ => {
+      var innerHTML = _.join(['Hello', 'webpack'], ' ');
+     console.log(innerHTML);
+
+   }).catch(error => 'An error occurred while loading the component');
+  }
+
   }
 }
 </script>

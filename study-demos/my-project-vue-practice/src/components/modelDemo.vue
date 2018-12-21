@@ -14,4 +14,10 @@ export default {
     }
 }
 </script>
+<style>
+  input {
+    border: 1px solid blueviolet;
+  }
+</style>
+
 
