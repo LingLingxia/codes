@@ -1,12 +1,14 @@
 {
-    "scripts": {
-        "webpack": "node  --inspect-brk ./node_modules/webpack/bin/webpack.js  ./build/webpack.config.js ",
-        "build": "node ./node_modules/webpack/bin/webpack.js  ./build/webpack.config.js "
-    },
-    "dependencies": {
-        "webpack": "^4.28.3"
-    },
-    "devDependencies": {
-        "webpack-cli": "^3.1.2"
-    }
+  "scripts": {
+    "webpack": "node  --inspect-brk ./node_modules/webpack/bin/webpack.js  --config=./build/webpack.config.js ",
+    "build": "node ./node_modules/webpack/bin/webpack.js  --config=./build/webpack.config.js ",
+    "config": "webpack config.js"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^1.0.0",
+    "webpack": "^4.28.3"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.2"
+  }
 }

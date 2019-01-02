@@ -1,14 +1,14 @@
 const path=require('path');
-const changeIndexName = require('./../plugin/changeIndexName');
-
+const changeIndexName = require('./../plugin/changeIndexName.js');
+const HtmlWebpackPlugin = require('./../plugin/clean-webpack-plugin.js');
+//console.log(path.resolve(__dirname,'./../source/entry1.js'));
 module.exports={
-    mode:'production',
-    entry:'./file.js',
+    mode: 'development',
+    entry:path.resolve(__dirname,'./../source/entry1.js'),
     output:{
-        path:path.resolve(__dirname,'dist'),
+        path:path.resolve(__dirname,'../dist'),
         filename:'my-first-webpack.build.js'
     },
-    mode:'development',
     module:{//loader用于转换
         rules:[
             {test:/\.txt$/,use:'raw-loader'},
@@ -25,7 +25,7 @@ module.exports={
     },
     plugins:[//打包优化，压缩，重定义环境中的变量等
         //new webpack.optimise.UglifyJsPlugin(),
-        new HtmlWebpackPlugin({template:'./src/index.html'}),
-        new changeIndexName({name:'2333'}),
+        new HtmlWebpackPlugin(),
+        //new changeIndexName({name:'2333'}),
     ]
 }
