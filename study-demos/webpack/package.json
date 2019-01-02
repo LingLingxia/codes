@@ -1,6 +1,12 @@
 {
     "scripts": {
-        "webpack": "./node_modules/webpack/bin/wepback.js"
+        "webpack": "node  --inspect-brk ./node_modules/webpack/bin/webpack.js  ./build/webpack.config.js ",
+        "build": "node ./node_modules/webpack/bin/webpack.js  ./build/webpack.config.js "
     },
-    "dependencies": {}
+    "dependencies": {
+        "webpack": "^4.28.3"
+    },
+    "devDependencies": {
+        "webpack-cli": "^3.1.2"
+    }
 }

@@ -1,6 +1,8 @@
 const path=require('path');
+const changeIndexName = require('./../plugin/changeIndexName');
 
 module.exports={
+    mode:'production',
     entry:'./file.js',
     output:{
         path:path.resolve(__dirname,'dist'),
@@ -22,7 +24,8 @@ module.exports={
         ]
     },
     plugins:[//打包优化，压缩，重定义环境中的变量等
-        new webpack.optimise.UglifyJsPlugin(),
-        new HtmlWebpackPlugin({template:'./src/index.html'})
+        //new webpack.optimise.UglifyJsPlugin(),
+        new HtmlWebpackPlugin({template:'./src/index.html'}),
+        new changeIndexName({name:'2333'}),
     ]
 }
