@@ -4,7 +4,7 @@ function changeIndexName(opt){
 
 changeIndexName.prototype.apply=function(compiler){
   console.log('******************^^^*************');
-
+   debugger;
   compiler.hooks.compile.tap('changeIndexName',function(){
     console.log('****************compiling************************8');
   });
@@ -15,8 +15,9 @@ changeIndexName.prototype.apply=function(compiler){
   //   // callback();
   //  });
 
-   compiler.plugin("emit",function(){
+   compiler.plugin("emit",function(compilation,callback){
      console.log('***************done********************');
+     callback();
    })
 }
 

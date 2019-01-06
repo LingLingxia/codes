@@ -18,3 +18,30 @@
 |cheap-module-source-map|无代码?|.|
 |cheap-source-map|无代码?|.|
 
+
+###webpack插件开发
+标准写法
+```
+function myPlugin(){
+
+}
+myPlugin.prototype.apply = function(compiler){
+   //原写法
+   compiler.plugin('hookName',function(compilation,callback){
+       // compilation 逻辑处理
+
+       //异步必须传,传了必须写.
+       callback();
+   });
+
+   //新写法
+   compiller.hook.hookName.tap(function(compilation){//同步
+
+   })
+
+   compiler.hooks.run.tapAsync.tap(function(compilation,callback){
+        callback();
+   })
+}
+```
+
