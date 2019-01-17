@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>正则表达式全局替换字符串</title>
+  <style>
+    b{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="myDiv">D</div>
+  <div id="insert"></div>
+  <script>
+    var  keywords = document.getElementById('myDiv').innerHTML;
+    var content = '$abd.\\c*hl|^kj;90&d;{}()as?kd.\\$';
+    var replaceString = '<b>$1</b>';
+    var newStr = regReplace( keywords,content,replaceString);
+    document.getElementById('insert').innerHTML=newStr;
+    function regReplace( keywords,content,replaceString){
+          var reg =  /([$^*?.+(){}|\\])/g;//顺序还不能乱$要放前面
+          var keywords = keywords.replace(reg,'\\$1')//转换关键字
+          var newReg = new RegExp('('+keywords+')','gi');//构造新的正则函数
+          return content.replace(newReg,replaceString);
+    }
+  </script>
+</body>
+</html>
