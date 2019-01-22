@@ -55,3 +55,15 @@ done 完成编译
 
 compiler 对象代表了完整的 webpack 环境配置。这个对象在启动 webpack 时被一次性建立，并配置好所有可操作的设置，包括 options，loader 和 plugin。当在 webpack 环境中应用一个插件时，插件将收到此 compiler 对象的引用。可以使用它来访问 webpack 的主环境。
 compilation 对象代表了一次资源版本构建。当运行 webpack 开发环境中间件时，每当检测到一个文件变化，就会创建一个新的 compilation，从而生成一组新的编译资源。一个 compilation 对象表现了当前的模块资源、编译生成资源、变化的文件、以及被跟踪依赖的状态信息。compilation 对象也提供了很多关键时机的回调，以供插件做自定义处理时选择使用。
+
+###compiler源码解析
+
+#### tapable 为插件创建钩子
+    SyncHook,同步钩子
+    SyncBailHook,同步保释勾
+    SyncWaterfallHook,同步瀑布勾  前一个钩子的结果是后一个钩子的参数。
+    AsyncParallelHook,异步并行勾 并行调用，与顺序无关。
+    AsyncParallelBailHook, 异步并行保释勾
+    AsyncSeriesHook,异步系列勾  同步的调用异步请求，与顺序有关。
+    AsyncSeriesBailHook,
+    AsyncSeriesWaterfallHook 
