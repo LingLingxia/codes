@@ -13,7 +13,7 @@ const {
 class Car{
   constructor(){
           this.hooks = {
-              accelerate:new SyncHook(['newSpeed']),
+              accelerate:new SyncHook(['newSpeede']),
               brake:new SyncHook(),
               calculateRoutes:
               new AsyncParallelHook(['source','target','routesList'])
@@ -42,5 +42,7 @@ const myCar = new Car();
 //tap是消费者，注册函数。
 myCar.hooks.brake.tap('WaringLampPlugin',()=>warningLalmp.on());
 myCar.hooks.accelerate.tap('loggerPlugin',newSpeed=>console.log(`accelerate to ${newSpeed}`));
-
+console.log('ok');
+myCar.setSpeed('100m');
+myCar.hooks.accelerate.call('800m');
 
