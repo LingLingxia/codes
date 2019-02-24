@@ -82,7 +82,7 @@ compiler.hooks.compilation.tap('compilation',function(compilation){
 });
 
 compiler.hooks.make.tap('make',function(compilation){
-  //无参数  ，异步平行钩子?  14
+  //compilation创建之后
   debugger;
 });
 

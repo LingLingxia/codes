@@ -1,5 +1,9 @@
 const path = require('path');
+const FileListPlugin = require('./src/plugin/FileListPlugin');
 module.exports = {
-  //recordsPath: path.join(__dirname, 'records.json'),
-  //recordsInputPath: path.join(__dirname, 'records.json'),
+  configureWebpack: {
+    plugins: [
+      new FileListPlugin()
+    ]
+  }
 }
