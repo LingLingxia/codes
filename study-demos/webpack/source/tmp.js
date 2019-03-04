@@ -1,5 +1,5 @@
 function yes(){
-    console.log('yes');
+    console.log('tmp-yes');
 }
 
 export {yes}

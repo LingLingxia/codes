@@ -1,12 +1,14 @@
 {
   "scripts": {
     "inspect": "node  --inspect-brk ./node_modules/webpack/bin/webpack.js  --config=./build/webpack.config.js ",
-    "build": "node ./node_modules/webpack/bin/webpack.js  --config=./build/webpack.config.js ",
+    "build": "webpack  --config=./build/webpack.config.js",
     "config": "webpack config.js"
   },
   "dependencies": {
     "clean-webpack-plugin": "^1.0.0",
     "copy-webpack-plugin": "^4.6.0",
+    "lodash": "^4.17.11",
+    "toposort": "^2.0.2",
     "webpack": "^4.28.3"
   },
   "devDependencies": {

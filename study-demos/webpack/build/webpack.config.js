@@ -1,10 +1,7 @@
 const path=require('path');
-const changeIndexName = require('./../plugin/changeIndexName.js');
-const HtmlWebpackPlugin = require('./../plugin/clean-webpack-plugin.js');
-const FileListPlugin = require('./../plugin/FileListPlugin.js');
-//const copyHtmlPlugin = require('copy-webpack-plugin');
-const copyHtmlPlugin = require('./../plugin/copy/dist/index.js');
-const allHooks = require('./../plugin/all-hooks.js');
+// const allHooks = require('./../plugin/all-hooks.js');
+const htmlWebpackPluginDemo= require('../plugin/html-webpack-plugin-demo');
+const webpack = require('webpack');
 module.exports={
     mode: 'development',
     entry:{
@@ -13,7 +10,7 @@ module.exports={
     },
     output:{
         path:path.resolve(__dirname,'../dist'),
-        filename:'[name].build.js'
+        filename:'[name].[hash].js'
     },
     devtool:'inline-source-map',
     module:{//loader用于转换
@@ -30,15 +27,15 @@ module.exports={
             ]}
         ]
     },
-    plugins:[//打包优化，压缩，重定义环境中的变量等
-        //new webpack.optimise.UglifyJsPlugin(),
-        //new HtmlWebpackPlugin(),
-        //new changeIndexName({name:'2333'}),
-        // new FileListPlugin(),
-        // new copyHtmlPlugin([{
-        //   from:path.resolve(__dirname,'./../config.js'),
-        //   to:path.resolve(__dirname,'./../dist/')
-        // }])
-        new allHooks()
-    ]
+    plugins:[
+        //new allHooks()
+        new htmlWebpackPluginDemo(),
+        
+    ],
+    optimization: {
+        splitChunks: {
+            chunks:'all',
+            name:'common'
+        }
+      }
 }
