@@ -49,6 +49,40 @@
 			});
 
 		});
+
+		//axios版本
+
+		uploadFile() {
+    const fd = new FormData();
+    const d:any = document;
+    const file = d.getElementById('file').files[0];
+    if (!file) {
+      alert('请选择图片');
+      return;
+    }
+    const tmpArr:Array<string> = file.name.split('.');
+    tmpArr.pop();
+    const name = tmpArr.join('');
+    if (this.checkInput(name)) {
+      alert('图片命名不合法');
+      return;
+    }
+    fd.append('file', file);
+    api.upload(fd).then((data:any) => {
+    }).catch((err:any) => {
+
+		}
+	}
+
+	upload(params:any){
+  //不要处理数据 直接传fd
+    return axios({
+      method:'POST',
+      url:'',
+      data:params,
+      transformRequest:[]
+    })
+  },
 	</script>
 </body>
 </html>
