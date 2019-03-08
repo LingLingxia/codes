@@ -165,28 +165,7 @@ var globalF = {
 		httpManager.token = this.getLocalStorage('token');
         httpManager.expires = this.getLocalStorage('expires')
 	},
-	showTips(tipId ,url ) {//直接传需要显示的文字进来
-		tip=TIPS[tipId]?TIPS[tipId]:tipId;
-		console.log(tip);
-		jQuery('#common-err').html(tip.toString());
 
-		jQuery('#common-err-wrap').removeClass('hide');
-
-		jQuery('#common-err-wrap').click(function(event){
-			if(event.target==this){
-				jQuery('#close-common-err').trigger('click');
-			}
-		})
-
-		jQuery('#close-common-err').click(function(){
-			
-   		 	jQuery('#common-err-wrap').addClass('hide');
-   		 	if(url){
-   		 		globalF.redirect('redirect', url);
-   		 	}
-
-		});
-	},
 	unique( arr ){
 		if(arr.length<=0) return [];
   
