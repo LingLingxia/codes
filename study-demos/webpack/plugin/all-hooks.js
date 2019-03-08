@@ -5,13 +5,13 @@ FileListPlugin.prototype.apply = function(compiler){
   compiler.hooks.environment.tap('environment',function(){
     //无参数  1
     debugger;
-    //调用了，看起来没啥用;
+    
 })
 
 compiler.hooks.afterEnvironment.tap('afterEnvironment',function(){
   //无参数 2
     debugger;
-    //调用了，看起来没啥用;
+
 })
 
   compiler.hooks.entryOption.tap('entryOption',function(entry){

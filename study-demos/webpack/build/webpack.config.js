@@ -10,7 +10,7 @@ module.exports={
     },
     output:{
         path:path.resolve(__dirname,'../dist'),
-        filename:'[name].[hash].js'
+        filename:'js/[name].[hash].js',
     },
     devtool:'inline-source-map',
     module:{//loader用于转换

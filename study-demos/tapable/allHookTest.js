@@ -50,7 +50,7 @@ const {
       console.log(`my first hooks called ${param1}`);
   });
 
-  //   myCar.callSyncTestOne();
+   myCar.callSyncTestOne();
   //   myCar.hooks.SyncTestOne.call('8888');
   
   
@@ -75,23 +75,23 @@ const {
     //测试调用顺序，按注册顺序调用，依次完成
 
 
-    myCar.hooks.AsyncSeriesTestOne.tapAsync('a-hook-name',(param1,cb)=>{
-       console.log('series one');
-       setTimeout(()=>{
-           console.log('series one 回调');
-           cb();
-       },1000);
-    })
+    // myCar.hooks.AsyncSeriesTestOne.tapAsync('a-hook-name',(param1,cb)=>{
+    //    console.log('series one');
+    //    setTimeout(()=>{
+    //        console.log('series one 回调');
+    //        cb();
+    //    },1000);
+    // })
 
-    myCar.hooks.AsyncSeriesTestOne.tapAsync('a-hook-name',(param1,cb)=>{
-       console.log('series two');
-       setTimeout(()=>{
-           console.log('series two 回调');
-          cb();
-       },100);
-    })
+    // myCar.hooks.AsyncSeriesTestOne.tapAsync('a-hook-name',(param1,cb)=>{
+    //    console.log('series two');
+    //    setTimeout(()=>{
+    //        console.log('series two 回调');
+    //       cb();
+    //    },100);
+    // })
     
-    myCar.hooks.AsyncSeriesTestOne.tap('a-hook-name',(param)=>{
-        console.log('series -----one tap');
-    })
-    myCar.callAsyncSeriesTestOne();
+    // myCar.hooks.AsyncSeriesTestOne.tap('a-hook-name',(param)=>{
+    //     console.log('series -----one tap');
+    // })
+    // myCar.callAsyncSeriesTestOne();

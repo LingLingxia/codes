@@ -21,7 +21,7 @@ class HtmlWebpackPlugin {
                 version: false
               };
 
-              let publicPath = self.getPublicPath(compilation);
+            let publicPath = self.getPublicPath(compilation);
         
             if (publicPath.length && publicPath.substr(-1, 1) !== '/') {
               publicPath += '/';
@@ -45,45 +45,45 @@ class HtmlWebpackPlugin {
         })
     }
 
-     sortChunks (chunks, compilation) {
-        return chunkSorter(chunks, compilation);
-      }
+    sortChunks (chunks, compilation) {
+      return chunkSorter(chunks, compilation);
+    }
 
-      filterChunks (chunks) {
-        return chunks.filter(chunk => {
-          const chunkName = chunk.names[0];
-          // This chunk doesn't have a name. This script can't handled it.
-          if (chunkName === undefined) {
+    filterChunks (chunks) {
+      return chunks.filter(chunk => {
+        const chunkName = chunk.names[0];
+        // This chunk doesn't have a name. This script can't handled it.
+        if (chunkName === undefined) {
+          return false;
+        }
+        // Skip if the chunk should be lazy loaded
+        if (typeof chunk.isInitial === 'function') {
+          if (!chunk.isInitial()) {
             return false;
           }
-          // Skip if the chunk should be lazy loaded
-          if (typeof chunk.isInitial === 'function') {
-            if (!chunk.isInitial()) {
-              return false;
-            }
-          } else if (!chunk.initial) {
-            return false;
-          }
-          // Add otherwise
-          return true;
-        });
-      }
+        } else if (!chunk.initial) {
+          return false;
+        }
+        // Add otherwise
+        return true;
+      });
+    }
       
-      getPublicPath(compilation){
-        let publicPath = typeof compilation.options.output.publicPath !== 'undefined'
-        ? compilation.mainTemplate.getPublicPath({hash: compilation.hash})
-        : path.relative(path.resolve(compilation.options.output.path, path.dirname('index.html')), compilation.options.output.path)
-          .split(path.sep).join('/');
-  
-      if (publicPath.length && publicPath.substr(-1, 1) !== '/') {
-        publicPath += '/';
-      }
+    getPublicPath(compilation){
+      let publicPath = typeof compilation.options.output.publicPath !== 'undefined'
+      ? compilation.mainTemplate.getPublicPath({hash: compilation.hash})
+      : path.relative(path.resolve(compilation.options.output.path, path.dirname('index.html')), compilation.options.output.path)
+        .split(path.sep).join('/');
 
-      return publicPath;
-      }
-      addScript(id){
-        return `<script src="${id}"></script>`;
-      }
+    if (publicPath.length && publicPath.substr(-1, 1) !== '/') {
+      publicPath += '/';
+    }
+
+    return publicPath;
+    }
+    addScript(id){
+      return `<script src="${id}"></script>`;
+    }
 }
 
 module.exports = HtmlWebpackPlugin;
