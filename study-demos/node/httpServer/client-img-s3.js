@@ -1,10 +1,10 @@
 const http =require('http');
 const queryString=require('querystring');
 const fs=require('fs');
-fs.unlink('2.jpg',(err)=>{
-    if(err) throw err;
-    console.log('delete success');
-});
+// fs.unlink('2.jpg',(err)=>{
+//     if(err) throw err;
+//     console.log('delete success');
+// });
 var client=http.request({
     host:'127.0.0.1',
     method:'get',
@@ -19,10 +19,10 @@ var client=http.request({
     res.on('end',()=>{
         fs.writeFile('2.jpg',data,{encoding:'binary'},(err)=>{
             if(err) throw err;
-            console.log('grab success');
+            console.log('grab success'); 
         });
     });
-    // var writeStream=fs.createWriteStream('1.jpg');
+    // var writeStream=fs.createWriteStream('2.jpg');
     // res.pipe(writeStream);
 });
 
