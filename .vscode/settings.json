@@ -1,3 +1,9 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "typescript.suggest.completeJSDocs": false,
+    "typescript.suggest.enabled": false,
+    "typescript.suggest.autoImports": false,
+    "typescript.suggestionActions.enabled": false,
+    "editor.quickSuggestions": false,
+    "editor.quickSuggestionsDelay": 100
 }
