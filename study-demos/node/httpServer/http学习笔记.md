@@ -49,6 +49,17 @@ request.removeHeader('Content-Type');
 
 # 类 http.ServerResponse 响应类
 - 作为第二个参数传给 http.Server类监听的 'request' 事件
+- 它实现了可写流`<stream.Writable>`接口,所以在传输文件时可以作为pipe的参数。
+```
+const http=require('http');
+const fs=require('fs');
+
+http.createServer((req,res)=>{
+    var writeS=fs.createReadStream('1.jpg');
+    res.writeHead(200,{'Content-type':'image/jpg'});
+    writeS.pipe(res);
+}).listen(80);
+```
 ### 事件 close
 - 表明在调用 response.end() 或能够刷新之前终止了底层连接
 ### 事件 finish
@@ -74,10 +85,84 @@ const contentLength = response.getHeader('Content-Length');
 const setCookie = response.getHeader('set-cookie');
 // setCookie 的类型为字符串数组。
 ```
+### response.writeHead(statusCode[, statusMessage][, headers]) 
+- 响应头
+```
+const body = 'hello world';
+response.writeHead(200, {
+  'Content-Length': Buffer.byteLength(body),
+  'Content-Type': 'text/plain' });
+```
+- 此方法只能在消息上调用一次，并且必须在调用 response.end() 之前调用。
 
+- 如果在调用此方法之前调用了 response.write() 或 response.end()，则将计算隐式或可变的响应头并调用此函数。
+
+- 当使用 response.setHeader() 设置响应头时，则与传给 response.writeHead() 的任何响应头合并，且 response.writeHead() 的优先。
+- 如果调用此方法并且尚未调用 response.setHeader()，则直接将提供的响应头值写入网络通道而不在内部进行缓存，响应头上的 response.getHeader() 将不会产生预期的结果。 如果需要渐进的响应头填充以及将来可能的检索和修改，则改用 response.setHeader()。
 ### 函数 response.write
+- 响应数据
 
 # 类 http.IncomingMessage 请求类
+- IncomingMessage 对象由 http.Server 或 http.ClientRequest 创建，
+- 作为第一个参数传给 http.Server类监听的 `request` 事件
+- 作为第一个参数传给 http.ClientRequest类监听的`response` 事件
+- 它实现了可读流`<stream.Writable>`接口
+
+```
+var client=http.request({
+    host:'127.0.0.1',
+    method:'get',
+    path:'/',
+
+},(res)=>{
+    var writeStream=fs.createWriteStream('2.jpg');
+    res.pipe(writeStream);
+});
+
+client.end();
+```
+写文件部分等同于
+```
+    let data='';
+    res.setEncoding('binary');
+    res.on('data',(chunk)=>{
+        data+=chunk;
+    });
+    res.on('end',()=>{
+        fs.writeFile('2.jpg',data,{encoding:'binary'},(err)=>{
+            if(err) throw err;
+            console.log('grab success'); 
+        });
+    });
+```
+### 属性 message.complete
+
+- 如果已收到并成功解析完整的 HTTP 消息，则 message.complete 属性将为 true
 
 # 函数 http.createServer 创建一个服务端
-# 函数 http.request 创建一个客户端
+- 创建一个http.Server类
+- 参数可选，一般不填,只传入一个回调函数，它会自动监听request事件。
+
+# 函数 http.request(options[, callback]) 
+# http.request(url[, options][, callback])  创建一个客户端
+
+- 创建一个http.ClientRequest类
+- 常用参数
+- url 可以是字符串或 URL 对象。 如果 url 是一个字符串，则会自动使用 url.parse() 解析它。 如果它是一个 URL 对象，则会自动转换为普通的 options 对象。
+- 如果同时指定了 url 和 options，则对象会被合并，其中 options 属性优先。
+- 基本用法
+```
+http.request({
+  host:'localhost',
+  port:80,
+  method:'get',
+  path:'/',//应包括查询字符串 例如 '/index.html?page=12',
+  headers:{
+
+  },
+  auth:'user:password'//身份验证
+  timeout:1000,//毫秒
+
+
+})
+```
