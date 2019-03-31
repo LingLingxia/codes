@@ -101,6 +101,7 @@ response.writeHead(200, {
 - 如果调用此方法并且尚未调用 response.setHeader()，则直接将提供的响应头值写入网络通道而不在内部进行缓存，响应头上的 response.getHeader() 将不会产生预期的结果。 如果需要渐进的响应头填充以及将来可能的检索和修改，则改用 response.setHeader()。
 ### 函数 response.write
 - 响应数据
+>write(),end()函数, data,end,close事件是因为实现了可写流接口
 
 # 类 http.IncomingMessage 请求类
 - IncomingMessage 对象由 http.Server 或 http.ClientRequest 创建，

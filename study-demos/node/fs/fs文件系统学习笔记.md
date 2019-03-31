@@ -243,7 +243,7 @@ options <string> | <Object>
     highWaterMark <integer> 默认值: 64 * 1024。
 返回: <fs.ReadStream> 参阅可读流。
 ```
-- 与可读流的 16 kb 的默认 highWaterMark 不同，此方法返回的流具有 64 kb 的默认 highWaterMark。???
+- 与可读流的 16 kb 的默认 highWaterMark 不同，此方法返回的流具有 64 kb 的默认 highWaterMark。(可缓冲的数据大小,对于普通的流， highWaterMark 指定了字节的总数。 对于对象模式的流， highWaterMark 指定了对象的总数。)
 - 如果指定了 fd 并且 start 被省略或 undefined，则 fs.createReadStream() 从当前文件位置开始顺序读取。
 - 如果指定了 fd，则 ReadStream 将忽略 path 参数并使用指定的文件描述符。 这意味着不会触发 'open' 事件。
 - 如果 autoClose 为 false，则即使出现错误，也不会关闭文件描述符。 应用程序负责关闭它并确保没有文件描述符泄漏。 
