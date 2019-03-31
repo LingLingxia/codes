@@ -5,13 +5,17 @@
 |自定义事件|自定义|自定义|代码触发|
 # 函数 fs.watch(filename[, options][, listener])
 - `filename <string> | <Buffer> | <URL>`
-- options {
+
+```
+ options {
     persistent:true,//default 持续监听
     recursive:false,//监视子目录
     encoding:utf-8,//传给listener的编码
 }
+ ```
 - listener (eventType,filename)=>{}//eventType  'rename' or 'change'
 - 监听器回调绑定在由 fs.FSWatcher 触发的 'change' 事件上，但它与 eventType 的 'change' 值不是一回事,详情见注释
+
 # 类 fs.FSWatcher
 - 所有 fs.FSWatcher 对象都是 EventEmitter 的实例，每当修改指定监视的文件，就会触发 'change' 事件。
 ### 事件 'change'
@@ -118,4 +122,288 @@ Stats {
 - ctime "更改时间" - 上次更改文件状态（修改索引节点数据）的时间。由 chmod(2)、 chown(2)、 link(2)、 mknod(2)、 rename(2)、 unlink(2)、 utimes(2)、 read(2) 和 write(2) 系统调用更改。
 - birthtime "创建时间" - 创建文件的时间。当创建文件时设置一次。 在不支持创建时间的文件系统上，该字段可能改为保存 ctime 或 1970-01-01T00:00Z（即 Unix 纪元时间戳 0）。 在这种情况下，该值可能大于 atime 或 mtime。 
 
-# 函数之间的差异与使用场景 fs.readStream,fs.writeStream,fs.read,fs.write,fs.readFile,fs.writeFile
+###  A Question:函数之间的差异与使用场景 fs.readStream,fs.writeStream,fs.read,fs.write,fs.readFile,fs.writeFile ?
+##  node读取文件/目录函数
+|函数名|参数|返回值|适用场景|
+|:--|:--|:--|:--|
+|fs.read|(fd, buffer, offset, length, position, callback)||传入文件描述符|
+|fs.readSync|(fd, buffer, offset, length, position)||传入文件描述符|
+|fs.readdir|(path[, options], callback)||读取目录|
+|fs.readdirSync|(path[, options])||同步读取目录|
+|fs.readFile|(path[, options], callback)||异步读取文件|
+|fs.readFileSync|(path[, options])||同步读取文件|
+|fs.readlink|(path[, options], callback)|??|link|
+|fs.readlinkSync|(path[, options])|??|link|
+
+# 函数 fs.readFile(path[, options], callback)
+- `path <string> | <Buffer> | <URL> | <integer> 文件名或文件描述符。`
+- 
+``` 
+encoding <string> | <null> 默认值: null。
+flag <string> 参阅支持的文件系统标志。默认值: 'r'。
+```
+- `(err,data<string> | <Buffer>)=>{}`
+- fs.readFileSync()直接返回data
+- 传入的路径为目录报错
+- fs.readFile() 函数会缓冲整个文件。 为了最小化内存成本，尽可能通过 fs.createReadStream() 进行流式传输。
+- 不传编码就返回一个Buffer,因为有很多文件如图片压缩包只能用Buffer返回.
+```
+fs.readFile('index.txt','utf8',(err,data)=>{
+    console.log(data);//12345678
+})
+
+```
+
+# 函数 fs.readdir(path[, options], callback)
+- `path <string> | <Buffer> | <URL>`
+```
+注意,此选项为10.0.0新增内容,因为本机版本为8.9.0此选项无效
+options <string> | <Object>
+
+encoding <string> 默认值: 'utf8'。
+withFileTypes <boolean> 默认值: false。
+```
+- `(err,files <string[]> | <Buffer[]> | <fs.Dirent[]>)=>{}`
+- files 是目录中的文件名的数组（不包括 '.' 和 '..'）option.encoding指定文件名编码
+- 如果 options.withFileTypes 设置为 true，则 files 数组将包含 fs.Dirent 对象。
+- fs.readdirSync(path[, options]) 为其同步版本
+```
+fs.readdir('../fs/',(err,files)=>{
+    console.log(files);
+})
+```
+- 会把目录名称一起返回
+```
+[ 'createStream.js',
+  'fs文件系统学习笔记.md',
+  'index.js',
+  'index.txt',
+  'merge',//目录
+  'read.js',
+  'stat',//目录
+  'test.txt',
+  'watch'//目录
+   ]
+```
+
+# 类 fs.Dirent 新增于: v10.10.0
+- 使用 withFileTypes 选项设置为 true 调用 fs.readdir() 或 fs.readdirSync() 时，生成的数组将填充 fs.Dirent 对象
+
+- dirent.isBlockDevice() boolean 是否为块设备
+- dirent.isCharacterDevice() boolean 是否为字符设备
+- dirent.isDirectory()  boolean  是否为目录
+- dirent.isFIFO() boolean 是否为(FIFO)管道
+- dirent.isFile() boolean 是否为文件
+- dirent.isSocket() boolean 是否为套接字
+- dirent.isSymbolicLink() boolean 是否为符号链接
+- dirent.name 属性,返回文件名 string or buffer
+
+# 类 fs.readStream(需要结合stream章节的知识使用)
+- 由fs.ReadStream函数返回,实现了可读流接口.
+### 事件 'close'
+- 当 fs.ReadStream 的底层文件描述符已关闭时触发。
+### 事件 'open'
+- 参数为(fd)
+- 当 fs.ReadStream 的文件描述符打开时触发。 
+### 事件 'ready'
+- 当 fs.ReadStream 准备好使用时触发。即'open'事件之后
+### 属性 readStream.bytesRead
+- number 到目前为止已读取的字节数
+### 属性 readStream.path
+- string or buffer 由 fs.createReadStream() 的第一个参数指定
+
+# 类 fs.WriteStream
+- 由fs.WriteStream函数返回,实现了可读流接口.
+### 事件 'close'
+- 当 fs.WriteStream 的底层文件描述符已关闭时触发。
+### 事件 'open'
+- 参数为(fd)
+- 当 fs.WriteStream 的文件描述符打开时触发。 
+### 事件 'ready'
+- 当 fs.WriteStream 准备好使用时触发。即'open'事件之后
+### 属性 writetream.bytesWritten
+- number 到目前为止已读取的字节数
+### 属性 writeStream.path
+- string or buffer 由 fs.createWriteStream() 的第一个参数指定
+
+
+
+# 类 fs.createReadStream(path[, options])
+```
+path <string> | <Buffer> | <URL>
+options <string> | <Object>
+
+    flags <string> 参阅支持的文件系统标志。默认值: 'r'。
+    encoding <string> 默认值: null。
+    fd <integer> 默认值: null。
+    mode <integer> 默认值: 0o666。
+    autoClose <boolean> 默认值: true。
+    start <integer>
+    end <integer> 默认值: Infinity。
+    highWaterMark <integer> 默认值: 64 * 1024。
+返回: <fs.ReadStream> 参阅可读流。
+```
+- 与可读流的 16 kb 的默认 highWaterMark 不同，此方法返回的流具有 64 kb 的默认 highWaterMark。???
+- 如果指定了 fd 并且 start 被省略或 undefined，则 fs.createReadStream() 从当前文件位置开始顺序读取。
+- 如果指定了 fd，则 ReadStream 将忽略 path 参数并使用指定的文件描述符。 这意味着不会触发 'open' 事件。
+- 如果 autoClose 为 false，则即使出现错误，也不会关闭文件描述符。 应用程序负责关闭它并确保没有文件描述符泄漏。 
+- 如果 autoClose 设为 true（默认行为），则在 'error' 或 'end' 事件时将自动关闭文件描述符。
+- mode 用于设置文件模式（权限和粘滞位），但仅限于创建文件的情况。
+- 如果 options 是字符串，则它指定字符编码。
+
+# 类 
+
+# 函数 fs.createWriteStream(path[, options])
+```
+path <string> | <Buffer> | <URL>
+options <string> | <Object>
+    flags <string> 参阅支持的文件系统标志。默认值: 'w'。
+    encoding <string> 默认值: 'utf8'。
+    fd <integer> 默认值: null。
+    mode <integer> 默认值: 0o666。
+    autoClose <boolean> 默认值: true。
+    start <integer>
+返回: <fs.WriteStream> 参阅可写流。
+```
+
+- options 可以包括一个 start 选项，允许在文件开头之后的某个位置写入数据。
+- 如果要修改文件而不是覆盖它，则 flags 模式需要为 r+ 模式而不是默认的 w 模式。
+- 如果 autoClose 设置为 true（默认行为），则在 'error' 或 'finish' 事件时文件描述符会自动关闭。
+- 如果 autoClose 为 false，则即使出现错误，也不会关闭文件描述符。 应用程序负责关闭它并确保没有文件描述符泄漏。
+- 如果指定了 fd，则 WriteStream 将忽略 path 参数并使用指定的文件描述符。 这意味着不会触发 'open' 事件
+
+# 函数 fs.appendFile(path, data[, options], callback)
+```
+path <string> | <Buffer> | <URL> | <number> 文件名或文件描述符。
+data <string> | <Buffer>
+options <Object> | <string>
+    encoding <string> | <null> 默认值: 'utf8'。
+    mode <integer> 默认值: 0o666。
+    flag <string> 参阅支持的文件系统标志。默认值: 'a'。
+callback <Function>
+    err <Error>
+```
+- 同步版函数 fs.appendFileSync()
+- 向text.txt添加了'hello ,3Q'
+```
+fs.appendFile('test.txt','hello ,3Q','utf8',(err)=>{
+    console.log('succeed');
+})
+
+```
+- 以下两种写法都会直接覆盖原文件的所有内容,暂时不知道用fd不用路径的时候怎么追加 
+- 使用fs.write可以在指定位置添加
+```
+/*
+var writeStream = fs.createWriteStream('test.txt',{flag:'w+',start:10},(err)=>{
+   console.log(err);
+}); 
+*/
+
+var writeStream = fs.createWriteStream('test.txt',(err)=>{
+   console.log(err);
+});
+
+writeStream.on('open',(fd)=>{
+   fs.appendFile(fd,'this is a writestream',(err)=>{
+       console.log(err);
+   })
+})
+```
+
+# 函数 fs.copyFile(src, dest[, flags], callback)
+```
+src <string> | <Buffer> | <URL> 要拷贝的源文件名。
+dest <string> | <Buffer> | <URL> 拷贝操作的目标文件名。
+flags <number> 用于拷贝操作的修饰符。默认值: 0。
+callback <Function>
+```
+- 异步地将 src 拷贝到 dest .同步版 fs.copyFileSync(src, dest[, flags])
+- 默认情况下，如果 dest 已经存在，则覆盖它。 除了可能的异常，回调函数没有其他参数。
+- flags 是一个可选的整数，指定拷贝操作的行为。 可以创建由两个或更多个值按位或组成的掩码（比如 fs.constants.COPYFILE_EXCL | fs.constants.COPYFILE_FICLONE）
+- fs.constants.COPYFILE_EXCL - 如果 dest 已存在，则拷贝操作将失败。
+- fs.constants.COPYFILE_FICLONE - 拷贝操作将尝试创建写时拷贝（copy-on-write）链接。如果平台不支持写时拷贝，则使用后备的拷贝机制。
+ fs.constants.COPYFILE_FICLONE_FORCE - 拷贝操作将尝试创建写时拷贝链接。如果平台不支持写时拷贝，则拷贝操作将失败。
+ - 将index.txt的内容拷贝到index.js,当index.js不存在时创建一个文件
+ ```
+ fs.copyFile('index.txt','index.js',((err)=>{
+   if(err){
+      throw err;
+   }
+}));
+ ```
+ - 拷贝文件夹报错
+ ```
+ /*
+ Error: EPERM: operation not permitted, copyfile 'C:\Users\llxla\git\codes\study-demos\node\fs\merge' -> 'C:\Users\llxla\git\codes\study-demos\node\fs\merge2'
+ */
+ fs.copyFile('./merge/','./merge2',((err)=>{
+   if(err){
+      throw err;
+   }
+}));
+ ```
+
+ # 函数 fs.mkdir(path[, options], callback)
+ - 异步地创建目录 同步版 fs.mkdirSync(path[, options])
+ ```
+path <string> | <Buffer> | <URL>
+options <Object> | <integer>  v10.0.0新增
+    recursive <boolean> 默认值: false。
+    mode <integer> Windows 上不支持。默认值: 0o777。
+callback <Function>
+err <Error>
+```
+- 可选的 options 参数可以是指定模式（权限和粘滞位）的整数，也可以是具有 mode 属性和 recursive 属性（指示是否应创建父文件夹）的对象。
+- 为了兼容10.0.0之前的目录,应该一级一级的创建目录
+- 创建一个tmp目录
+```
+fs.mkdir('tmp',(err)=>{
+   if(err){
+      throw err;
+   }
+})
+```
+
+# 函数 fs.unlink(path, callback)
+- 异步地删除文件或符号链接 同步版fs.unlinkSync(path)
+- fs.unlink() 不能用于目录
+```
+fs.unlink('1.jpg',(err)=>{
+   if(err){
+      console.log(err);
+   }
+});
+/*
+用于目录则报错
+Error: EPERM: operation not permitted, 
+*/
+```
+# 函数 fs.rmdir(path, callback)
+- 异步地删除文件夹  同步版 fs.rmdirSync(path)
+```
+fs.rmdir('tmp',(err)=>{
+   if(err){
+      throw err;
+   }
+})
+```
+# 函数 fs.rename(oldPath, newPath, callback)
+- 异步地将 oldPath 上的文件重命名为 newPath 提供的路径名。 如果 newPath 已存在，则覆盖它
+-更改名字时文件和目录都可用,如果newPath已存在,path==文件名?覆盖,path==目录名?报错.(operation not permitted)
+```
+fs.rename('tmp-2','tmp-3',(err)=>{
+   if(err){
+      throw err;
+   }
+})
+
+fs.rename('tmp-3/tmp.txt','tmp-3/tmp-3.txt',(err)=>{
+   if(err){
+      throw err;
+   }
+})
+
+```
+
+[文件系统的常量](fs系统的常量.md)
