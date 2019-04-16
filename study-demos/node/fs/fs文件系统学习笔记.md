@@ -88,6 +88,7 @@ fs.stat('demo.txt',(err,stat)=>{
 
 ```
 ### Stats属性
+[fs.Stats的mode属性](fs系统的常量.md) 不太必要用到整个,有函数可以判断stats的类型
 ```
 Stats {
     dev: 3430564453, //包含该文件的设备的数字标识符。  ???
@@ -111,7 +112,6 @@ Stats {
 }
 
 ```
-
 ### 文件属性的时间值
 ####stat 对象中的时间具有以下语义：
 
@@ -405,5 +405,17 @@ fs.rename('tmp-3/tmp.txt','tmp-3/tmp-3.txt',(err)=>{
 })
 
 ```
+
+# 函数 fs.open(path, flags[, mode], callback)
+异步地打开文件。参阅 open
+```
+path <string> | <Buffer> | <URL>
+flags <string> | <number> 参阅支持的文件系统标志。
+mode <integer> 默认值: 0o666（可读写）。
+callback <Function>
+    err <Error>
+    fd <integer>
+```
+- [flag的标记](fs系统的常量.md)
 
 [文件系统的常量](fs系统的常量.md)

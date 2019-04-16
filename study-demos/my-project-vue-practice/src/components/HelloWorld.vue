@@ -1,6 +1,17 @@
 <template>
   <div class="hello">
-
+    <div class="a-block">
+      <h1>slot</h1>
+      <slot-demo>
+        这是父组件的slot-default的值
+        <h3 slot="slot-one" slot-scope="user">
+          {{user.data.name}}这是slot-one里面的值{{user.id}}
+           <ul>
+             <li v-for="(item,index) in user.arr" :key="index">{{item}}</li>
+           </ul>
+          </h3>
+        </slot-demo>
+    </div>
     <div class="a-block">
       <h1>jsx渲染的组件</h1>
       <jsx>默认槽内容</jsx>
@@ -42,6 +53,7 @@
 import modelDemo from './modelDemo';
 import customInstruction from './customInstruction';
 import jsx from './jsx';
+import slotDemo from './slotDemo';
 export default {
   name: 'HelloWorld',
   data () {
@@ -54,7 +66,8 @@ export default {
     customInstruction,
     jsx:jsx.default,
     jsxPropsTest:jsx.propsTest,
-    jsxFunctionalTest:jsx.functionalTest
+    jsxFunctionalTest:jsx.functionalTest,
+    slotDemo
   },
   methods:{
     check(val){
