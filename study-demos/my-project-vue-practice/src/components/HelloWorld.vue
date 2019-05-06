@@ -84,6 +84,14 @@ export default {
     alert('click me');
   }
 
+  },
+  created(){
+    const string = 'test1test2test3';
+    // g 修饰符加不加都可以
+    const regex = /t(e)(st(\d?))/g;
+
+    for (const match of string.matchAll(regex)) { console.log(match);}
+  
   }
 }
 </script>
