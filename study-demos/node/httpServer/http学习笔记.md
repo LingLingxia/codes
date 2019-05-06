@@ -167,3 +167,7 @@ http.request({
 
 })
 ```
+
+###stream的一些总结
+- `http.ClientRequest 服务器请求 `和`http.ServerResponse 服务端响应类 `都是可写流,所以他们都有write函数,end函数.
+- 对于一个http请求,客户端发起时一个可写流,到了服务端收到一个可读流,服务端返回一个可写流,在客户端收到的是一个可读流.
