@@ -45,7 +45,13 @@
       <h1>自定义指令</h1>
       <custom-instruction></custom-instruction>
     </div>
-
+    <div class="a-block">
+      <h1>修改数组元素,响应式测试</h1>
+      <ul>
+        <li v-for="item in arr" :key="item.index">{{item.name}}</li>
+      </ul>
+      <button @click="changeArrProperty()">点击修改数组属性</button>
+    </div>
   </div>
 </template>
 
@@ -58,7 +64,9 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      arr:null,
+      arrIndex:1
     }
   },
   components:{
@@ -68,6 +76,18 @@ export default {
     jsxPropsTest:jsx.propsTest,
     jsxFunctionalTest:jsx.functionalTest,
     slotDemo
+  },
+    created(){
+      this.arr = [
+      {
+        index:1,
+        name:'llx'
+      },
+      {
+        index:2,
+        name:'llx2'
+      }
+    ];
   },
   methods:{
     check(val){
@@ -82,6 +102,17 @@ export default {
   },
   clickMe(){
     alert('click me');
+  },
+  changeArrProperty(){
+    //生效
+    // this.arr[1].name='llx'+ this.arrIndex++;
+    // console.log(this.arr);
+
+    //无效
+    this.arr[1]={
+      index:this.arrIndex++,
+      name:'llx'+this.arrIndex
+    }
   }
 
   },
