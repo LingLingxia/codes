@@ -7,7 +7,7 @@ export var sayHello = function(){//这样写的 最终会成为  export对象的
 }
 
 function sayNO(){
-    alert('no');
+    console.log('no');
 }
 
 export {

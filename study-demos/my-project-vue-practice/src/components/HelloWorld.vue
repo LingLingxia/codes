@@ -1,6 +1,19 @@
 <template>
   <div class="hello">
     <div class="a-block">
+      <h2>测试nextTick</h2>
+      <button @click="doNextTick()">click me</button>
+    </div>
+    <div class="a-block">
+          <h1>测试vm.$forceUpdate是否可以监听到新增的数据并渲染</h1>
+          <p>如果用了vue检测不到的方式去改变值,那么只有本次修改生效,并不会把这个新加的属性变成响应式的</p>
+          <p v-for="(item,key) in testData" :key="key">{{item.name}}</p>
+          <button @click="operateAge('add')">添加年龄</button>
+          <button @click="operateAge('edit')">修改年龄</button>
+          <button @click="operateAge('remove')">移除年龄</button>
+
+    </div>
+    <div class="a-block">
       <h1>slot</h1>
       <slot-demo>
         这是父组件的slot-default的值
@@ -52,6 +65,7 @@
       </ul>
       <button @click="changeArrProperty()">点击修改数组属性</button>
     </div>
+
   </div>
 </template>
 
@@ -66,7 +80,15 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       arr:null,
-      arrIndex:1
+      arrIndex:1,
+      testData:[{
+        name:'llx'
+      },{
+        name:'llx2'
+      }
+
+        
+      ]
     }
   },
   components:{
@@ -90,6 +112,33 @@ export default {
     ];
   },
   methods:{
+    doNextTick(){
+        this.$nextTick().then(()=>{
+          console.log('nextTick2');
+        })    
+        this.$nextTick(()=>{
+          console.log('nextTick1');
+        });
+
+    },
+    operateAge(type){
+      switch(type){
+        case 'add':
+        //this.testData.age ='24';
+        this.testData[0]={name:'llx3'};
+        //这一次调用forceUpdate会更新,但是这样的写法并没有把这个新的对象变成一个observer对象
+        //大部分情况下,我们不需要自己调用forceUpdate
+        this.$forceUpdate();
+        break;
+        case 'edit':
+        // this.testData.age = '25';
+        this.testData[0].name='llx';
+        // this.$forceUpdate();
+        break;
+        case 'remove':
+        // delete this.testData.age;
+      }
+    },
     check(val){
       console.log(val);
     },
