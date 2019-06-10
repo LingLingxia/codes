@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>垂直居中</title>
+    <style>
+        .box{
+            height:300px;
+            margin:20px;
+            background:pink;
+        }
+        .box p{
+            border:1px solid #333;
+            margin:0;
+
+        }
+        .one{
+            line-height:300px;
+            text-align:center;
+        }
+        .one p{
+            line-height:20px;
+            display:inline-block;
+            vertical-align:middle;
+        }
+
+        .two{
+            position:relative;
+        }
+        .two p{
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+        }
+        .three{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .four{
+            display:table-cell;
+            vertical-align:middle;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box one"><p>ta aut odit minus rerum Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dicta perferendis deleniti unde quaerat optio expedita magni id earum rem. Sunt neque deserunt pariatur ea quas fugit impedit harum minima? pariatur animi molestiae assumend</p></div>
+         
+    
+    <div class="box two">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis atque nostrum. Laborum tenetur minima excepturi provident itaque? Laudantium aliquid rem dicta aut odit minus rerum pariatur animi molestiae assumenda!</p>
+    </div>
+    <div class="box three">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis atque nostrum. Laborum tenetur minima excepturi provident itaque? Laudantium aliquid rem dicta aut odit minus rerum pariatur animi molestiae assumenda!</p>
+    </div>
+    <div class="box four">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis atque nostrum. Laborum tenetur minima excepturi provident itaque? Laudantium aliquid rem dicta aut odit minus rerum pariatur animi molestiae assumenda!</p>
+    </div>
+</body>
+</html>

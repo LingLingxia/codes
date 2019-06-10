@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       .box> .target{
+             display:none;
+             position:absolute;
+             opacity:0;
+             transition:opacity .25s;
+             /* visibility:hidden; */
+       }
+
+       .box:hover >.target{
+           display:block;
+           /* visibility:visible; */
+           opacity:1;
+           outline:1px dotted Highlight;
+       }
+       .footer{
+         outline:9999px solid #30b3d6;
+         position:absolute;
+         clip:rect(0 9999px 9999px 0);
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="file" id="img" style="display:none"/><label for="img" >点击有效</label>
+    </div>
+    <div class="box">
+        00000
+         <p class="target">6666</p>
+         <p style="background: red;">abcdefg</p>
+    </div>
+    <div class="footer">footer,当屏幕内容过矮时,自动填满</div>
+    <script>
+       document.getElementById('img').addEventListener('change',(e)=>{
+           console.log(e);
+       })
+    </script>
+</body>
+</html>
