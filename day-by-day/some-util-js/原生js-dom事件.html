@@ -15,8 +15,8 @@
 </head>
 <body>
     <div id="wrap-div">
-        <input type="text" id="my-input"/>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores illum odit debitis ipsum labore voluptas rerum eligendi quis deserunt, facilis quibusdam architecto laborum, vero ipsa veniam atque dolores repellendus.</span>
+        <input type="text" id="my-input" value="只有输入框可以监听键盘事件"/>
+        <span style="display: block;color:#00ade5;font-size:16px;">mouseover,mouseout可以在子元素中触发(冒泡),e.toElement===e.target<br/>mouseenter,mouseleave,只在本元素触发(不冒泡) e.relatedTarget===e.target</span>
         <p id="second-p">Lorem ipsum dolor sit amet consectetur adipisicing' elit. Magni, voluptates corporis. Ullam reprehenderit quod mollitia dignissimos deserunt consequuntur recusandae, sequi exercitationem sit adipisci animi quibusdam esse quasi nostrum libero aperiam.</p>
     </div>
     <div class="scroll-div" id="scroll-div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti veritatis asperiores minus magnam doloremque eius quos harum quae voluptatem iure dolore, pariatur necessitatibus, at nulla sed vitae! Exercitationem, laudantium.</div>
@@ -40,6 +40,10 @@
     scrollDiv.addEventListener('mousewheel',(e)=>{
         console.log(e.wheelDelta);
     },false);
+    /*
+     向上时  wheelDelta为正数,向下为负数
+    
+    */
     </script>
 </body>
 </html>
