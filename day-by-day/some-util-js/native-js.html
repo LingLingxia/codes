@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>原生js</title>
+</head>
+<body>
+    <span id="a-span" class="abc" style="font-size: 12px;color: pink">234</span>
+    <input placeholder="I am a input" value="我是一个输入框"/> 
+    <!-- 我是注释 -->我是一段文字
+    <p id="another-text">
+        <span></span>
+        另一段文字
+        <span></span>
+    </p>
+    <script>
+        console.log(document.body.firstChild.id);//没想到吧,第一个是空白节点
+        console.log(document.body.firstElementChild.id);//可以用这个写法
+        let ul = document.createElement('ul');
+        for(var i = 0;i<5;i++){
+            let li = document.createElement('li');
+            let num = document.createTextNode(i);
+            li.appendChild(num);
+            ul.insertBefore(li,null);
+        }
+        document.body.appendChild(ul);
+
+        let anotherText = document.getElementById('another-text');
+        anotherText.firstChild.appendData('12345677');
+        // anotherText.firstChild.deleteData(0,5)
+        // anotherText.firstChild.insertData(0,'另一段文字回来啦')
+        // anotherText.firstChild.splitText(1);//分成了两段   '另'  '一端文字回来啦12345677'  如果传入0 会出现一个空的文本节点
+        // anotherText.normalize();//所有的文本呢子节点变成了一个
+        let aSpan = document.body.firstElementChild;
+        aSpan.style.getPropertyValue('font-size');
+        let computedStyle = document.defaultView.getComputedStyle(aSpan,null);
+    </script>
+</body>
+</html>

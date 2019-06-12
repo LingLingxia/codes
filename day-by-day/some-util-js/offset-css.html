@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css偏移量 </title>
+    <style>
+        body{
+            padding: 0;
+            margin:0;
+        }
+       .parent{
+            width: 200px;
+            height: 200px;
+            border: 10px solid #eee;
+            
+       }
+       .third-parent{
+           overflow-y: scroll;
+       }
+    </style>
+</head>
+<body>
+    <div class="first-paretz parent ">
+        <div class="second-parent parent">
+            <div class="third-parent parent" id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptas, animi esse, natus praesentium molestiae eum, placeat rem commodi sapiente debitis sint voluptate et voluptatum deserunt officiis illum delectus voluptatem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis culpa cupiditate facilis, consequatur nisi natus debitis recusandae eum necessitatibus officia! Ad temporibus velit dolores reprehenderit harum totam quos aliquid distinctio.</div>
+        </div>
+    </div>
+    <script>
+       let third = document.getElementById('third');
+       console.log(third.offsetHeight);//height + padding + border   220
+       console.log(third.offsetTop);//第一个定位父元素相对位移    从border所在位置开始比较  20
+       console.log(third.offsetLeft);//第一个定位父元素相对位移  20
+       console.log(third.clientHeight);//height + padding  200
+       console.log(third.scrollHeight);// 458
+       
+       console.log(document.documentElement.offsetHeight);//视口  220 因为上下边距重合的原因,只算first-parent的高度
+       console.log(document.documentElement.offsetWidth);//视口
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>各种事件效果测试</title>
+    <style>
+        .scroll-div{
+            width: 200px;
+            height: 200px;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap-div">
+        <input type="text" id="my-input"/>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores illum odit debitis ipsum labore voluptas rerum eligendi quis deserunt, facilis quibusdam architecto laborum, vero ipsa veniam atque dolores repellendus.</span>
+        <p id="second-p">Lorem ipsum dolor sit amet consectetur adipisicing' elit. Magni, voluptates corporis. Ullam reprehenderit quod mollitia dignissimos deserunt consequuntur recusandae, sequi exercitationem sit adipisci animi quibusdam esse quasi nostrum libero aperiam.</p>
+    </div>
+    <div class="scroll-div" id="scroll-div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti veritatis asperiores minus magnam doloremque eius quos harum quae voluptatem iure dolore, pariatur necessitatibus, at nulla sed vitae! Exercitationem, laudantium.</div>
+    <script>
+       let wrapDiv = document.getElementById('wrap-div');
+       let myInput =  document.getElementById('my-input');
+       let scrollDiv = document.getElementById('scroll-div');
+       let arr =  ['mouseover','mouseout','mouseenter','mouseleave'];
+    //    arr.forEach(item=>{
+    //        wrapDiv.addEventListener(item,(e)=>{
+    //            console.log(item,e.toElement&&e.toElement.tagName,e.target.tagName,e.relatedTarget&&e.relatedTarget.tagName);
+    //        },false)
+    //    });
+    //    wrapDiv.addEventListener('click',(e)=>{
+    //         console.log(e,e.type,e.bubbles,e.cancelBubble,e.currentTarget,e.target,e.toElement,e.relatedTarget);
+    //    },false);
+    //    wrapDiv.addEventListener('keyup',(e)=>{
+    //         console.log(e.key,e.keyCode,event.shiftKey);
+    //    },false);
+
+    scrollDiv.addEventListener('mousewheel',(e)=>{
+        console.log(e.wheelDelta);
+    },false);
+    </script>
+</body>
+</html>
