@@ -1,5 +1,9 @@
 <template>
   <div class="hello">
+    <div>
+      <h2>draggable源码学习</h2>
+      <draggable></draggable>
+    </div>
     <div class="a-block">
       <h2>测试nextTick</h2>
       <button @click="doNextTick()">click me</button>
@@ -74,6 +78,7 @@ import modelDemo from './modelDemo';
 import customInstruction from './customInstruction';
 import jsx from './jsx';
 import slotDemo from './slotDemo';
+import draggable from './draggable';
 export default {
   name: 'HelloWorld',
   data () {
@@ -97,7 +102,8 @@ export default {
     jsx:jsx.default,
     jsxPropsTest:jsx.propsTest,
     jsxFunctionalTest:jsx.functionalTest,
-    slotDemo
+    slotDemo,
+    draggable
   },
     created(){
       this.arr = [

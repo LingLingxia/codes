@@ -30,9 +30,10 @@
     //            console.log(item,e.toElement&&e.toElement.tagName,e.target.tagName,e.relatedTarget&&e.relatedTarget.tagName);
     //        },false)
     //    });
-    //    wrapDiv.addEventListener('click',(e)=>{
-    //         console.log(e,e.type,e.bubbles,e.cancelBubble,e.currentTarget,e.target,e.toElement,e.relatedTarget);
-    //    },false);
+       wrapDiv.addEventListener('click',(e)=>{
+           console.log(e,e.currentTarget,e.target);//这里很奇怪,输出e的时候显示e.currentTarget为null,输出e.currentTarget却是对的
+           // console.log(e,e.type,e.bubbles,e.cancelBubble,e.currentTarget,e.target,e.toElement,e.relatedTarget);
+       },false);
     //    wrapDiv.addEventListener('keyup',(e)=>{
     //         console.log(e.key,e.keyCode,event.shiftKey);
     //    },false);

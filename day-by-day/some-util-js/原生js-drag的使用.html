@@ -53,8 +53,8 @@
     /*
     拖动元素 
      1,html设置draggable=true
-     2,element(需要拖动的元素)  element.ondragstart=function(ev){ ev.dataTransfer.setData(key,value);}
-     3,拖动源的容器  startWrap.ondragover=function(ev){return false};
+     2,eleent(需要拖动的元素)  element.ondragstart=function(ev){ ev.dataTransfer.setData(key,value);}
+     3,需要放置的容器  startWrap.ondragover=function(ev){return false};
      4,需要放置的容器  endErap.ondrop=function(ev){ev.dataTransfer.getData(key)}
      
      */
@@ -85,11 +85,11 @@
 
     var element=document.getElementById(id);
 
-        element.ondragover=function(ev){
+        element.ondragover=function(ev){//因为左边右边都可以放置,所以都需要阻止dragover的默认行为
             return false;
         }
         element.ondrop=function(ev){
-            ev.preventDefault();
+            ev.preventDefault();//兼容火狐 
             ev.stopPropagation();
             var elem=document.getElementById(ev.dataTransfer.getData('id'));
             if(ev.target.id==id){
@@ -113,6 +113,10 @@
 
 
 
+
+</script>
+<script>
+//第二版
 
 </script>
 </body>

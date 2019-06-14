@@ -52,7 +52,7 @@
 
 		//axios版本
 
-		uploadFile() {
+	uploadFile() {
     const fd = new FormData();
     const d:any = document;
     const file = d.getElementById('file').files[0];

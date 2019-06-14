@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拖拽</title>
+    <style>
+            div#left,
+        div#right {
+            width: 120px;
+            float: left;
+            margin: 10px 100px 10px 0px;
+            height: 240px;
+            background-color: #dddddd;
+            border: 1px solid #000;
+            overflow-y: auto;
+        }
+
+        div label {
+            font-size: 22px;
+            font-weight: bold;
+            width: 100%;
+            display: inline-block;
+            padding: 4px 0;
+            text-align: center;
+            margin: 0px 0 2px 0;
+            color: #fff;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap" id="left">
+
+    </div>
+    <div class="wrap" id="right">
+    </div>
+    <script>
+        let left = document.getElementById('left');
+        let right = document.getElementById('right');
+        let dragTarget = null;
+        for(var i = 0;i<5;i++){
+            let label = document.createElement('label');
+            label.innerText = "index"+i;
+            label.id = "index"+i;
+            label.draggable = true;
+            label.addEventListener('dragstart',(e)=>{
+                 //e.dataTransfer.setData('id',i);//这里不要写成i,因为i一直是5
+                  e.dataTransfer.setData('Text',e.target.id);
+                  dragTarget = e.target;
+            },false);
+            // label.addEventListener('dragenter',(e)=>{
+            //     console.log(e.dataTransfer.getData('Text'))
+            //     if(dragTarget){
+            //         e.target.parentNode.insertBefore(dragTarget,e.target);
+            //     }
+            // })
+            left.appendChild(label);
+        }
+        function canDrop(item){
+          item.addEventListener('dragover',(e)=>{//dragover和dragenter效果不是一样的  dragenter无效
+             //dragenter只有鼠标换元素的时候触发,dragover只要还在元素上面,就一直触发.
+              e.preventDefault();
+          },false);
+          item.addEventListener('drop',function (e){//子元素也可以drop??  这是父元素的drop
+            dragTarget = null;
+                e.preventDefault();//兼容火狐
+              //  e.stopPropagation();//可不可以删掉??  好像可以
+                let id = e.dataTransfer.getData('Text');
+                let dropItem = document.getElementById(id);
+                if(e.target===this){
+                    this.appendChild(dropItem);
+                }else{//子元素   this始终等于e.currentTarget  ,这里不可以用箭头函数,否则this就会等于window
+                    this.insertBefore(dropItem,e.target);
+                }
+          },false);
+
+        }
+        canDrop(left);
+        canDrop(right);
+    </script>
+</body>
+</html>
