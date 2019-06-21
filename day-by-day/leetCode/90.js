@@ -47,3 +47,32 @@ var subsets = function(nums) {
 };
 
 console.log(subsets([1,2,2]));
+
+
+//排序 + 回溯
+var subsetsWithDup = function(nums) {
+    let arr = [[]];
+    nums.sort((a,b)=>a-b);
+    function dp(tmp,index,len){
+        var i  = index;
+        while(i<nums.length){
+            let repeatCount = 1;
+            while(i+repeatCount<nums.length&&nums[i+repeatCount]===nums[i]){
+                repeatCount++;
+            }
+            let j = 1;
+            let itemContain = [];
+            while(j<=repeatCount){
+            itemContain.push(nums[i]);
+            tmp.push(...itemContain);
+            arr.push(tmp.slice(0));
+            dp(tmp,i+repeatCount,len+j);
+            tmp.length = len;
+            j++;
+            }
+            i+= repeatCount;
+        }
+    }
+    dp([],0,0);
+    return arr;
+}

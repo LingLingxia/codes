@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>event loop</title>
+</head>
+<body>
+    <script>
+        console.log('script start');
+        async function async1(){
+            await async2(); //调用await相当与在下一轮执行了一个new Promise
+            console.log('async1 end');
+        }
+        async function async2(){
+            console.log('async2 end');
+        }
+        async1();
+        setTimeout(() => {
+            console.log('settimeout')
+        }, 0);
+
+        new Promise(resolve=>{
+            console.log('Promise');
+            resolve();
+        })
+        .then(()=>{
+            console.log('promise1');
+        })
+        .then(()=>{
+            console.log('promise2');
+        })
+        console.log('script end');
+//我猜的顺序 script start=> promise =>script end => async2 end=>async1 end =>promise1=>promise2=>settimeout
+//实际的顺序  script start=> async2 end=> promise =>script end =>async1 end =>promise1=>promise2=>settimeout
+    </script>
+</body>
+</html>

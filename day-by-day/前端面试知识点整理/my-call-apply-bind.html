@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 自己实现call,bind,apply</title>
+</head>
+<body>
+    <script>
+        //my call  首先,这个函数要写在Function.prototype上面 ,其次,用Symbol做属性的时候,要用[],不用.
+        Function.prototype.myCall=function (context){
+            if(typeof this!='function'){
+                throw new TypeError('Error');
+            }
+            context = context||window;
+            let fn = Symbol('fn');
+            context[fn] = this;
+            let arg = [...arguments].slice(1);
+            let result = context[fn](...arg);
+            delete context[fn];
+            return result;
+        }
+        var k = 3;
+        function myCallTest(a,b,c,d){
+            return this.k+a+b+c+d;
+        }
+        let obj = {
+            k:5,
+            fn:4
+        }
+       console.log(myCallTest.myCall(obj,1,1,1,1));
+
+console.log('apply-----------------------------------------------------------------------------------');
+
+        //my apply  注意,它的参数是一个数组
+        Function.prototype.myApply = function(context){
+             if(typeof this!='function'){
+                 throw new TypeError('Error');
+             }
+             context = context || window;
+             let fn = Symbol('fn'),result;
+             context[fn] = this;
+             if(arguments[1]){
+                result = context[fn](...arguments[1]);
+             }else{
+                result = context[fn]();
+             }
+             delete context[fn];
+             return result;
+        }
+        let myApplyTest = myCallTest;
+       console.log( myApplyTest.myApply(obj,[2,2,2,2]));
+console.log('bind------------------------------------------------------------------------------');
+        //my bind
+
+         Function.prototype.myBind = function(context){
+            if(typeof this!='function'){
+                 throw new TypeError('Error');
+             }
+             context = context || window;
+             const _this = this;//这是一个函数
+             let arg = [...arguments].slice(1);//bind传的参数
+             return function(){
+                   if(this instanceof _this){
+                   return new _this(...args,...arguments);//调用的时候传的参数
+                  }else{
+                    return   _this.apply(context,arg.concat([...arguments]));
+                  }
+             }
+
+         }
+
+         var myBindTest = myCallTest;
+         console.log(myBindTest.myBind(obj,3,3)(3,3));
+
+console.log('instanceof------------------------------------------------------------------------------');
+
+        // my instanceof
+        function myInstanceOf(left,right){
+            let prototype = right.prototype;
+            let leftPro = left.__proto__;
+            while(leftPro){
+             if(leftPro===prototype) return true;
+              leftPro = leftPro.__proto__;
+            }
+            return false;
+        }
+
+        function instanceTextFunction(a){
+            this.a = a;
+        }
+        let testObj = new instanceTextFunction(3);
+        console.log(myInstanceOf(testObj,instanceTextFunction));
+        console.log(testObj instanceof instanceTextFunction);
+        
+    </script>
+</body>
+</html>
