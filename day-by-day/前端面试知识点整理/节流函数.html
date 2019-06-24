@@ -9,16 +9,14 @@
 <body>
     <h1>Lorem ipsum dolor <br/>sit amet consectetur adipisicing elit. Excepturi a veniam quaerat neque commodi pariatur adipisci quisquam maxime expedita optio minus, tempora consequuntur modi. Blanditiis tempora beatae dicta debitis doloribus!</h1>
     <script>
-        //函数多次触发的时候
-        var timer = null;
-        document.body.addEventListener('mousemove',function(){
-              clearTimeout(timer);
-              timer = setTimeout(() => {
-                  console.log(3);
-              }, 500);
-        },false);
-
-
+        //函数多次触发的时候   下面有节流函数
+        // var timer = null;
+        // document.body.addEventListener('mousemove',function(){
+        //       clearTimeout(timer);
+        //       timer = setTimeout(() => {
+        //           console.log(3);
+        //       }, 500);
+        // },false);
 
 
 
@@ -36,6 +34,34 @@
             timer2 = setTimeout(someFunction  , 1000);  
          }
         }
+
+
+        //节流函数版本1
+      function throttle(fn,time = 500){
+          let timer = null;
+          return function(){
+                clearTimeout(timer);
+                let self = this;
+                let arg = [...arguments]
+                timer = setTimeout(function(){
+                  fn.apply(self,arg);
+                }, time);
+          }
+      }
+
+
+      function throttleTest(a){
+            console.log(a);
+      }
+
+      let throttleFn = throttle(throttleTest,1000);
+      document.body.addEventListener('mousemove',function(){
+        throttleFn(5);
+      },false);
+
+
+      //节流函数版本21
+
 
     </script>
 </body>

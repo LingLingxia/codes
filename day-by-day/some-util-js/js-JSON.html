@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>json学习</title>
+    <h1>使用JSON.stringify 的时候会把对象的key自动加上双引号,并且把所有的单引号换成双引号<br>
+        所以,我们传入一个字符串的时候,会变成'a'=>""a"" ,但是我们直接写let a = ""a""是一个错误的语法 <br>
+        并且JSON.parse(""a"")不能解析.
+    </h1>
+    <h1>使用JSON.parse解析的时候,一个正确的JSON字符串里面不能包含单引号</h1>
+</head>
+<body>
+    <script>
+        let obj = {
+            'name':'777',
+             age:['a',0]
+            }
+        console.log(JSON.stringify(obj));
+    </script>
+    
+</body>
+</html>
