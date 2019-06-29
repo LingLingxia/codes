@@ -52,3 +52,28 @@ a=mergeSort(a);
 b=mergeSort(b);
 console.log(a);
 console.log(b);
+
+
+
+
+//2019-06-26更新
+function merge(arr){
+    if(arr.length <=1) return arr;
+    let mid = Math.floor((arr.length-1)/2);
+  return  mergeSort(merge(arr.slice(0,mid+1)), merge(arr.slice(mid+1,arr.length)));
+}
+
+function mergeSort(leftArr,rightArr){
+let ret = [],i = 0,j = 0;
+while(i<leftArr.length||j<rightArr.length){
+    if(j===rightArr.length||leftArr[i]<=rightArr[j]){
+        ret.push(leftArr[i++]);
+    }else{
+        ret.push(rightArr[j++]);
+    }
+}
+   return ret;
+}
+
+
+console.log(mergeSort([1,2],[3,4]));

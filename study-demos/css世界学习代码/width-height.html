@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>width-height</title>
+</head>
+<body>
+    <div style="border: 1px solid #333;height: 100%;">
+
+    </div>
+    <div>
+        当父元素的宽度是auto的时候;,子元素的width50%是按照最近的有width的祖先元素,都没有就是浏览器宽度
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit suscipit, autem tenetur ipsa harum magni voluptate! Minima ad, eos nam quae excepturi quis modi aspernatur perspiciatis quia, commodi aliquam.
+            <div style="width: 50%;border: 1px solid #333">1</div> 
+        </span>
+         
+    </div>
+</body>
+</html>

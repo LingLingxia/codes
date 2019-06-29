@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     .animate{
+         width: 200px;
+         height: 200px;
+         border: 1px solid #333;
+     }
+     .css-wrap{
+         transform: translateX(500px);transform: translateX(500px);
+         animation: bounce 5s ease-out 1s;
+     }
+     .css-delay{
+        transform: translateX(0);
+     }
+     .animate-class{
+        transform: translateX(500px);
+        transition: 5s ease-out;
+     }
+     .js-wrap{
+         position: absolute;
+     }
+     @keyframes bounce{
+         0%{
+            transform: translateX(0);
+         }
+         100%{
+            transform: translateX(500px);
+         }
+     }
+    </style>
+</head>
+<body>
+    <h1>5s 移动500px</h1>
+    <div class="animate css-wrap">css实现滑动</div>
+    <div class="animate css-delay" id="a">一秒钟之后加上类再滑动</div>
+    <div class="animate js-wrap" id="b">js实现滑动 5s 快=>慢</div>
+    <div class="animate js-wrap" id="c" style="top: 300px">js实现滑动 500px 快=>慢</div>
+
+    <script>
+    setTimeout(() => {
+        document.getElementById('a').classList.add('animate-class');
+    }, 1000);
+
+//5s 快到慢运动---------------------------------------------------------------------------
+    function animateElement(el,time){
+        let ele = document.querySelector(el);
+        ele.style.left = 0;
+        let left = 0;
+        let startTime = Date.now(); // remember start time
+        let timer = setInterval(()=>{
+            let currentTime = Math.floor(Date.now() - startTime);
+            console.log(currentTime);
+            if(currentTime>=5000){
+                clearInterval(timer);
+            }else{
+                left += Math.floor((5000  - currentTime)/500);
+                ele.style.left = left + 'px';
+            }
+        },20);
+    }
+
+    animateElement('#b',5000);
+//---------------------------------------------------------------------------------
+function animateElement2(el,time){
+        let ele = document.querySelector(el);
+        ele.style.left = 0;
+        let left = 0;
+        let i = 1;
+        let startTime = Date.now(); // remember start time
+        let timer = setInterval(()=>{
+            if(left>=500){
+                clearInterval(timer);
+            }else{
+                left += Math.ceil(500-left)/4;
+                ele.style.left = left + 'px';
+            }
+        },50);
+    }
+
+    animateElement2('#c',5000);
+    
+    </script>
+</body>
+</html>

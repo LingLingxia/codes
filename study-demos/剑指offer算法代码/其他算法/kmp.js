@@ -37,5 +37,6 @@ function getNext2(arr) {
 
 var a = 'aabcaab';
 var b= 'aabcaabcd';
-console.log(getNext2(a));
+var c = 'bbb';
+console.log(getNext2(c));
 

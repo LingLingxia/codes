@@ -62,3 +62,41 @@ var spiralOrder = function(matrix) {
 //     [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
 //    );
 
+
+
+//第二遍重写  第一次比较冗杂
+
+
+var spiralOrder = function(matrix) {
+    let m = matrix.length;
+    if(m===0) return [];
+    let n = matrix[0].length;
+    if(n===0) return [];
+    let [x,y,left,right,top,bottom,arr] = [0,0,0,n-1,0,m-1,[]];
+    while(true){
+        while(y<=right){
+            arr.push(matrix[top][y++]);
+        }
+
+        if(++top>bottom) break;
+        x = top;
+        while(x<=bottom){
+            arr.push(matrix[x++][right]);
+        }
+
+        if(--right<left) break;
+        y = right;
+        while(y>=left){
+            arr.push(matrix[bottom][y--]);
+        }
+
+        if(--bottom<top) break
+        x = bottom;
+        while(x>=top){
+            arr.push(matrix[x--][left]);
+        }
+        if(++left>right) break;
+        y = left;
+    }
+  return arr;
+}

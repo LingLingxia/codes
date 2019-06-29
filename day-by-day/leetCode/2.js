@@ -240,3 +240,56 @@ while(ret){
   console.log(ret.val);
   ret = ret.next;
 }
+
+
+//这个也写的太多了  新版上线
+
+
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */
+var addTwoNumbers = function(l1, l2) {
+  let newHead,newPost,prev=0;
+  function add(l1,l2){
+      if(!l1&&!l2){
+        return ;
+      }
+      add(l1?l1.next:null,l2?l2.next:null);
+      let tmp = prev;
+      tmp +=  l1?l1.val:0;
+      tmp +=  l2?l2.val:0;
+      let tmpObj = {
+        val:tmp%10,
+        next:null
+      }
+      if(!newHead){
+        newHead = tmpObj;
+        newPost = tmpObj;
+      } else{
+        newPost.next = tmpObj;
+        newPost = newPost.next;
+      }
+      prev = tmp>=10?1:0;
+      
+
+    }
+
+    add(l1,l2);
+    if(prev){
+        newPost.next={
+            val:1,
+            next:null
+        }
+    }
+    return newHead;
+  
+};
