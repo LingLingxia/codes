@@ -1,0 +1,25 @@
+html
+    head
+    body
+        div 我的名字是#{name}
+            a(href="google.com") google
+            |
+            |
+            a(href="google.com" class="button") google
+            |
+            |
+            a(href="google.com" class="button") google
+        - var actived=true;
+        p(class=actived?'a':'b') 测试class里面使用表达式
+            input(
+                type="text"
+                name="my-input"
+                id="my-input"
+                )
+        div(data-json=`
+            {
+            "very-long": "piece of ",
+            "data": true
+            }
+        `)
+    script

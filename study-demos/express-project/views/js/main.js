@@ -1,35 +1,35 @@
 
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
-
-const routes = [
-    { path: '/foo', component: Foo },
-    { path: '/bar', component: Bar }
-  ]
-
-  const router = new VueRouter({
-    routes // short for `routes: routes`
-  })
-  
 const app = new Vue({
     el:'#app',
     data:{
-        name:'llx'
+        name:'llx',
+        username:'llx',
+        password:'123456'
     },
-    router:router,
+    created(){
+        this.loginByCookie();
+    },
     methods:{
         login(){
-
+            axios.post('/api/login',{name:this.username,password:this.password}).then(data=>{
+                console.log(data);
+            }).catch(err=>{
+                console.log(err);
+            })
         },
         register(){
-            axios.post('/api/register',{name:'llx',password:'123456'}).then(data=>{
+            axios.post('/api/register',{name:this.username,password:this.password}).then(data=>{
+                console.log(data);
+            }).catch(err=>{
+                console.log(err);
+            })
+        },
+        loginByCookie(){
+            axios.post('/api/cookieLogin').then(data=>{
                 console.log(data);
             }).catch(err=>{
                 console.log(err);
             })
         }
     }
-    // components:{
-    //     'a-button':antd.button
-    // }
-})
+});

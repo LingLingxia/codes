@@ -15,10 +15,14 @@
     </head>
     <div id="app">
        欢迎来到llx-express 学习项目
-       <router-link to="/foo"><button class='btn btn-primary'>登陆</button></router-link>
-       <router-link to="/bar"><button class='btn btn-default'>注册</button></router-link>
-       <router-view></router-view>
-       
+       <div class="input-wrap">
+         <label for="item1" class="input-label">用户名</label>
+         <input type="text" class="input" id="item1" placeholder="用户名"  v-model="username">
+        </div>
+       <div class="input-wrap">
+         <label for="item2" class="input-label">密码</label>
+         <input type="text" class="input" id="item2" placeholder="密码" v-model="password">
+        </div>
        <a href="javascript:void(0)" @click="register">注册</a>
        <a href="javascript:void(0)" @click="login">登陆</a>
     </div>
@@ -26,9 +30,7 @@
         版权所有
     </footer>
   <script src="../node_modules/vue/dist/vue.js"> </script>  
-  <script src="../node_modules/vue-router/dist/vue-router.js"></script>
   <script src="../node_modules/axios/dist/axios.js"></script>
-  <!-- <script src="js/bootstrap-3.3.7/dist/js/bootstrap.js"></script>   -->
   <script src="js/axios.js"></script>
   <script src="js/main.js"></script>
 

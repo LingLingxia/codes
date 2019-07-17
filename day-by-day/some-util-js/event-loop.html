@@ -31,6 +31,17 @@
         .then(()=>{
             console.log('promise2');
         })
+
+        // async function async4(){
+        //     await async5(); //调用await相当与在下一轮执行了一个new Promise
+        //     console.log('async4 end');
+        // }
+        // async function async5(){
+        //     console.log('async5 end');
+        // }
+
+        // async4();
+
         console.log('script end');
 //我猜的顺序 script start=> promise =>script end => async2 end=>async1 end =>promise1=>promise2=>settimeout
 //实际的顺序  script start=> async2 end=> promise =>script end =>async1 end =>promise1=>promise2=>settimeout
