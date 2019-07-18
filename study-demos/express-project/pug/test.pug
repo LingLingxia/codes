@@ -22,4 +22,49 @@ html
             "data": true
             }
         `)
+        div(class='div-class' onclick='play()' escaped="<code>" unescaped!="<code>") 这两个code在浏览器的显示是一样的,但是在后台的输出是不一样的
+            span='<code>'+'这里也是被转义过的'
+                // 给模板写的注释
+        div  这是一个div
+        //- 这个div#user必须要比 - var缩进多,而var 和上面的div没有嵌套关系,所以就不需要缩进,如果希望#user嵌套在div里面,就需要把div移下来
+        //- 最佳实践,不要把js嵌在标签内缩进
+        - var user={description:'foo bar baz'}
+        - var authorised = false
+            div#user
+                if user.description
+                    h2.green 描述
+                    p.description=user.description
+                else if authorised
+                    h2.blue 描述
+                    p.description.
+                        用户灭有添加描述
+                else 
+                    h2.red 描述
+                    p.description 用户没有描述
+        mixin article(title)
+            .article
+                .article-wraper
+                    p&attributes(attributes)(title=attributes.title) 随便写个内容
+                    h1=title
+                    if block
+                        block
+                    else 
+                        p 没有提供内容
+        +article('我的名字')
+        +article('你的名字')(class='my-class' title="my-title")
+            p 很好很好
+        ul
+            each val,index in [1,2,3,4,5]
+                li=val+index
+        ul
+            - var n = 0;
+            while n<4
+                li=n++
+        // 嵌套位置取决与include的位置
+        include first.pug
+    script.
+            function play(){
+                alert('play');
+            }
     script
+        include second.js

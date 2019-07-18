@@ -1,5 +1,7 @@
 
 //虽然这个代码超时了,但是算法是对的!!
+//193 ,99
+findKthNumber(193,99);
 function findKthNumber( n, k) {
     var  value = 1;
     for(var index = 1;index < k; index++){
@@ -23,3 +25,5 @@ function getMax(n){
     }
     return n;
 }
+
+

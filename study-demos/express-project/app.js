@@ -65,6 +65,19 @@ api.use('/login',(req,res,next)=>{
 
 api.use('/cookieLogin',function(req,res){
     var json = req.signedCookies;
+    var name = json&&json.user&&json.user.split('-');
+    if(!name||name.length!=2) {
+        res.send('登陆失败');
+        return ;
+    }  
+    fs.readFile('./db.json','utf8',(err,data)=>{
+        const userInfo = JSON.parse(data)||{};
+        if(userInfo[name[0]]&&userInfo[name[0]]==name[1]){
+            res.send('登陆成功');
+        }else{
+            res.send('登陆失败');
+        }
+    })
     console.log(json,req.cookies);
 });
 
@@ -72,13 +85,19 @@ app.use('/api',api);
 //后端api请求接口
 app.use('/foo',router);
 app.use('/node_modules',express.static('node_modules'));
-app.use('/pug',function(req,res){
-   const pug = require('pug');
-   //renderFile 和compileFile要分清楚
-   const compiledText = pug.renderFile('pug/test.pug',{pretty:true,name:'Foo'});
-   console.log(compiledText);
-   res.send(compiledText);
-})
+
+fs.readdir('./pug/',(err,pages)=>{
+    pages.forEach(pageName=>{
+        if(pageName.slice(-4)==='.pug'){
+            let path = pageName.slice(0,pageName.length-4);
+            app.use('/'+path,function(req,res){
+                const compiledText = pug.renderFile('pug/'+pageName,{pretty:true});
+                console.log(compiledText);
+                res.send(compiledText);
+            })
+        }   
+    })
+});
 
 app.use(express.static('views'));
 app.listen(3100,()=>{
