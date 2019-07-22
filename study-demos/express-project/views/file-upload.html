@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文件上传前端测试页面</title>
+</head>
+<body>
+    <form action="/file" enctype="multipart/form-data" method="POST">
+        <input type="file" name="f1" id="file"/>
+        <input type="file" name="f2" id="fileb"/>
+        <button type="submit">submit-跳转上传</button>
+    </form>
+    <div class="message">
+        <span id="m"></span>
+        <button id="uploadBtn">upload-原生xhr上传</button>
+    </div>
+    <script>
+        //原生js上传文件
+
+        function upload(data){
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST','/file',true);
+            //666 只要把这个去掉,就可以自动生成 boundry
+           // xhr.setRequestHeader('Content-Type','multipart/form-data');
+            xhr.onload = function(){
+                m.innerHTML = xhr.responseText;
+            }
+            xhr.send(data);
+        }
+        function uploadFile(){
+            var fd = new FormData();
+            fd.append('f1',file.files[0]);
+            fd.append('f2',fileb.files[0]);
+            upload(fd);
+        }
+        uploadBtn.addEventListener('click',uploadFile,false);
+    </script>
+</body>
+</html>

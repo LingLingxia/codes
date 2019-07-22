@@ -1,11 +1,14 @@
 const express = require('express');
 const bodyparser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const multer = require('multer');
 const fs = require('fs');
 const pug = require('pug');
+const path = require('path');
 
 var app = express();
 var router = express.Router();
+var upload = multer({ dest: 'uploads/' });
 router.use((req,res,next)=>{
     console.log('%s %s %s',req.method,req.url,req.path);
     next();
@@ -85,7 +88,7 @@ app.use('/api',api);
 //后端api请求接口
 app.use('/foo',router);
 app.use('/node_modules',express.static('node_modules'));
-
+//监听pug文件
 fs.readdir('./pug/',(err,pages)=>{
     pages.forEach(pageName=>{
         if(pageName.slice(-4)==='.pug'){
@@ -99,7 +102,23 @@ fs.readdir('./pug/',(err,pages)=>{
     })
 });
 
+app.use('/file',upload.any(),function(req,res){
+    console.log(req.files);
+    var  ret = '';
+    req.files.forEach(file=>{
+        const filePath = path.parse(file.originalname);
+        const newPath = `${file.path}.${filePath.ext}`;
+        fs.rename(`${file.path}`,newPath,function(err){
+            if(err){
+                console.log(err);
+            }
+        });
+        ret +=('---'+newPath);
+    })
+    res.send(ret);
+});
+
 app.use(express.static('views'));
 app.listen(3100,()=>{
     console.log('服务已开启-3100')
-})
+});
