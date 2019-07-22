@@ -32,7 +32,7 @@ module.exports = {
     // set this to false - it *may* help
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
     cacheBusting: true,
-
+    sourceMap:true,
     cssSourceMap: true
   },
 
@@ -51,7 +51,8 @@ module.exports = {
 
     productionSourceMap: true,
     // https://webpack.js.org/configuration/devtool/#production
-    devtool: '#source-map',
+    //devtool: '#source-map',
+    devtool: '#cheap-module-eval-source-map',
 
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
