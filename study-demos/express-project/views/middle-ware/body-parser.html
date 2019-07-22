@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>body-parser</title>
+</head>
+<body>
+    <div class="wrap">
+        <button id="jsonBtn">json</button>
+        <button id="textBtn">text</button>
+        <form action="/body-parser/urlencoded" enctype="application/x-www-form-urlencoded" method="POST">
+            <input type="text" value="llxllxllx" name="name">
+            <input type="text" value="23" name="age"> 
+            <button>submit</button>
+        </form>
+    </div>
+    <script src="/node_modules/axios/dist/axios.js"></script>
+    <script src="/js/axios.js"></script>
+    <script>
+        jsonBtn.addEventListener('click',function(){
+            const jsonRequest = axios.create({
+               // url:'/body-parser/json',  //仅在使用jsonRequest.request调用时有效
+                method:'POST',
+                headers:{
+                    'Content-Type':'application/json;charset=UTF-8'
+                    //如果不写content-type默认就是json
+                },
+                // data:{  //仅在使用jsonRequest.request调用时有效
+                //     name:'llx',
+                //     age:'24'
+                // },
+            });
+            jsonRequest.post('/body-parser/json',{name:'llx2',age:'22222'}).then(x=>{
+                console.log(x);
+            })
+            // jsonRequest.request().then(x=>{
+            //     console.log(x);
+            // });
+        },false);
+
+        textBtn.addEventListener('click',function(){
+            const jsonRequest = axios.create({
+                method:'POST',
+                headers:{
+                    'Content-Type':'text/plain;charset=UTF-8'
+                    
+                },
+            });
+            jsonRequest.post('/body-parser/text','8888888').then(x=>{
+                console.log(x);
+            })
+        },false);
+    </script>
+</body>
+</html>

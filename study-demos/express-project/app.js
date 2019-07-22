@@ -6,6 +6,14 @@ const fs = require('fs');
 const pug = require('pug');
 const path = require('path');
 
+
+//中间件测试路由
+const bodyParserRouter = require('./middleware/body-parser');
+
+
+
+
+//中间件测试路由end
 var app = express();
 var router = express.Router();
 var upload = multer({ dest: 'uploads/' });
@@ -53,6 +61,7 @@ api.use('/register',(req,res,next)=>{
 
 api.use('/login',(req,res,next)=>{
     const params = req.body;
+    
     req.secret = 'a';
     fs.readFile('./db.json','utf8',(err,data)=>{
         const userInfo = JSON.parse(data)||{};
@@ -119,6 +128,11 @@ app.use('/file',upload.any(),function(req,res){
 });
 
 app.use(express.static('views'));
+
+
+//路由测试
+app.use('/body-parser',bodyParserRouter);
+
 app.listen(3100,()=>{
     console.log('服务已开启-3100')
 });
