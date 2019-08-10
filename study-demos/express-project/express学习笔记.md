@@ -6,3 +6,6 @@ app.use('/foo',router);
 router.use(path,()=>{})
 
 
+## app.mountpath
+- 作为一个sub-app,它被挂载在了哪些路径上.
+
