@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     .scroll-container{
+         overflow: scroll;
+     }
+     .scroll-container::-webkit-scrollbar{
+         /* 这个属性必须有并且不能为空样式,否则后面的不生效 */
+         background: yellow;
+         width: 6px;
+         height: 6px;
+     }
+     .scroll-container::-webkit-scrollbar-button{
+         background: pink;
+      
+     }
+     .scroll-container::-webkit-scrollbar-thumb{
+        background: pink;
+        border-radius: 4px;
+     }
+     .scroll-container::-webkit-scrollbar-track{
+         background: blue;
+     }
+     .scroll-container::-webkit-scrollbar-track-piece{
+         background: #333;
+         /* 貌似覆盖了前面的blue */
+     }
+    </style>
+</head>
+<body>
+    
+    <div style="height:200px;width: 400px; " class="scroll-container">
+        滚动条处理
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum illum qui impedit ullam nulla officia nostrum, iure autem incidunt ea unde ad excepturi at quibusdam ratione? Omnis impedit expedita quam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nihil quisquam inventore ea soluta, ullam distinctio, eligendi id quasi sint qui labore modi repellendus. Nulla sed cum voluptate ullam dicta.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit suscipit tenetur deleniti cupiditate, error consequatur labore, autem dicta qui blanditiis porro! Deserunt nam excepturi sint eligendi iusto nisi! Saepe, repellendus.
+    </div>
+</body>
+</html>
