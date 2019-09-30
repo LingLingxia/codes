@@ -4,13 +4,18 @@ const htmlWebpackPluginDemo= require('../plugin/html-webpack-plugin-demo');
 const webpack = require('webpack');
 module.exports={
     mode: 'development',
-    entry:{
-      app:path.resolve(__dirname,'./../source/entry1.js'),
-      vendor:path.resolve(__dirname,'./../source/entry2.js')
-    },
+    // entry:{
+    //   app:path.resolve(__dirname,'./../source/entry1.js'),
+    //   vendor:path.resolve(__dirname,'./../source/entry2.js')
+    // },
+    // output:{
+    //     path:path.resolve(__dirname,'../dist'),
+    //     filename:'js/[name].[hash].js',
+    // },
+    entry:path.resolve(__dirname,'./../module-test/output.js'),
     output:{
         path:path.resolve(__dirname,'../dist'),
-        filename:'js/[name].[hash].js',
+        filename:'output.js',
     },
     devtool:'inline-source-map',
     module:{//loader用于转换

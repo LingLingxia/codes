@@ -7,7 +7,7 @@ WW
 ```
 {
     "window.zoomLevel": 1,
-    "eslint.alwaysShowStatus": true,
+    "eslint.alwaysShowSt atus": true,
     "eslint.autoFixOnSave": true,
     "eslint.validate": [
         "javascriptreact",
@@ -32,7 +32,7 @@ WW
 }
 ```
 
-### .eslintignore
+### .eslintrc.js
 ```
 module.exports = {
   root: true,

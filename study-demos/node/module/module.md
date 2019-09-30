@@ -62,4 +62,14 @@ success();
 
 
 ### 和 es6 模块的区别
-- 
+- es6是编译时引入，node是运行时引入
+- 以下代码输出的对象中含有abc三个属性
+```
+export var a = 1;
+export var b = 2;
+var c = 3;
+export {
+  c
+}
+```
+- es6在webpack中按需引入 ,require是引入了整个模块。
