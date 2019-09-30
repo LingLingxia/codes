@@ -136,3 +136,18 @@ app.use('/body-parser',bodyParserRouter);
 app.listen(3100,()=>{
     console.log('服务已开启-3100')
 });
+
+app.param('id',function(req,res,next,id){
+    console.log('called only once');
+    next();
+});
+
+app.get('/user/:id',function(req,res,next){
+    console.log('althought this matches');
+    next();
+});
+
+app.get('/user/:id',function(req,res){
+    console.log('and this matches too');
+    res.end();
+})
