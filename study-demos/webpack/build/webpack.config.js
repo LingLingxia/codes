@@ -1,6 +1,7 @@
 const path=require('path');
 // const allHooks = require('./../plugin/all-hooks.js');
 const htmlWebpackPluginDemo= require('../plugin/html-webpack-plugin-demo');
+
 const webpack = require('webpack');
 module.exports={
     mode: 'development',

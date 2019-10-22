@@ -1,14 +1,24 @@
-var x = 100;
-export var a = 1;
-export var b = 2;
-var c = 3;
-export {
-  c
-}
-export function f(){
-  
-}
-// var a = 1,b = 2,c = 3;
-// module.exports={
-//   a,b,c
+ import identify_b from './identyfy_b'
+ var identify_a = 111;
+ var identify_c = 333;
+// export  {
+//   identify_a,
+//   identify_b,
+//   identify_c
 // }
+
+module.exports = {
+    identify_a,
+    identify_b,
+    identify_c
+}
+//c 一定会被删掉
+
+//不配置uglifyJS  b不会被删掉
+
+//配置uglifyJS
+
+//b 无副作用   删掉
+//b 有副作用  sideEffects:false 删掉
+
+
