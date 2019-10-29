@@ -1,0 +1,1 @@
+slot.innerHTML = '引入的js'
