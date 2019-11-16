@@ -4,6 +4,7 @@
   "description": "仿知乎",
   "main": "index.js",
   "scripts": {
+    "inspect":"node --inspect-brk index.js",
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "koa": "^2.10.0",
+    "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0"
   },
   "devDependencies": {
