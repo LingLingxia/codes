@@ -5,8 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    p.me::before{
+      content: 'M';
+      margin-right:5px;
+    }
+    p.others::after{
+      content: 'U';
+      margin-left: 5px;
+    }
+    p.others{
+      text-align: right;
+    }
+    p.me::before,p.others::after{
+      display: inline-block;
+      width:30px;
+      height: 30px;
+      color:coral;
+      border:1px solid #999;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 100px;
+    }
+    .messages{
+      width: 500px;
+      height: 800px;
+      border: 1px solid #eee;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-  <script src="ws-front.js"></script>
+  <input type="text" id="message-input" />
+  <button id="submit">提交</button>
+  <div id="app" class="messages">
+    
+  </div>
+  <script>
+  function addMessage(className,data){
+    const p = document.createElement('p')
+    p.innerHTML = data;
+    p.classList.add(className);
+    document.querySelector('#app').appendChild(p);
+  }
+  let ws = new WebSocket("ws://localhost:8181");
+  let messageInput = document.querySelector('#message-input');
+  document.querySelector('#submit').addEventListener('click',()=>{
+    console.log(messageInput.value);
+    addMessage('me',messageInput.value);
+    ws.send(messageInput.value);
+    messageInput.value = "";
+  },false);
+  ws.onopen= function(){
+    console.log("start");
+  }
+  ws.onmessage = function(e){
+    console.log("client:接受到服务端的消息"+e.data);
+    addMessage('others',e.data);
+  }
+
+  </script>
 </body>
 </html>
