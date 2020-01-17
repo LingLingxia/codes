@@ -13,11 +13,12 @@ wss.on('connection',function(ws){
     console.log("server:收到消息",message);
   })
   ws.on('close', function () {
-    map.forEach(w=>{
-      if(w==ws){
-        map.delete(w);
-      }
-    })
+    map.delete(ws);
+    // map.forEach(w=>{
+    //   if(w==ws){
+    //     map.delete(w);
+    //   }
+    // })
     console.log('disconnected');
   });
   

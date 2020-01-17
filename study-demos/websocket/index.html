@@ -6,18 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
-    p.me::before{
+    p.me::after{
       content: 'M';
-      margin-right:5px;
+      margin-left:5px;
     }
-    p.others::after{
+    p.others::before{
       content: 'U';
-      margin-left: 5px;
+      margin-right: 5px;
     }
-    p.others{
+    p.me{
       text-align: right;
     }
-    p.me::before,p.others::after{
+    p.me::after,p.others::before{
       display: inline-block;
       width:30px;
       height: 30px;
@@ -48,7 +48,8 @@
     p.classList.add(className);
     document.querySelector('#app').appendChild(p);
   }
-  let ws = new WebSocket("ws://localhost:8181");
+  //let ws = new WebSocket("ws://localhost:8181");
+  let ws = new WebSocket("ws://localhost:8083");
   let messageInput = document.querySelector('#message-input');
   document.querySelector('#submit').addEventListener('click',()=>{
     console.log(messageInput.value);
