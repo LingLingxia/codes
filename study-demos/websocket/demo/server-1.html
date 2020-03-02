@@ -8,16 +8,7 @@
 </head>
 <body>
   <script>
-  let ws = new WebSocket('ws://localhost:8083');
-  ws.onopen = function(){
-    setTimeout(() => {
-      ws.send('你好，来自客户端');
-    }, 2000);
-  }
-  
-  ws.onmessage = function(e){
-      console.log(e.data);
-  }
+    let ws = new WebSocket("ws://localhost:8083");
   </script>
 </body>
 </html>

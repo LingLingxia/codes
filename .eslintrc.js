@@ -19,14 +19,14 @@ module.exports = {
       }],
       // disallow reassignment of function parameters
       // disallow parameter object manipulation except for specific exclusions
-      'no-param-reassign': ['error', {
-        props: true,
-        ignorePropertyModificationsFor: [
-          'state', // for vuex state
-          'acc', // for reduce accumulators
-          'e' // for e.returnvalue
-        ]
-      }],
+      // 'no-param-reassign': ['error', {
+      //   props: true,
+      //   ignorePropertyModificationsFor: [
+      //     'state', // for vuex state
+      //     'acc', // for reduce accumulators
+      //     'e' // for e.returnvalue
+      //   ]
+      // }],
       'no-underscore-dangle': 'off',
       'no-bitwise': ['error', { 'allow': ['&', '|','<<'] }],
       // allow optionalDependencies
