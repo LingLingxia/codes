@@ -1,7 +1,6 @@
 const User = require('../models/users');
 const jwt = require('jsonwebtoken');
 const { secret } = require('../config');
-//save find findByid都是数据库自带的api
 class UsersCtl {
   async find(ctx){
     ctx.body = await User.find();
