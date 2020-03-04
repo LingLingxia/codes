@@ -1,0 +1,59 @@
+2019-06-10 22:48:57 [INFO] pandownload version: 2.1.0 beta
+2019-06-10 22:48:58 [INFO] aria2 websocket connection opened (127.0.0.1:6808)
+2019-06-10 22:48:58 [INFO] aria2 version: 1.34.0
+2019-06-10 22:48:58 [INFO] aria2 json-rpc path: http://token:pandownload@127.0.0.1:6808/jsonrpc
+2019-06-10 22:48:58 [INFO] create main window
+2019-06-10 22:48:58 [INFO] verify cookie (600)
+2019-06-10 22:49:00 [INFO] user login success (4052464532): zji739
+2019-06-10 22:55:19 [WARN] request error (0x10000001c): https://pan.baidu.com/api/report/user 
+2019-06-10 22:56:06 [WARN] account error (403): Access Denied
+2019-06-10 23:05:18 [WARN] ID#9 - The response status is not successful. status=500(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/11-3 django-haystack elasticsearch-py elasticsearch-dsl-py比较.vep" SIZE="12751723"
+2019-06-10 23:05:59 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-10 23:06:50 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-10 23:06:56 [WARN] ID#10 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/12-15 Nginx uWSGI Daphne Supervisor Django生产环境部署_batch.vep" SIZE="56377737"
+2019-06-10 23:07:32 [WARN] ID#8 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/8-16 模型类的测试用例.vep" SIZE="48800727"
+2019-06-10 23:07:33 [WARN] account error (403): Access Denied
+2019-06-10 23:07:53 [WARN] ID#21 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-11 Generic Consumers同步与异步通信_batch.vep" SIZE="39926354"
+2019-06-10 23:07:55 [WARN] ID#21 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-11 Generic Consumers同步与异步通信_batch.vep" SIZE="39926354"
+2019-06-10 23:07:57 [WARN] ID#21 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-11 Generic Consumers同步与异步通信_batch.vep" SIZE="39926354"
+2019-06-10 23:07:59 [WARN] ID#22 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-9 Channel Layers的配置和使用_batch.vep" SIZE="27300079"
+2019-06-10 23:08:01 [WARN] ID#22 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-9 Channel Layers的配置和使用_batch.vep" SIZE="27300079"
+2019-06-10 23:08:04 [WARN] ID#22 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-9 Channel Layers的配置和使用_batch.vep" SIZE="27300079"
+2019-06-10 23:08:06 [WARN] ID#23 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-12 Channels的路由Routing开发_batch.vep" SIZE="44713518"
+2019-06-10 23:08:07 [WARN] ID#17 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/11-5 完成searh search.html前端开发.vep" SIZE="40518164"
+2019-06-10 23:08:09 [WARN] ID#23 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-12 Channels的路由Routing开发_batch.vep" SIZE="44713518"
+2019-06-10 23:08:10 [WARN] ID#17 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/11-5 完成searh search.html前端开发.vep" SIZE="40518164"
+2019-06-10 23:08:11 [WARN] ID#23 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-12 Channels的路由Routing开发_batch.vep" SIZE="44713518"
+2019-06-10 23:08:15 [WARN] ID#24 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-15 用户中心信息统计_batch.vep" SIZE="73841103"
+2019-06-10 23:08:17 [WARN] ID#24 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-15 用户中心信息统计_batch.vep" SIZE="73841103"
+2019-06-10 23:08:18 [WARN] ID#17 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/11-5 完成searh search.html前端开发.vep" SIZE="40518164"
+2019-06-10 23:08:31 [WARN] ID#9 - The response status is not successful. status=500(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/11-3 django-haystack elasticsearch-py elasticsearch-dsl-py比较.vep" SIZE="12751723"
+2019-06-10 23:10:09 [WARN] ID#8 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/8-16 模型类的测试用例.vep" SIZE="48800727"
+2019-06-10 23:10:30 [WARN] ID#23 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-12 Channels的路由Routing开发_batch.vep" SIZE="44713518"
+2019-06-10 23:11:48 [WARN] ID#8 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/8-16 模型类的测试用例.vep" SIZE="48800727"
+2019-06-10 23:11:54 [WARN] ID#33 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/10-2 GenericForeignKey让模型类可复用.vep" SIZE="50986441"
+2019-06-10 23:13:28 [WARN] ID#8 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/8-16 模型类的测试用例.vep" SIZE="48800727"
+2019-06-10 23:13:50 [WARN] ID#52 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/12-7 ORM语句和SQL优化（下）_batch.vep" SIZE="84911198"
+2019-06-10 23:13:56 [WARN] ID#55 - The response status is not successful. status=500(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/10-6 WebSocket消息接收和处理.vep" SIZE="19598221"
+2019-06-10 23:14:17 [WARN] ID#43 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/12-2 BUG修复和功能优化.vep" SIZE="51260849"
+2019-06-10 23:14:20 [WARN] ID#19 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/9-4 WebSocket协议的概念和原理.vep" SIZE="33464801"
+2019-06-10 23:14:33 [WARN] ID#46 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/13-3 云数据库RDS MySQL配置.vep" SIZE="21662651"
+2019-06-10 23:15:30 [WARN] request error (0x200000070): https://pan.baidu.com/api/sharedownload {"errno":112,"request_id":3733327655589331048,"server_time":1560179729}
+2019-06-10 23:16:51 [WARN] ID#50 - The response status is not successful. status=500(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/10-14  回答被采纳时WebSocket消息通知_batch.vep" SIZE="13559231"
+2019-06-10 23:17:11 [WARN] ID#8 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/8-16 模型类的测试用例.vep" SIZE="48800727"
+2019-06-10 23:17:20 [WARN] ID#16 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/11-1 全站搜索的实现思路.vep" SIZE="25620320"
+2019-06-10 23:24:37 [WARN] account error (-1): http请求错误 0x6
+2019-06-10 23:24:43 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-06-10 23:25:04 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-06-10 23:25:38 [WARN] account error (403): Access Denied
+2019-06-10 23:28:23 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-10 23:29:14 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-10 23:30:04 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-10 23:30:55 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-10 23:32:46 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-10 23:33:36 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-10 23:34:27 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-10 23:46:11 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-10 23:47:02 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-10 23:48:52 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-11 00:29:38 [WARN] aria2 websocket connection closed (127.0.0.1:6808), code: 1006 (Abnormal close), reason: 

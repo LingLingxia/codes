@@ -1,0 +1,400 @@
+2019-05-07 22:26:58 [INFO] pandownload version: 2.1.0 beta
+2019-05-07 22:26:59 [INFO] aria2 websocket connection opened (127.0.0.1:6808)
+2019-05-07 22:26:59 [INFO] aria2 version: 1.34.0
+2019-05-07 22:26:59 [INFO] aria2 json-rpc path: http://token:pandownload@127.0.0.1:6808/jsonrpc
+2019-05-07 22:26:59 [INFO] create main window
+2019-05-07 22:26:59 [INFO] verify cookie (600)
+2019-05-07 22:27:02 [INFO] user login success (4052464532): zji739
+2019-05-07 22:31:21 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:31:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:32:10 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:32:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:33:42 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:34:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:34:31 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:35:20 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:35:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:36:09 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:37:07 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:37:41 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:38:30 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:38:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:39:19 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:39:57 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:40:08 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:41:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:41:40 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:42:29 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:42:47 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:43:18 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:44:07 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:44:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:45:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:45:39 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:46:28 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:47:02 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:47:17 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:48:07 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:48:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:49:39 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:49:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:50:28 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:51:17 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:51:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:52:06 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:52:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:53:38 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:54:07 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:54:27 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:55:16 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:55:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:56:05 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:56:57 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:57:37 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:58:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 22:58:26 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:59:15 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 22:59:47 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:00:04 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:01:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:01:36 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:02:25 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:02:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:03:14 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:04:02 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:04:03 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:05:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:05:35 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:06:25 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:06:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:07:14 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:08:03 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:08:18 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:09:36 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:09:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:10:25 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:11:08 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:11:14 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:12:03 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:12:33 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:13:36 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:13:58 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:14:25 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:15:14 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:15:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:16:03 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:16:47 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:17:35 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:18:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:18:25 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:19:14 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:19:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:20:03 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:21:03 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:21:35 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:22:24 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:22:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:23:13 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:23:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:24:02 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:25:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:25:35 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:26:24 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:26:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:27:14 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:28:03 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:28:07 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:29:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:29:35 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:30:24 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:30:57 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:31:13 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:32:02 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:32:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:33:35 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:33:47 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:34:24 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:35:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:35:13 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:36:02 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:36:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:37:34 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:38:03 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:38:24 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:39:13 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:39:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:40:02 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:40:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:41:34 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:42:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:42:23 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:43:12 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:43:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:44:02 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:45:08 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:45:34 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:46:23 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:46:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:47:12 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:47:57 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:48:01 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:49:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:49:34 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:50:23 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:50:47 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:51:12 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:52:02 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:52:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:53:34 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:53:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:54:23 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:55:02 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:55:12 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:56:01 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:56:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:57:33 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:57:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-07 23:58:22 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:59:11 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-07 23:59:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:00:00 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:00:43 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:01:32 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:02:07 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:02:21 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:03:10 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:03:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:03:59 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:04:57 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:05:31 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:06:20 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:06:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:07:09 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:07:48 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:07:58 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:09:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:09:30 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:10:19 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:10:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:11:08 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:11:57 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:12:02 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:13:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:13:29 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:14:18 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:14:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:15:07 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:15:56 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:16:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:17:28 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:17:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:18:17 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:19:06 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:19:07 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:19:55 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:20:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:21:27 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:21:57 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:22:16 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:23:05 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:23:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:23:54 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:24:47 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:25:26 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:26:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:26:15 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:27:04 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:27:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:27:53 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:29:02 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:29:25 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:30:14 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:30:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:31:03 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:31:52 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:31:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:33:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:33:24 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:34:13 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:34:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:35:02 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:35:51 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:36:07 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:37:23 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:37:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:38:12 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:38:57 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:39:01 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:39:50 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:40:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:41:22 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:41:47 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:42:11 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:43:00 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:43:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:43:49 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:44:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:45:21 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:46:02 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:46:10 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:46:59 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:47:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:47:48 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:48:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:49:20 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:50:09 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:50:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:50:58 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:51:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:51:47 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:53:07 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:53:19 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:54:08 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:54:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:54:57 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:55:46 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:55:57 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:57:18 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:57:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:58:07 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:58:47 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 00:58:56 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 00:59:45 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:00:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:01:17 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:01:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:02:06 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:02:55 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:03:02 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:03:44 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:04:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:05:16 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:05:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:06:05 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:06:54 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:07:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:07:43 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:08:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:09:15 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:10:04 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:10:07 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:10:53 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:11:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:11:42 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:12:57 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:13:14 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:14:03 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:14:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:14:52 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:15:41 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:15:47 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:17:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:17:13 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:18:02 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:18:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:18:51 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:19:40 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:20:02 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:21:12 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:21:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:22:01 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:22:50 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:22:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:23:39 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:24:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:25:11 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:25:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:26:00 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:26:49 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:27:07 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:27:38 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:28:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:29:10 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:29:57 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:29:59 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:30:48 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:31:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:31:37 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:32:47 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:33:09 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:33:58 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:34:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:34:47 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:35:36 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:35:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:37:02 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:37:08 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:37:57 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:38:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:38:47 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:39:36 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:39:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:41:08 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:41:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:41:57 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:42:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:42:46 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:43:35 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:44:07 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:45:07 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:45:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:45:56 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:46:45 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:46:57 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:47:34 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:48:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:49:06 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:49:47 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:49:55 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:50:44 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:51:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:51:33 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:52:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:53:05 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:53:54 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:54:02 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:54:43 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:55:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:55:32 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:56:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:57:04 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:57:53 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:58:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 01:58:42 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:59:31 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 01:59:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:01:03 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:01:07 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:01:52 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:02:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:02:41 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:03:30 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:03:57 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:05:02 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:05:22 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:05:51 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:06:40 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:06:47 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:07:29 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:08:12 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:09:01 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:09:37 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:09:50 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:10:39 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:11:02 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:11:28 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:12:27 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:13:00 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:13:49 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:13:52 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:14:38 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:15:17 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:15:27 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:16:42 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:16:59 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:17:48 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:18:07 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:18:37 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:19:26 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-05-08 02:19:32 [WARN] account error (-1): http请求错误 0x6
+2019-05-08 02:20:21 [WARN] aria2 websocket connection closed (127.0.0.1:6808), code: 1006 (Abnormal close), reason: 

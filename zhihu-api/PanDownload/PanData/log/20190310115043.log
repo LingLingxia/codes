@@ -1,0 +1,140 @@
+2019-03-10 11:50:44 [INFO] pandownload version: 2.0.6 beta
+2019-03-10 11:50:48 [INFO] aria2 websocket connection opened
+2019-03-10 11:50:48 [INFO] aria2 version: 1.34.0
+2019-03-10 11:50:48 [INFO] aria2 json-rpc path: http://token:pandownload@127.0.0.1:6808/jsonrpc
+2019-03-10 11:50:48 [INFO] create main window
+2019-03-10 11:50:48 [INFO] verify cookie (601)
+2019-03-10 11:50:51 [INFO] user login success (4052464532): zji739
+2019-03-10 11:53:39 [WARN] ID#11 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-10 开发路由（新建和更新博客路由）.vep" SIZE="64418301"
+2019-03-10 11:53:40 [WARN] ID#11 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-10 开发路由（新建和更新博客路由）.vep" SIZE="64418301"
+2019-03-10 11:53:41 [WARN] ID#11 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-10 开发路由（新建和更新博客路由）.vep" SIZE="64418301"
+2019-03-10 11:53:41 [WARN] ID#12 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-11 开发路由（删除博客路由和登录路由）.vep" SIZE="44160177"
+2019-03-10 11:53:43 [WARN] ID#12 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-11 开发路由（删除博客路由和登录路由）.vep" SIZE="44160177"
+2019-03-10 11:53:43 [WARN] ID#13 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-12 补充：路由和API.vep" SIZE="21301241"
+2019-03-10 11:53:44 [WARN] ID#12 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-11 开发路由（删除博客路由和登录路由）.vep" SIZE="44160177"
+2019-03-10 11:53:45 [WARN] ID#13 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-12 补充：路由和API.vep" SIZE="21301241"
+2019-03-10 11:53:45 [WARN] ID#14 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-2 处理get请求.vep" SIZE="96124107"
+2019-03-10 11:53:46 [WARN] ID#13 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-12 补充：路由和API.vep" SIZE="21301241"
+2019-03-10 11:53:49 [WARN] ID#15 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-3 处理post请求.vep" SIZE="72121961"
+2019-03-10 11:53:49 [WARN] ID#16 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-4 处理http请求的综合示例.vep" SIZE="48785155"
+2019-03-10 11:53:50 [WARN] ID#15 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-3 处理post请求.vep" SIZE="72121961"
+2019-03-10 11:53:51 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1588609361424634098}
+2019-03-10 11:53:51 [WARN] ID#15 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-3 处理post请求.vep" SIZE="72121961"
+2019-03-10 11:53:52 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1588609467543208610}
+2019-03-10 11:53:52 [WARN] ID#16 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-4 处理http请求的综合示例.vep" SIZE="48785155"
+2019-03-10 11:53:52 [WARN] ID#17 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-5 搭建开发环境.vep" SIZE="106219705"
+2019-03-10 11:53:52 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1588609656480579545}
+2019-03-10 11:53:52 [WARN] ID#18 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-6 初始化路由.vep" SIZE="119303751"
+2019-03-10 11:53:53 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1588609783711704942}
+2019-03-10 11:53:53 [WARN] ID#16 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-4 处理http请求的综合示例.vep" SIZE="48785155"
+2019-03-10 11:53:53 [WARN] ID#19 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-7 开发路由（博客列表路由）_1.vep" SIZE="105275397"
+2019-03-10 11:53:53 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1588609963780052395}
+2019-03-10 11:53:53 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1588609961989033425}
+2019-03-10 11:53:54 [WARN] ID#17 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-5 搭建开发环境.vep" SIZE="106219705"
+2019-03-10 11:53:54 [WARN] ID#20 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-8 开发路由（博客详情路由）.vep" SIZE="103749021"
+2019-03-10 11:53:54 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1588610083785419323}
+2019-03-10 11:53:55 [WARN] ID#18 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-6 初始化路由.vep" SIZE="119303751"
+2019-03-10 11:53:57 [WARN] ID#19 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-7 开发路由（博客列表路由）_1.vep" SIZE="105275397"
+2019-03-10 11:53:57 [WARN] ID#21 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-9 开发路由（处理 POSTData）.vep" SIZE="45933391"
+2019-03-10 11:53:58 [WARN] ID#18 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-6 初始化路由.vep" SIZE="119303751"
+2019-03-10 11:53:59 [WARN] ID#17 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-5 搭建开发环境.vep" SIZE="106219705"
+2019-03-10 11:53:59 [WARN] ID#19 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-7 开发路由（博客列表路由）_1.vep" SIZE="105275397"
+2019-03-10 11:54:00 [WARN] ID#20 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-8 开发路由（博客详情路由）.vep" SIZE="103749021"
+2019-03-10 11:54:00 [WARN] ID#21 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-9 开发路由（处理 POSTData）.vep" SIZE="45933391"
+2019-03-10 11:54:01 [WARN] ID#21 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-9 开发路由（处理 POSTData）.vep" SIZE="45933391"
+2019-03-10 11:54:02 [WARN] ID#20 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/4-8 开发路由（博客详情路由）.vep" SIZE="103749021"
+2019-03-10 11:54:02 [WARN] ID#22 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-1 MySql 介绍.vep" SIZE="58133821"
+2019-03-10 11:54:03 [WARN] ID#1 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/1-1 课程导读.vep" SIZE="37572817"
+2019-03-10 11:54:04 [WARN] ID#1 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/1-1 课程导读.vep" SIZE="37572817"
+2019-03-10 11:54:05 [WARN] ID#22 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-1 MySql 介绍.vep" SIZE="58133821"
+2019-03-10 11:54:05 [WARN] ID#23 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-10 总结.vep" SIZE="10780183"
+2019-03-10 11:54:05 [WARN] ID#1 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/1-1 课程导读.vep" SIZE="37572817"
+2019-03-10 11:54:08 [WARN] ID#22 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-1 MySql 介绍.vep" SIZE="58133821"
+2019-03-10 11:54:08 [WARN] ID#23 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-10 总结.vep" SIZE="10780183"
+2019-03-10 11:54:08 [WARN] ID#24 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-2 数据库操作（创建和增、删、查）.vep" SIZE="145671711"
+2019-03-10 11:54:10 [WARN] ID#23 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-10 总结.vep" SIZE="10780183"
+2019-03-10 11:54:10 [WARN] ID#24 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-2 数据库操作（创建和增、删、查）.vep" SIZE="145671711"
+2019-03-10 11:54:10 [WARN] ID#25 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-3 数据库操作（更新）.vep" SIZE="98678655"
+2019-03-10 11:54:10 [WARN] ID#26 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-4 nodejs操作 mysql.vep" SIZE="78005433"
+2019-03-10 11:54:12 [WARN] ID#24 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-2 数据库操作（创建和增、删、查）.vep" SIZE="145671711"
+2019-03-10 11:54:12 [WARN] ID#25 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-3 数据库操作（更新）.vep" SIZE="98678655"
+2019-03-10 11:54:12 [WARN] ID#26 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-4 nodejs操作 mysql.vep" SIZE="78005433"
+2019-03-10 11:54:12 [WARN] ID#27 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-5 nodejs 链接 mysql 做成工具.vep" SIZE="58125949"
+2019-03-10 11:54:14 [WARN] ID#26 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-4 nodejs操作 mysql.vep" SIZE="78005433"
+2019-03-10 11:54:15 [WARN] ID#28 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-6 API对接mysql（博客列表）.vep" SIZE="77521713"
+2019-03-10 11:54:16 [WARN] ID#27 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-5 nodejs 链接 mysql 做成工具.vep" SIZE="58125949"
+2019-03-10 11:54:16 [WARN] ID#28 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-6 API对接mysql（博客列表）.vep" SIZE="77521713"
+2019-03-10 11:54:16 [WARN] ID#29 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-7 API对接mysql（博客详情和新建）.vep" SIZE="78650847"
+2019-03-10 11:54:18 [WARN] ID#27 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-5 nodejs 链接 mysql 做成工具.vep" SIZE="58125949"
+2019-03-10 11:54:18 [WARN] ID#28 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-6 API对接mysql（博客列表）.vep" SIZE="77521713"
+2019-03-10 11:54:18 [WARN] ID#29 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-7 API对接mysql（博客详情和新建）.vep" SIZE="78650847"
+2019-03-10 11:54:18 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1588616691377677056}
+2019-03-10 11:54:18 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1588616691625229996}
+2019-03-10 11:54:19 [WARN] ID#29 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-7 API对接mysql（博客详情和新建）.vep" SIZE="78650847"
+2019-03-10 11:54:19 [WARN] ID#30 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-8 API对接mysql（博客更新和删除）.vep" SIZE="67918303"
+2019-03-10 11:54:19 [WARN] ID#31 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-9 API对接mysql（登录）.vep" SIZE="39244721"
+2019-03-10 11:54:20 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1588616997612436215}
+2019-03-10 11:54:20 [WARN] ID#30 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-8 API对接mysql（博客更新和删除）.vep" SIZE="67918303"
+2019-03-10 11:54:20 [WARN] ID#32 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-1 开始.vep" SIZE="23365277"
+2019-03-10 11:54:20 [WARN] ID#33 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-10 nodejs链接redis的demo.vep" SIZE="41196547"
+2019-03-10 11:54:21 [WARN] ID#31 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-9 API对接mysql（登录）.vep" SIZE="39244721"
+2019-03-10 11:54:22 [WARN] ID#30 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-8 API对接mysql（博客更新和删除）.vep" SIZE="67918303"
+2019-03-10 11:54:22 [WARN] ID#32 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-1 开始.vep" SIZE="23365277"
+2019-03-10 11:54:24 [WARN] ID#31 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/5-9 API对接mysql（登录）.vep" SIZE="39244721"
+2019-03-10 11:54:24 [WARN] ID#32 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-1 开始.vep" SIZE="23365277"
+2019-03-10 11:54:24 [WARN] ID#33 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-10 nodejs链接redis的demo.vep" SIZE="41196547"
+2019-03-10 11:54:26 [WARN] ID#33 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-10 nodejs链接redis的demo.vep" SIZE="41196547"
+2019-03-10 11:54:26 [WARN] ID#34 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-11 nodejs连接redis-封装工具函数.vep" SIZE="49684563"
+2019-03-10 11:54:26 [WARN] ID#35 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-12 session存入redis.vep" SIZE="70061307"
+2019-03-10 11:54:28 [WARN] ID#36 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-13 完成server端登录的代码.vep" SIZE="41480419"
+2019-03-10 11:54:29 [WARN] ID#36 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-13 完成server端登录的代码.vep" SIZE="41480419"
+2019-03-10 11:54:30 [WARN] ID#36 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-13 完成server端登录的代码.vep" SIZE="41480419"
+2019-03-10 11:54:32 [WARN] ID#37 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-14 联调-介绍html页面.vep" SIZE="63721377"
+2019-03-10 11:54:33 [WARN] ID#37 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-14 联调-介绍html页面.vep" SIZE="63721377"
+2019-03-10 11:54:34 [WARN] ID#37 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-14 联调-介绍html页面.vep" SIZE="63721377"
+2019-03-10 11:54:35 [WARN] ID#38 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-15 nginx配置.vep" SIZE="114636657"
+2019-03-10 11:54:37 [WARN] ID#38 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-15 nginx配置.vep" SIZE="114636657"
+2019-03-10 11:54:39 [WARN] ID#38 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-15 nginx配置.vep" SIZE="114636657"
+2019-03-10 11:54:40 [WARN] ID#39 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-16 联调演示与总结.vep" SIZE="51042273"
+2019-03-10 11:54:41 [WARN] ID#39 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-16 联调演示与总结.vep" SIZE="51042273"
+2019-03-10 11:54:42 [WARN] ID#39 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-16 联调演示与总结.vep" SIZE="51042273"
+2019-03-10 11:54:43 [WARN] ID#40 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-2 cookie-介绍.vep" SIZE="117879659"
+2019-03-10 11:54:46 [WARN] ID#40 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-2 cookie-介绍.vep" SIZE="117879659"
+2019-03-10 11:54:47 [WARN] ID#40 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-2 cookie-介绍.vep" SIZE="117879659"
+2019-03-10 11:54:50 [WARN] ID#41 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-3 cookie用于登录验证.vep" SIZE="102987057"
+2019-03-10 11:54:51 [WARN] ID#41 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-3 cookie用于登录验证.vep" SIZE="102987057"
+2019-03-10 11:54:52 [WARN] ID#41 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-3 cookie用于登录验证.vep" SIZE="102987057"
+2019-03-10 11:54:53 [WARN] ID#42 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-4 cookie做限制（1）.vep" SIZE="23287841"
+2019-03-10 11:54:54 [WARN] ID#42 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-4 cookie做限制（1）.vep" SIZE="23287841"
+2019-03-10 11:54:56 [WARN] ID#42 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-4 cookie做限制（1）.vep" SIZE="23287841"
+2019-03-10 11:54:57 [WARN] ID#43 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-5 cookie做限制（2）.vep" SIZE="51879445"
+2019-03-10 11:54:59 [WARN] ID#43 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-5 cookie做限制（2）.vep" SIZE="51879445"
+2019-03-10 11:55:01 [WARN] ID#43 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-5 cookie做限制（2）.vep" SIZE="51879445"
+2019-03-10 11:55:03 [WARN] ID#44 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-6 session介绍.vep" SIZE="140968691"
+2019-03-10 11:55:05 [WARN] ID#44 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-6 session介绍.vep" SIZE="140968691"
+2019-03-10 11:55:06 [WARN] ID#44 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-6 session介绍.vep" SIZE="140968691"
+2019-03-10 11:55:08 [WARN] ID#45 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-7 session演示.vep" SIZE="47550551"
+2019-03-10 11:55:10 [WARN] ID#45 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-7 session演示.vep" SIZE="47550551"
+2019-03-10 11:55:11 [WARN] ID#45 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-7 session演示.vep" SIZE="47550551"
+2019-03-10 11:55:12 [WARN] ID#46 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-8 从 session 到 redis.vep" SIZE="98107527"
+2019-03-10 11:55:14 [WARN] ID#46 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-8 从 session 到 redis.vep" SIZE="98107527"
+2019-03-10 11:55:16 [WARN] ID#46 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-8 从 session 到 redis.vep" SIZE="98107527"
+2019-03-10 11:55:17 [WARN] ID#47 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-9 redis介绍.vep" SIZE="30027255"
+2019-03-10 11:55:19 [WARN] ID#47 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-9 redis介绍.vep" SIZE="30027255"
+2019-03-10 11:59:48 [WARN] ID#24 - No URI available.(1) FILE="C:/Users/Administrator/Desktop/Node.js 从零开发 web server博客项目 前端晋升全栈工程师必备/6-5 cookie做限制（2）.vep" SIZE="51879445"
+2019-03-10 15:05:24 [WARN] request error (0x200000001): https://pan.baidu.com/api/quota {"errno":1,"request_id":1591694598844231553}
+2019-03-10 20:11:43 [WARN] request error (0x200000001): https://pan.baidu.com/api/quota {"errno":1,"request_id":1596626922965600965}
+2019-03-10 22:40:55 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-03-10 22:41:16 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-03-10 22:41:21 [WARN] account error (-1): http请求错误 0x6
+2019-03-10 23:02:16 [WARN] request error (0x200000002): https://pan.baidu.com/share/list {"errno":2,"request_id":446453143062038050,"server_time":1552230134}
+2019-03-10 23:17:26 [WARN] account error (-1): http请求错误 0x6
+2019-03-10 23:17:31 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-03-10 23:17:52 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-03-10 23:18:12 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-03-10 23:18:27 [WARN] account error (-1): http请求错误 0x6
+2019-03-10 23:18:33 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-03-10 23:19:41 [INFO] close main window
+2019-03-10 23:19:41 [WARN] aria2 websocket connection closed, code: 1000 (Normal close), reason: aria2 shutdown
+2019-03-10 23:19:42 [INFO] websocket client stop
+2019-03-10 23:19:42 [INFO] exit

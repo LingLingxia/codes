@@ -1,0 +1,81 @@
+2019-05-02 11:27:58 [INFO] pandownload version: 2.1.0 beta
+2019-05-02 11:28:00 [INFO] aria2 websocket connection opened (127.0.0.1:6808)
+2019-05-02 11:28:00 [INFO] aria2 version: 1.34.0
+2019-05-02 11:28:00 [INFO] aria2 json-rpc path: http://token:pandownload@127.0.0.1:6808/jsonrpc
+2019-05-02 11:28:00 [INFO] create main window
+2019-05-02 11:28:00 [INFO] verify cookie (600)
+2019-05-02 11:28:03 [INFO] user login success (4052464532): zji739
+2019-05-02 11:29:42 [WARN] rpc error (0): timeout
+2019-05-02 11:29:47 [WARN] rpc error (0): timeout
+2019-05-02 11:29:52 [WARN] rpc error (0): timeout
+2019-05-02 11:29:57 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-05-02 11:30:52 [WARN] rpc error (0): timeout
+2019-05-02 11:30:57 [WARN] rpc error (0): timeout
+2019-05-02 11:31:02 [WARN] rpc error (0): timeout
+2019-05-02 11:31:07 [WARN] rpc error (0): timeout
+2019-05-02 11:31:42 [WARN] rpc error (0): timeout
+2019-05-02 11:31:47 [WARN] rpc error (0): timeout
+2019-05-02 11:31:50 [WARN] ID#10 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/8-7 定义问答模型类的方法-使代码更易扩展.vep" SIZE="49664817"
+2019-05-02 11:32:28 [WARN] rpc error (0): timeout
+2019-05-02 11:32:33 [WARN] rpc error (0): timeout
+2019-05-02 11:32:38 [WARN] rpc error (0): timeout
+2019-05-02 11:33:47 [WARN] ID#10 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/8-7 定义问答模型类的方法-使代码更易扩展.vep" SIZE="49664817"
+2019-05-02 11:37:35 [WARN] ID#33 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/7-12 Django Template Language语法精讲.vep" SIZE="125248923"
+2019-05-02 11:38:48 [WARN] ID#45 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/6-14 本章总结与课后作业.vep" SIZE="34589081"
+2019-05-02 11:39:33 [WARN] ID#33 - Got EOF from the server.(1) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/7-12 Django Template Language语法精讲.vep" SIZE="125248923"
+2019-05-02 11:41:47 [WARN] ID#32 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/7-14 模型类和视图的测试用例.vep" SIZE="50153229"
+2019-05-02 11:41:58 [WARN] rpc error (0): timeout
+2019-05-02 11:42:55 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-05-02 11:46:12 [WARN] request error (0x10000001c): https://pan.baidu.com/share/list 
+2019-05-02 11:46:56 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-05-02 11:47:26 [WARN] rpc error (0): timeout
+2019-05-02 11:47:31 [WARN] rpc error (0): timeout
+2019-05-02 11:47:48 [WARN] rpc error (0): timeout
+2019-05-02 11:48:45 [WARN] rpc error (0): timeout
+2019-05-02 11:48:50 [WARN] rpc error (0): timeout
+2019-05-02 11:48:55 [WARN] rpc error (0): timeout
+2019-05-02 11:50:17 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-05-02 11:50:26 [WARN] ID#54 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/6-1 动态功能models.py设计.vep" SIZE="77056035"
+2019-05-02 11:50:39 [WARN] ID#60 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/5-5 理解OAuth 2.0协议的原理.vep" SIZE="69509341"
+2019-05-02 11:50:49 [WARN] rpc error (0): timeout
+2019-05-02 11:50:58 [WARN] rpc error (0): timeout
+2019-05-02 11:51:05 [WARN] request error (0x10000001c): https://pan.baidu.com/rest/2.0/membership/speeds/freqctrl?method=get 
+2019-05-02 11:51:08 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-05-02 11:51:30 [WARN] ID#67 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/4-4 项目开发环境介绍（服务器环境和Pycharm远程开发设置.vep" SIZE="91156625"
+2019-05-02 11:51:54 [WARN] rpc error (0): timeout
+2019-05-02 11:51:59 [WARN] rpc error (0): timeout
+2019-05-02 11:52:55 [WARN] rpc error (0): timeout
+2019-05-02 11:53:00 [WARN] rpc error (0): timeout
+2019-05-02 11:53:05 [WARN] rpc error (0): timeout
+2019-05-02 11:53:10 [WARN] rpc error (0): timeout
+2019-05-02 11:53:18 [WARN] rpc error (0): timeout
+2019-05-02 11:54:18 [WARN] rpc error (0): timeout
+2019-05-02 11:54:23 [WARN] rpc error (0): timeout
+2019-05-02 11:54:30 [WARN] rpc error (0): timeout
+2019-05-02 11:56:07 [WARN] ID#66 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/Django高级实战 开发企业级问答网站/4-5 删改部分文件完成项目初始模板.vep" SIZE="116113785"
+2019-05-02 11:58:46 [WARN] rpc error (0): timeout
+2019-05-02 11:58:51 [WARN] rpc error (0): timeout
+2019-05-02 11:58:55 [WARN] ID#87 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/从零起步 系统入门Python爬虫工程师-v/小瓜-联系方式.jpg" SIZE="65170"
+2019-05-02 12:00:42 [WARN] rpc error (0): timeout
+2019-05-02 12:00:47 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-05-02 12:00:47 [WARN] rpc error (0): timeout
+2019-05-02 12:00:52 [WARN] rpc error (0): timeout
+2019-05-02 12:01:29 [WARN] account error (-1): http请求错误 0x6
+2019-05-02 12:01:38 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-05-02 12:05:22 [WARN] ID#89 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/从零起步 系统入门Python爬虫工程师-v/9-9 通过selenium解析商品详情页 - .vep" SIZE="103765957"
+2019-05-02 12:06:05 [WARN] rpc error (0): timeout
+2019-05-02 12:06:18 [WARN] ID#91 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/从零起步 系统入门Python爬虫工程师-v/9-7 通过selenium解析商品详情页 - .vep" SIZE="101550753"
+2019-05-02 12:06:24 [WARN] ID#93 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/从零起步 系统入门Python爬虫工程师-v/9-5 通过requests完成京东详情页数据的.vep" SIZE="103299905"
+2019-05-02 12:08:58 [WARN] ID#94 - No URI available.(1) FILE="C:/Users/Administrator/Desktop/从零起步 系统入门Python爬虫工程师-v/9-4 京东的商品详情页接口分.vep" SIZE="153562627"
+2019-05-02 12:09:47 [WARN] rpc error (0): timeout
+2019-05-02 12:10:44 [WARN] rpc error (0): timeout
+2019-05-02 12:10:49 [WARN] rpc error (0): timeout
+2019-05-02 12:10:52 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-05-02 12:10:54 [WARN] rpc error (0): timeout
+2019-05-02 12:11:34 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-05-02 12:20:38 [WARN] ID#108 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/从零起步 系统入门Python爬虫工程师-v/8-3 python的GIL真的会导致多线程慢吗？.vep" SIZE="157319451"
+2019-05-02 12:21:08 [WARN] rpc error (0): timeout
+2019-05-02 12:21:41 [INFO] close main window
+2019-05-02 12:21:41 [WARN] aria2 websocket connection closed (127.0.0.1:6808), code: 1000 (Normal close), reason: aria2 shutdown
+2019-05-02 12:21:42 [INFO] websocket client stop
+2019-05-02 12:21:42 [INFO] exit

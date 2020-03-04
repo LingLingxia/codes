@@ -1,0 +1,127 @@
+2019-06-21 09:17:39 [INFO] pandownload version: 2.1.1 beta
+2019-06-21 09:17:41 [INFO] aria2 websocket connection opened (127.0.0.1:36911)
+2019-06-21 09:17:41 [INFO] aria2 version: 1.34.0
+2019-06-21 09:17:41 [INFO] aria2 json-rpc path: http://token:pandownload@127.0.0.1:36911/jsonrpc
+2019-06-21 09:17:41 [INFO] create main window
+2019-06-21 09:17:41 [INFO] verify cookie (600)
+2019-06-21 09:17:44 [INFO] user login success (4052464532): zji739
+2019-06-21 09:18:58 [WARN] request error (0x200000074): https://pan.baidu.com/api/sharedownload {"errno":116,"request_id":3974974459975180856,"server_time":1561079933}
+2019-06-21 09:19:55 [WARN] request error (0x200000074): https://pan.baidu.com/api/sharedownload {"errno":116,"request_id":3974989846410042939,"server_time":1561079991}
+2019-06-21 09:19:59 [WARN] request error (0x200000074): https://pan.baidu.com/api/sharedownload {"errno":116,"request_id":3974991022736476665,"server_time":1561079995}
+2019-06-21 09:20:05 [WARN] request error (0x2ffffffec): https://pan.baidu.com/api/sharedownload {"errno":-20,"request_id":3974992666068441365,"server_time":1561080001}
+2019-06-21 09:20:34 [WARN] request error (0x2ffffffec): https://pan.baidu.com/api/sharedownload {"errno":-20,"request_id":3975000354277372183,"server_time":1561080030}
+2019-06-21 09:20:45 [WARN] request error (0x200000074): https://pan.baidu.com/api/sharedownload {"errno":116,"request_id":3975003251566771938,"server_time":1561080041}
+2019-06-21 09:21:04 [WARN] request error (0x200000074): https://pan.baidu.com/api/sharedownload {"errno":116,"request_id":3975008422375862673,"server_time":1561080060}
+2019-06-21 09:21:23 [WARN] request error (0x200000074): https://pan.baidu.com/api/sharedownload {"errno":116,"request_id":3975013346264670532,"server_time":1561080078}
+2019-06-21 09:21:55 [WARN] request error (0x2ffffffec): https://pan.baidu.com/api/sharedownload {"errno":-20,"request_id":3975022000422203104,"server_time":1561080110}
+2019-06-21 09:22:07 [WARN] request error (0x2ffffffec): https://pan.baidu.com/api/sharedownload {"errno":-20,"request_id":3975025319927141708,"server_time":1561080123}
+2019-06-21 09:22:21 [WARN] request error (0x2ffffffec): https://pan.baidu.com/api/sharedownload {"errno":-20,"request_id":3975028949594996262,"server_time":1561080136}
+2019-06-21 09:22:43 [WARN] request error (0x2ffffffec): https://pan.baidu.com/api/sharedownload {"errno":-20,"request_id":3975034805898896397,"server_time":1561080158}
+2019-06-21 09:22:54 [WARN] request error (0x2ffffffec): https://pan.baidu.com/api/sharedownload {"errno":-20,"request_id":3975037907820250863,"server_time":1561080170}
+2019-06-21 09:23:07 [WARN] request error (0x2ffffffec): https://pan.baidu.com/api/sharedownload {"errno":-20,"request_id":3975041262524824702,"server_time":1561080182}
+2019-06-21 09:24:15 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:25:26 [WARN] ID#5 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-5 Mybatis自动生成器使用方式.ev4" SIZE="356065424"
+2019-06-21 09:25:39 [WARN] ID#2 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-8 定义通用的返回对象--返回错误信息.ev4" SIZE="209873888"
+2019-06-21 09:26:06 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:26:57 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:27:38 [WARN] request error (0x100000023): https://pan.baidu.com/api/quota 
+2019-06-21 09:27:41 [WARN] ID#5 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-5 Mybatis自动生成器使用方式.ev4" SIZE="356065424"
+2019-06-21 09:28:28 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:29:31 [WARN] ID#5 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-5 Mybatis自动生成器使用方式.ev4" SIZE="356065424"
+2019-06-21 09:30:19 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:30:58 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:31:00 [WARN] ID#12 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-28 交易模型管理--交易下单03.ev4" SIZE="230880560"
+2019-06-21 09:31:48 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:32:39 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:33:05 [WARN] ID#12 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-28 交易模型管理--交易下单03.ev4" SIZE="230880560"
+2019-06-21 09:34:53 [WARN] ID#12 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-28 交易模型管理--交易下单03.ev4" SIZE="230880560"
+2019-06-21 09:35:15 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:35:19 [WARN] ID#21 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-2 使用IDEA创建MAVEN项目.ev4" SIZE="71253568"
+2019-06-21 09:36:06 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:37:26 [WARN] ID#21 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-2 使用IDEA创建MAVEN项目.ev4" SIZE="71253568"
+2019-06-21 09:37:57 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:38:47 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:40:21 [WARN] ID#27 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-14 用户模型管理--getotp页面美化.ev4" SIZE="68539824"
+2019-06-21 09:41:37 [WARN] ID#30 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-11 用户模型管理--otp验证码获取.ev4" SIZE="139360576"
+2019-06-21 09:43:32 [WARN] ID#30 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-11 用户模型管理--otp验证码获取.ev4" SIZE="139360576"
+2019-06-21 09:45:12 [WARN] ID#35 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第10章 防刷限流技术【保护系统，免于过载】/10-4 限流目的介绍.ev4" SIZE="8259456"
+2019-06-21 09:45:14 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:45:39 [WARN] ID#36 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第10章 防刷限流技术【保护系统，免于过载】/10-3 验证码技术（下）.ev4" SIZE="244721424"
+2019-06-21 09:46:05 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:46:56 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:47:05 [WARN] ID#35 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第10章 防刷限流技术【保护系统，免于过载】/10-4 限流目的介绍.ev4" SIZE="8259456"
+2019-06-21 09:47:41 [WARN] ID#36 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第10章 防刷限流技术【保护系统，免于过载】/10-3 验证码技术（下）.ev4" SIZE="244721424"
+2019-06-21 09:47:46 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:49:08 [WARN] ID#35 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第10章 防刷限流技术【保护系统，免于过载】/10-4 限流目的介绍.ev4" SIZE="8259456"
+2019-06-21 09:49:37 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:49:50 [WARN] ID#36 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第10章 防刷限流技术【保护系统，免于过载】/10-3 验证码技术（下）.ev4" SIZE="244721424"
+2019-06-21 09:50:28 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:51:18 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:52:05 [WARN] ID#56 - Write disk cache flush failure index=155(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/dianshangmiaosha-master(1).zip" SIZE="210986354"
+2019-06-21 09:52:06 [WARN] ID#54 - Write disk cache flush failure index=187(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-1 事务型消息（上）.ev4" SIZE="365940944"
+2019-06-21 09:52:06 [WARN] ID#50 - Write disk cache flush failure index=198(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-5 库存流水状态（3）.ev4" SIZE="334359328"
+2019-06-21 09:52:07 [WARN] ID#53 - Write disk cache flush failure index=490(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-2 事务型消息应用（下）.ev4" SIZE="592960688"
+2019-06-21 09:52:07 [WARN] ID#51 - Write disk cache flush failure index=219(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-4 库存流水状态（2）.ev4" SIZE="253370880"
+2019-06-21 09:52:08 [WARN] ID#52 - Write disk cache flush failure index=72(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-3 库存流水状态（1）.ev4" SIZE="130681984"
+2019-06-21 09:52:09 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-21 09:52:11 [WARN] ID#53 - Write disk cache flush failure index=13(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-2 事务型消息应用（下）.ev4" SIZE="592960688"
+2019-06-21 09:52:11 [WARN] ID#54 - Write disk cache flush failure index=98(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-1 事务型消息（上）.ev4" SIZE="365940944"
+2019-06-21 09:52:11 [WARN] ID#51 - Write disk cache flush failure index=68(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-4 库存流水状态（2）.ev4" SIZE="253370880"
+2019-06-21 09:52:12 [WARN] ID#50 - Write disk cache flush failure index=149(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-5 库存流水状态（3）.ev4" SIZE="334359328"
+2019-06-21 09:52:12 [WARN] ID#52 - Write disk cache flush failure index=23(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-3 库存流水状态（1）.ev4" SIZE="130681984"
+2019-06-21 09:52:15 [WARN] ID#54 - Write disk cache flush failure index=22(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-1 事务型消息（上）.ev4" SIZE="365940944"
+2019-06-21 09:52:17 [WARN] ID#53 - Write disk cache flush failure index=528(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-2 事务型消息应用（下）.ev4" SIZE="592960688"
+2019-06-21 09:52:17 [WARN] ID#50 - Write disk cache flush failure index=37(9) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-5 库存流水状态（3）.ev4" SIZE="334359328"
+2019-06-21 09:52:19 [WARN] aria2 websocket connection closed (127.0.0.1:36911), code: 1006 (Abnormal close), reason: 
+2019-06-21 09:52:21 [WARN] aria2 websocket connection failed (127.0.0.1:36911), state: 3 (websocketpp.transport:2 - Underlying Transport Error)
+	local close code: 1006 (Abnormal close), local close reason: Underlying Transport Error
+	remote close code: 1006 (Abnormal close), remote close reason: 
+2019-06-21 09:52:23 [WARN] aria2 websocket connection failed (127.0.0.1:36911), state: 3 (websocketpp.transport:2 - Underlying Transport Error)
+	local close code: 1006 (Abnormal close), local close reason: Underlying Transport Error
+	remote close code: 1006 (Abnormal close), remote close reason: 
+2019-06-21 09:52:25 [WARN] aria2 websocket connection failed (127.0.0.1:36911), state: 3 (websocketpp.transport:2 - Underlying Transport Error)
+	local close code: 1006 (Abnormal close), local close reason: Underlying Transport Error
+	remote close code: 1006 (Abnormal close), remote close reason: 
+2019-06-21 18:26:08 [WARN] ID#5 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-5 Mybatis自动生成器使用方式.ev4" SIZE="356065424"
+2019-06-21 18:26:08 [WARN] ID#12 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-28 交易模型管理--交易下单03.ev4" SIZE="230880560"
+2019-06-21 18:26:08 [WARN] ID#35 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第10章 防刷限流技术【保护系统，免于过载】/10-4 限流目的介绍.ev4" SIZE="8259456"
+2019-06-21 18:26:08 [WARN] ID#36 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第10章 防刷限流技术【保护系统，免于过载】/10-3 验证码技术（下）.ev4" SIZE="244721424"
+2019-06-21 18:26:08 [WARN] ID#50 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-5 库存流水状态（3）.ev4" SIZE="334359328"
+2019-06-21 18:26:08 [WARN] ID#53 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-2 事务型消息应用（下）.ev4" SIZE="592960688"
+2019-06-21 18:26:09 [WARN] ID#54 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-1 事务型消息（上）.ev4" SIZE="365940944"
+2019-06-21 18:26:09 [WARN] ID#5 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-5 Mybatis自动生成器使用方式.ev4" SIZE="356065424"
+2019-06-21 18:26:09 [WARN] ID#12 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-28 交易模型管理--交易下单03.ev4" SIZE="230880560"
+2019-06-21 18:26:09 [WARN] ID#35 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第10章 防刷限流技术【保护系统，免于过载】/10-4 限流目的介绍.ev4" SIZE="8259456"
+2019-06-21 18:26:09 [WARN] ID#36 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第10章 防刷限流技术【保护系统，免于过载】/10-3 验证码技术（下）.ev4" SIZE="244721424"
+2019-06-21 18:26:09 [WARN] ID#50 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-5 库存流水状态（3）.ev4" SIZE="334359328"
+2019-06-21 18:26:09 [WARN] ID#53 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-2 事务型消息应用（下）.ev4" SIZE="592960688"
+2019-06-21 18:26:09 [WARN] ID#54 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-1 事务型消息（上）.ev4" SIZE="365940944"
+2019-06-21 18:26:09 [WARN] ID#5 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-5 Mybatis自动生成器使用方式.ev4" SIZE="356065424"
+2019-06-21 18:26:09 [WARN] ID#12 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/新建文件夹 (2)/第12章 【附录篇】应用SpringBoot搭建电商秒杀的基础项目实战/12-28 交易模型管理--交易下单03.ev4" SIZE="230880560"
+2019-06-21 18:26:09 [WARN] ID#35 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第10章 防刷限流技术【保护系统，免于过载】/10-4 限流目的介绍.ev4" SIZE="8259456"
+2019-06-21 18:26:09 [WARN] ID#36 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第10章 防刷限流技术【保护系统，免于过载】/10-3 验证码技术（下）.ev4" SIZE="244721424"
+2019-06-21 18:26:10 [WARN] ID#50 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-5 库存流水状态（3）.ev4" SIZE="334359328"
+2019-06-21 18:26:10 [WARN] ID#53 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-2 事务型消息应用（下）.ev4" SIZE="592960688"
+2019-06-21 18:26:10 [WARN] ID#54 - 下载链接过期或系统时间不正确，请删除任务重新下载(-5) FILE="C:/Users/Administrator/Desktop/Java电商秒杀系统深度优化 从容应对亿级流量挑战/第8章 交易优化技术之事务型消息【保证最终一致性的利器】/8-1 事务型消息（上）.ev4" SIZE="365940944"
+2019-06-21 18:26:13 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:13 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:13 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:13 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:15 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:15 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:15 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:15 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:22 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:22 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:22 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:22 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:23 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:23 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:29 [INFO] close main window
+2019-06-21 18:26:29 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:29 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:29 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:29 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:29 [WARN] rpc error (0): connection failed
+2019-06-21 18:26:30 [INFO] websocket client stop
+2019-06-21 18:26:30 [INFO] exit

@@ -1,0 +1,11 @@
+2019-04-06 22:47:58 [INFO] pandownload version: 2.0.8 beta
+2019-04-06 22:48:01 [INFO] aria2 websocket connection opened (127.0.0.1:6808)
+2019-04-06 22:48:01 [INFO] aria2 version: 1.34.0
+2019-04-06 22:48:01 [INFO] aria2 json-rpc path: http://token:pandownload@127.0.0.1:6808/jsonrpc
+2019-04-06 22:48:01 [INFO] create main window
+2019-04-06 22:48:01 [INFO] verify cookie (600)
+2019-04-06 22:48:04 [INFO] user login success (4052464532): zji739
+2019-04-06 22:49:53 [WARN] rpc error (0): timeout
+2019-04-06 22:55:15 [WARN] request error (0x200000064): https://pan.baidu.com/api/quota {"errno":100,"request_id":2225467164163099112}
+2019-04-06 22:57:09 [WARN] ID#9 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/新建文件夹 (7)/9-2 express 安装.vep" SIZE="87642869"
+2019-04-06 23:03:41 [WARN] aria2 websocket connection closed (127.0.0.1:6808), code: 1006 (Abnormal close), reason: 

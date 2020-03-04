@@ -1,0 +1,328 @@
+2019-03-07 21:24:33 [INFO] pandownload version: 2.0.6 beta
+2019-03-07 21:24:37 [WARN] aria2 websocket connection failed, state: 3 (websocketpp.transport:7 - End of File)
+	local close code: 1006 (Abnormal close), local close reason: End of File
+	remote close code: 1006 (Abnormal close), remote close reason: 
+2019-03-07 21:24:37 [INFO] aria2 websocket connection opened
+2019-03-07 21:24:37 [INFO] aria2 version: 1.34.0
+2019-03-07 21:24:37 [INFO] aria2 json-rpc path: http://token:pandownload@127.0.0.1:6808/jsonrpc
+2019-03-07 21:24:44 [INFO] create main window
+2019-03-07 21:25:25 [WARN] account error (1005): username and/or password wrong
+2019-03-07 21:26:05 [INFO] verify cookie (601)
+2019-03-07 21:26:07 [INFO] user login success (4052464532): zji739
+2019-03-07 21:26:46 [WARN] rpc error (0): timeout
+2019-03-07 21:28:52 [WARN] rpc error (0): timeout
+2019-03-07 21:29:03 [WARN] ID#2 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/1-1 Django+小程序技术打造微信小程序助手.ev4" SIZE="89130336"
+2019-03-07 21:29:04 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528294944869637280}
+2019-03-07 21:29:04 [WARN] ID#2 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/1-1 Django+小程序技术打造微信小程序助手.ev4" SIZE="89130336"
+2019-03-07 21:29:16 [WARN] rpc error (0): timeout
+2019-03-07 21:29:25 [WARN] rpc error (0): timeout
+2019-03-07 21:30:35 [WARN] rpc error (0): timeout
+2019-03-07 21:30:43 [WARN] rpc error (0): timeout
+2019-03-07 21:30:50 [WARN] rpc error (0): timeout
+2019-03-07 21:30:52 [WARN] ID#12 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/2-9 小程序的发布流程.ev4" SIZE="25576752"
+2019-03-07 21:30:57 [WARN] rpc error (0): timeout
+2019-03-07 21:31:02 [WARN] ID#14 - The response status is not successful. status=406(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-10 综合实践之休闲娱乐-下.ev4" SIZE="63748272"
+2019-03-07 21:31:03 [WARN] ID#12 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/2-9 小程序的发布流程.ev4" SIZE="25576752"
+2019-03-07 21:31:09 [WARN] rpc error (0): timeout
+2019-03-07 21:31:14 [WARN] ID#14 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-10 综合实践之休闲娱乐-下.ev4" SIZE="63748272"
+2019-03-07 21:31:15 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528330205134328562}
+2019-03-07 21:31:15 [WARN] ID#14 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-10 综合实践之休闲娱乐-下.ev4" SIZE="63748272"
+2019-03-07 21:31:16 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528330441204175222}
+2019-03-07 21:31:16 [WARN] ID#15 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-2 Django的RESTful URL设计.ev4" SIZE="90986464"
+2019-03-07 21:31:25 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528332886921495048}
+2019-03-07 21:31:25 [WARN] ID#15 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-2 Django的RESTful URL设计.ev4" SIZE="90986464"
+2019-03-07 21:31:28 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528333787741941040}
+2019-03-07 21:31:31 [WARN] rpc error (0): timeout
+2019-03-07 21:31:39 [WARN] ID#17 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-4 实现图文消息.ev4" SIZE="93571648"
+2019-03-07 21:31:57 [WARN] rpc error (0): timeout
+2019-03-07 21:32:51 [WARN] ID#3 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/10-1 课程总结.ev4" SIZE="137567600"
+2019-03-07 21:32:53 [WARN] ID#2 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/1-1 Django+小程序技术打造微信小程序助手.ev4" SIZE="89130336"
+2019-03-07 21:32:58 [WARN] ID#17 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-4 实现图文消息.ev4" SIZE="93571648"
+2019-03-07 21:33:02 [WARN] ID#17 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-4 实现图文消息.ev4" SIZE="93571648"
+2019-03-07 21:33:20 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528363661903319754}
+2019-03-07 21:33:20 [WARN] ID#20 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-7 综合实践之生活服务-上.ev4" SIZE="105652720"
+2019-03-07 21:33:21 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528363966333974435}
+2019-03-07 21:33:21 [WARN] ID#21 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-8 综合实践之生活服务-下.ev4" SIZE="91728304"
+2019-03-07 21:33:25 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528364921670652194}
+2019-03-07 21:33:25 [WARN] ID#22 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-9  综合实践之休闲娱乐-上.ev4" SIZE="75114368"
+2019-03-07 21:33:33 [WARN] ID#1 - No URI available.(24) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/资料/Jarvis-master.zip" SIZE="445613481"
+2019-03-07 21:33:37 [WARN] ID#1 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/资料/Jarvis-master.zip" SIZE="445613481"
+2019-03-07 21:33:50 [WARN] ID#23 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-1 章节导学.ev4" SIZE="20230224"
+2019-03-07 21:33:52 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528372107190143978}
+2019-03-07 21:33:52 [WARN] ID#21 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-8 综合实践之生活服务-下.ev4" SIZE="91728304"
+2019-03-07 21:33:53 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528372709861846103}
+2019-03-07 21:33:54 [WARN] ID#22 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-9  综合实践之休闲娱乐-上.ev4" SIZE="75114368"
+2019-03-07 21:33:57 [WARN] ID#23 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-1 章节导学.ev4" SIZE="20230224"
+2019-03-07 21:34:10 [WARN] ID#22 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-9  综合实践之休闲娱乐-上.ev4" SIZE="75114368"
+2019-03-07 21:34:52 [WARN] ID#12 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/2-9 小程序的发布流程.ev4" SIZE="25576752"
+2019-03-07 21:34:59 [WARN] ID#24 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-2 有状态服务.ev4" SIZE="48902656"
+2019-03-07 21:35:05 [WARN] ID#24 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-2 有状态服务.ev4" SIZE="48902656"
+2019-03-07 21:35:38 [WARN] ID#11 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/2-8 小程序对接Django.ev4" SIZE="41647360"
+2019-03-07 21:35:53 [WARN] ID#11 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/2-8 小程序对接Django.ev4" SIZE="41647360"
+2019-03-07 21:35:57 [WARN] ID#11 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/2-8 小程序对接Django.ev4" SIZE="41647360"
+2019-03-07 21:36:05 [WARN] ID#25 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-3 小程序的状态管理.ev4" SIZE="115246928"
+2019-03-07 21:36:07 [WARN] ID#25 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-3 小程序的状态管理.ev4" SIZE="115246928"
+2019-03-07 21:36:20 [WARN] ID#23 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-1 章节导学.ev4" SIZE="20230224"
+2019-03-07 21:36:29 [WARN] ID#1 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/资料/Jarvis-master.zip" SIZE="445613481"
+2019-03-07 21:36:30 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528414887718557843}
+2019-03-07 21:36:31 [WARN] ID#27 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-5 完善用户个人信息.ev4" SIZE="104499520"
+2019-03-07 21:38:10 [WARN] ID#21 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-8 综合实践之生活服务-下.ev4" SIZE="91728304"
+2019-03-07 21:38:13 [WARN] ID#27 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-5 完善用户个人信息.ev4" SIZE="104499520"
+2019-03-07 21:38:42 [WARN] ID#28 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-6 复杂多变的用户状态管理.ev4" SIZE="66496832"
+2019-03-07 21:38:45 [WARN] ID#28 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-6 复杂多变的用户状态管理.ev4" SIZE="66496832"
+2019-03-07 21:38:47 [WARN] ID#16 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-3 实现个人助手功能清单发布.ev4" SIZE="75242960"
+2019-03-07 21:38:59 [WARN] ID#16 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-3 实现个人助手功能清单发布.ev4" SIZE="75242960"
+2019-03-07 21:39:00 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528455023326771951}
+2019-03-07 21:39:00 [WARN] ID#16 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-3 实现个人助手功能清单发布.ev4" SIZE="75242960"
+2019-03-07 21:39:01 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528455265295583778}
+2019-03-07 21:39:01 [WARN] ID#29 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-7 有状态的首页实现.ev4" SIZE="135927104"
+2019-03-07 21:39:20 [WARN] ID#28 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-6 复杂多变的用户状态管理.ev4" SIZE="66496832"
+2019-03-07 21:39:23 [WARN] ID#29 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-7 有状态的首页实现.ev4" SIZE="135927104"
+2019-03-07 21:39:54 [WARN] ID#13 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-1 Request&Response对象.ev4" SIZE="145697280"
+2019-03-07 21:39:55 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528469690410024734}
+2019-03-07 21:39:56 [WARN] ID#13 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-1 Request&Response对象.ev4" SIZE="145697280"
+2019-03-07 21:39:59 [WARN] ID#31 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-2 数据库迁移.ev4" SIZE="112109584"
+2019-03-07 21:40:02 [WARN] ID#13 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-1 Request&Response对象.ev4" SIZE="145697280"
+2019-03-07 21:40:06 [WARN] ID#31 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-2 数据库迁移.ev4" SIZE="112109584"
+2019-03-07 21:40:09 [WARN] ID#31 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-2 数据库迁移.ev4" SIZE="112109584"
+2019-03-07 21:40:38 [WARN] ID#25 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-3 小程序的状态管理.ev4" SIZE="115246928"
+2019-03-07 21:40:59 [WARN] ID#20 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-7 综合实践之生活服务-上.ev4" SIZE="105652720"
+2019-03-07 21:41:00 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528487087225225719}
+2019-03-07 21:41:00 [WARN] ID#20 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-7 综合实践之生活服务-上.ev4" SIZE="105652720"
+2019-03-07 21:41:00 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528487366373709914}
+2019-03-07 21:41:01 [WARN] ID#34 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-5 数据库函数.ev4" SIZE="187828832"
+2019-03-07 21:41:04 [WARN] ID#35 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-1 章节导学.ev4" SIZE="17169952"
+2019-03-07 21:41:08 [WARN] ID#34 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-5 数据库函数.ev4" SIZE="187828832"
+2019-03-07 21:42:16 [WARN] ID#32 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-3 数据库索引.ev4" SIZE="103342576"
+2019-03-07 21:42:19 [WARN] ID#32 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-3 数据库索引.ev4" SIZE="103342576"
+2019-03-07 21:42:22 [WARN] ID#32 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-3 数据库索引.ev4" SIZE="103342576"
+2019-03-07 21:43:30 [WARN] ID#24 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-2 有状态服务.ev4" SIZE="48902656"
+2019-03-07 21:44:28 [WARN] ID#3 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/10-1 课程总结.ev4" SIZE="137567600"
+2019-03-07 21:44:41 [WARN] ID#19 - No URI available.(1) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-6 Django图文消息应用.ev4" SIZE="173119520"
+2019-03-07 21:45:18 [WARN] ID#29 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-7 有状态的首页实现.ev4" SIZE="135927104"
+2019-03-07 21:45:34 [WARN] ID#3 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/10-1 课程总结.ev4" SIZE="137567600"
+2019-03-07 21:45:53 [WARN] ID#35 - No URI available.(1) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-1 章节导学.ev4" SIZE="17169952"
+2019-03-07 21:45:59 [WARN] ID#35 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-1 章节导学.ev4" SIZE="17169952"
+2019-03-07 21:47:45 [WARN] ID#27 - No URI available.(1) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-5 完善用户个人信息.ev4" SIZE="104499520"
+2019-03-07 21:47:48 [WARN] ID#40 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-1 章节导学.ev4" SIZE="21955872"
+2019-03-07 21:47:51 [WARN] ID#40 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-1 章节导学.ev4" SIZE="21955872"
+2019-03-07 21:47:53 [WARN] ID#40 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-1 章节导学.ev4" SIZE="21955872"
+2019-03-07 21:48:00 [WARN] ID#41 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-2 Django 日志模块.ev4" SIZE="179486528"
+2019-03-07 21:48:02 [WARN] ID#41 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-2 Django 日志模块.ev4" SIZE="179486528"
+2019-03-07 21:48:04 [WARN] ID#41 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-2 Django 日志模块.ev4" SIZE="179486528"
+2019-03-07 21:48:23 [WARN] ID#36 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-2 理解模型变更与迁移.ev4" SIZE="92847104"
+2019-03-07 21:48:24 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528606368308362175}
+2019-03-07 21:48:24 [WARN] ID#36 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-2 理解模型变更与迁移.ev4" SIZE="92847104"
+2019-03-07 21:48:24 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528606484857125987}
+2019-03-07 21:48:25 [WARN] ID#43 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-4 Django 缓存模块.ev4" SIZE="190128256"
+2019-03-07 21:48:25 [WARN] ID#19 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-6 Django图文消息应用.ev4" SIZE="173119520"
+2019-03-07 21:48:26 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528606756837550531}
+2019-03-07 21:48:26 [WARN] ID#44 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-5 Django 后台服务部署.ev4" SIZE="67480816"
+2019-03-07 21:48:29 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528607817119728398}
+2019-03-07 21:48:29 [WARN] ID#19 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-6 Django图文消息应用.ev4" SIZE="173119520"
+2019-03-07 21:48:30 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528607938917263332}
+2019-03-07 21:48:30 [WARN] ID#36 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-2 理解模型变更与迁移.ev4" SIZE="92847104"
+2019-03-07 21:48:31 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528608231001520912}
+2019-03-07 21:48:31 [WARN] ID#43 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-4 Django 缓存模块.ev4" SIZE="190128256"
+2019-03-07 21:48:31 [WARN] ID#45 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-6 Django Crontab 定时任务.ev4" SIZE="96318336"
+2019-03-07 21:48:36 [WARN] ID#43 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-4 Django 缓存模块.ev4" SIZE="190128256"
+2019-03-07 21:48:39 [WARN] ID#45 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-6 Django Crontab 定时任务.ev4" SIZE="96318336"
+2019-03-07 21:48:51 [WARN] ID#26 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-4 实现登录功能.ev4" SIZE="157356672"
+2019-03-07 21:48:54 [WARN] ID#26 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-4 实现登录功能.ev4" SIZE="157356672"
+2019-03-07 21:48:56 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528614867035725155}
+2019-03-07 21:48:56 [WARN] ID#26 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-4 实现登录功能.ev4" SIZE="157356672"
+2019-03-07 21:48:59 [WARN] ID#46 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-7 Django Middleware 中间件.ev4" SIZE="105370720"
+2019-03-07 21:49:00 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528615999070849822}
+2019-03-07 21:49:00 [WARN] ID#46 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-7 Django Middleware 中间件.ev4" SIZE="105370720"
+2019-03-07 21:49:01 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528616312802623609}
+2019-03-07 21:49:01 [WARN] ID#47 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-8 Django 邮件模块.ev4" SIZE="70227312"
+2019-03-07 21:49:31 [WARN] ID#39 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-5 数据库操作规范.ev4" SIZE="57878720"
+2019-03-07 21:49:34 [WARN] ID#39 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-5 数据库操作规范.ev4" SIZE="57878720"
+2019-03-07 21:50:14 [WARN] ID#34 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-5 数据库函数.ev4" SIZE="187828832"
+2019-03-07 21:51:07 [WARN] ID#39 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-5 数据库操作规范.ev4" SIZE="57878720"
+2019-03-07 21:51:12 [WARN] ID#47 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-8 Django 邮件模块.ev4" SIZE="70227312"
+2019-03-07 21:51:34 [WARN] ID#30 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-1 章节导学.ev4" SIZE="30477536"
+2019-03-07 21:51:36 [WARN] ID#30 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-1 章节导学.ev4" SIZE="30477536"
+2019-03-07 21:52:33 [WARN] ID#37 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-3 懒加载与预加载.ev4" SIZE="117546352"
+2019-03-07 21:52:41 [WARN] ID#37 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-3 懒加载与预加载.ev4" SIZE="117546352"
+2019-03-07 21:52:43 [WARN] ID#37 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-3 懒加载与预加载.ev4" SIZE="117546352"
+2019-03-07 21:53:22 [WARN] ID#30 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-1 章节导学.ev4" SIZE="30477536"
+2019-03-07 21:53:24 [WARN] ID#50 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-2 Django依赖服务的高可用.ev4" SIZE="110685104"
+2019-03-07 21:54:08 [WARN] ID#44 - No URI available.(1) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-5 Django 后台服务部署.ev4" SIZE="67480816"
+2019-03-07 21:54:13 [WARN] ID#44 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-5 Django 后台服务部署.ev4" SIZE="67480816"
+2019-03-07 21:54:16 [WARN] ID#51 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-3 Nginx 必知必会.ev4" SIZE="116068112"
+2019-03-07 21:54:30 [WARN] ID#49 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-1 章节导学.ev4" SIZE="31079136"
+2019-03-07 21:55:36 [WARN] ID#45 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-6 Django Crontab 定时任务.ev4" SIZE="96318336"
+2019-03-07 21:56:05 [WARN] ID#46 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-7 Django Middleware 中间件.ev4" SIZE="105370720"
+2019-03-07 21:56:09 [WARN] ID#53 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-5 Django uWSGI部署.ev4" SIZE="153979440"
+2019-03-07 21:56:24 [WARN] ID#47 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-8 Django 邮件模块.ev4" SIZE="70227312"
+2019-03-07 21:56:25 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528735627572261499}
+2019-03-07 21:56:25 [WARN] ID#54 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-6 Django Nginx+uWSGI部署.ev4" SIZE="107261808"
+2019-03-07 21:56:26 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528735747052565035}
+2019-03-07 21:56:26 [WARN] ID#55 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-7 Django HTTPS部署.ev4" SIZE="142478720"
+2019-03-07 21:56:31 [WARN] ID#49 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-1 章节导学.ev4" SIZE="31079136"
+2019-03-07 21:56:34 [WARN] ID#49 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-1 章节导学.ev4" SIZE="31079136"
+2019-03-07 21:57:17 [WARN] ID#50 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-2 Django依赖服务的高可用.ev4" SIZE="110685104"
+2019-03-07 21:57:21 [WARN] ID#51 - Got EOF from the server.(1) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-3 Nginx 必知必会.ev4" SIZE="116068112"
+2019-03-07 21:57:22 [WARN] ID#52 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-4 uWSGI 必知必会.ev4" SIZE="55290720"
+2019-03-07 21:57:25 [WARN] ID#51 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-3 Nginx 必知必会.ev4" SIZE="116068112"
+2019-03-07 21:57:26 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528751945218128526}
+2019-03-07 21:57:26 [WARN] ID#55 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-7 Django HTTPS部署.ev4" SIZE="142478720"
+2019-03-07 21:58:29 [WARN] ID#57 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-1 章节导学.ev4" SIZE="13796288"
+2019-03-07 21:58:48 [WARN] ID#55 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-7 Django HTTPS部署.ev4" SIZE="142478720"
+2019-03-07 21:58:51 [WARN] ID#50 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-2 Django依赖服务的高可用.ev4" SIZE="110685104"
+2019-03-07 21:59:20 [WARN] ID#52 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-4 uWSGI 必知必会.ev4" SIZE="55290720"
+2019-03-07 21:59:27 [WARN] ID#42 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-3 Django Admin模块.ev4" SIZE="160586128"
+2019-03-07 21:59:32 [WARN] ID#42 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-3 Django Admin模块.ev4" SIZE="160586128"
+2019-03-07 21:59:56 [WARN] ID#48 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-9 综合实践：基于邮件通知的服务监控和告警系统.ev4" SIZE="264078064"
+2019-03-07 22:00:16 [WARN] ID#57 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-1 章节导学.ev4" SIZE="13796288"
+2019-03-07 22:00:21 [WARN] ID#57 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-1 章节导学.ev4" SIZE="13796288"
+2019-03-07 22:00:49 [WARN] ID#52 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-4 uWSGI 必知必会.ev4" SIZE="55290720"
+2019-03-07 22:00:51 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528806782493554267}
+2019-03-07 22:00:51 [WARN] ID#60 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-4 部署优化之Unix域套接字.ev4" SIZE="124050016"
+2019-03-07 22:00:58 [WARN] ID#61 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-5 部署发布要点.ev4" SIZE="42440720"
+2019-03-07 22:01:09 [WARN] ID#60 - The response status is not successful. status=500(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-4 部署优化之Unix域套接字.ev4" SIZE="124050016"
+2019-03-07 22:02:43 [WARN] ID#48 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-9 综合实践：基于邮件通知的服务监控和告警系统.ev4" SIZE="264078064"
+2019-03-07 22:05:26 [WARN] ID#56 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-8 Nginx 部署高可用服务.ev4" SIZE="150821040"
+2019-03-07 22:05:27 [WARN] ID#33 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-4 关系映射.ev4" SIZE="109395792"
+2019-03-07 22:05:29 [WARN] ID#38 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-4 数据库长连接.ev4" SIZE="70191600"
+2019-03-07 22:05:30 [WARN] ID#56 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-8 Nginx 部署高可用服务.ev4" SIZE="150821040"
+2019-03-07 22:05:34 [WARN] ID#56 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-8 Nginx 部署高可用服务.ev4" SIZE="150821040"
+2019-03-07 22:06:03 [WARN] ID#38 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-4 数据库长连接.ev4" SIZE="70191600"
+2019-03-07 22:06:05 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528891141112070082}
+2019-03-07 22:06:05 [WARN] ID#38 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/6-4 数据库长连接.ev4" SIZE="70191600"
+2019-03-07 22:06:18 [WARN] ID#48 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-9 综合实践：基于邮件通知的服务监控和告警系统.ev4" SIZE="264078064"
+2019-03-07 22:06:23 [WARN] ID#64 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-2 新建提问.ev4" SIZE="87723536"
+2019-03-07 22:06:35 [WARN] rpc error (0): timeout
+2019-03-07 22:06:44 [WARN] rpc error (0): timeout
+2019-03-07 22:06:56 [WARN] rpc error (0): timeout
+2019-03-07 22:07:14 [WARN] ID#61 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-5 部署发布要点.ev4" SIZE="42440720"
+2019-03-07 22:07:32 [WARN] ID#58 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-2 小程序优化之UI优化.ev4" SIZE="145166928"
+2019-03-07 22:07:36 [WARN] ID#58 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-2 小程序优化之UI优化.ev4" SIZE="145166928"
+2019-03-07 22:07:53 [WARN] ID#61 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-5 部署发布要点.ev4" SIZE="42440720"
+2019-03-07 22:07:56 [WARN] ID#65 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-3 获取问题列表.ev4" SIZE="27995552"
+2019-03-07 22:08:03 [WARN] ID#65 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-3 获取问题列表.ev4" SIZE="27995552"
+2019-03-07 22:08:48 [WARN] ID#33 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-4 关系映射.ev4" SIZE="109395792"
+2019-03-07 22:08:51 [WARN] ID#33 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/5-4 关系映射.ev4" SIZE="109395792"
+2019-03-07 22:09:00 [WARN] ID#54 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-6 Django Nginx+uWSGI部署.ev4" SIZE="107261808"
+2019-03-07 22:09:06 [WARN] ID#60 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-4 部署优化之Unix域套接字.ev4" SIZE="124050016"
+2019-03-07 22:09:16 [WARN] script log (默认): [CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)
+2019-03-07 22:09:16 [WARN] ID#54 - [CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)(-1) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-6 Django Nginx+uWSGI部署.ev4" SIZE="107261808"
+2019-03-07 22:09:21 [WARN] ID#67 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-5 回复和获取问题的回复.ev4" SIZE="58297968"
+2019-03-07 22:09:28 [WARN] ID#68 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-6 获取回答的回复.ev4" SIZE="56627584"
+2019-03-07 22:09:31 [WARN] ID#67 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-5 回复和获取问题的回复.ev4" SIZE="58297968"
+2019-03-07 22:09:38 [WARN] ID#67 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-5 回复和获取问题的回复.ev4" SIZE="58297968"
+2019-03-07 22:09:43 [WARN] ID#69 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-1 修改个人信息接口.ev4" SIZE="143920864"
+2019-03-07 22:09:45 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1528950081937030155}
+2019-03-07 22:09:45 [WARN] ID#69 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-1 修改个人信息接口.ev4" SIZE="143920864"
+2019-03-07 22:09:51 [WARN] ID#70 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-10 处理用户的加入小组申请.ev4" SIZE="104299312"
+2019-03-07 22:11:01 [WARN] account error (-1): http请求错误 0x38
+2019-03-07 22:11:11 [WARN] ID#63 - No URI available.(1) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-1 model设计.ev4" SIZE="40698528"
+2019-03-07 22:11:28 [WARN] ID#63 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-1 model设计.ev4" SIZE="40698528"
+2019-03-07 22:11:36 [WARN] ID#64 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-2 新建提问.ev4" SIZE="87723536"
+2019-03-07 22:11:38 [WARN] ID#42 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-3 Django Admin模块.ev4" SIZE="160586128"
+2019-03-07 22:12:01 [WARN] ID#70 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-10 处理用户的加入小组申请.ev4" SIZE="104299312"
+2019-03-07 22:12:16 [WARN] script log (默认): [CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)
+2019-03-07 22:12:16 [WARN] ID#70 - [CURL-EASY][OPERATION_TIMEDOUT] Timeout was reached (28)(-1) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-10 处理用户的加入小组申请.ev4" SIZE="104299312"
+2019-03-07 22:12:26 [WARN] ID#65 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-3 获取问题列表.ev4" SIZE="27995552"
+2019-03-07 22:12:33 [WARN] ID#72 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-2 基本信息修改-前端联调.ev4" SIZE="19185504"
+2019-03-07 22:12:36 [WARN] ID#72 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-2 基本信息修改-前端联调.ev4" SIZE="19185504"
+2019-03-07 22:12:45 [WARN] ID#66 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-4 获取问题详情.ev4" SIZE="45948624"
+2019-03-07 22:12:54 [WARN] ID#71 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-11 处理用户的加入小组申请-前端联调.ev4" SIZE="24493872"
+2019-03-07 22:13:02 [WARN] ID#71 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-11 处理用户的加入小组申请-前端联调.ev4" SIZE="24493872"
+2019-03-07 22:13:07 [WARN] ID#53 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-5 Django uWSGI部署.ev4" SIZE="153979440"
+2019-03-07 22:13:17 [WARN] ID#73 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-3 头像修改接口.ev4" SIZE="59305456"
+2019-03-07 22:13:18 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529007489656745156}
+2019-03-07 22:13:19 [WARN] ID#73 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-3 头像修改接口.ev4" SIZE="59305456"
+2019-03-07 22:13:25 [WARN] ID#74 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-4 头像修改功能-前后端联调.ev4" SIZE="21174160"
+2019-03-07 22:13:26 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529009521379841770}
+2019-03-07 22:13:26 [WARN] ID#73 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-3 头像修改接口.ev4" SIZE="59305456"
+2019-03-07 22:13:29 [WARN] ID#74 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-4 头像修改功能-前后端联调.ev4" SIZE="21174160"
+2019-03-07 22:13:34 [WARN] ID#63 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-1 model设计.ev4" SIZE="40698528"
+2019-03-07 22:13:37 [WARN] ID#75 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-5 修改个人密码.ev4" SIZE="71099824"
+2019-03-07 22:13:42 [WARN] ID#75 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-5 修改个人密码.ev4" SIZE="71099824"
+2019-03-07 22:13:43 [WARN] ID#59 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-3 小程序优化之逻辑优化.ev4" SIZE="223624224"
+2019-03-07 22:13:44 [WARN] ID#66 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-4 获取问题详情.ev4" SIZE="45948624"
+2019-03-07 22:13:49 [WARN] ID#64 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-2 新建提问.ev4" SIZE="87723536"
+2019-03-07 22:13:54 [WARN] ID#76 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-6 修改个人密码-前端联调.ev4" SIZE="16290304"
+2019-03-07 22:14:02 [WARN] ID#66 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-4 获取问题详情.ev4" SIZE="45948624"
+2019-03-07 22:14:02 [WARN] ID#76 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-6 修改个人密码-前端联调.ev4" SIZE="16290304"
+2019-03-07 22:14:08 [WARN] ID#76 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-6 修改个人密码-前端联调.ev4" SIZE="16290304"
+2019-03-07 22:14:09 [WARN] ID#77 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-7 个人消息接口-1.ev4" SIZE="128061376"
+2019-03-07 22:14:12 [WARN] ID#77 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-7 个人消息接口-1.ev4" SIZE="128061376"
+2019-03-07 22:14:14 [WARN] ID#77 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-7 个人消息接口-1.ev4" SIZE="128061376"
+2019-03-07 22:14:17 [WARN] ID#79 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-9 消息相关接口-前后端联调.ev4" SIZE="9373216"
+2019-03-07 22:14:20 [WARN] ID#79 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-9 消息相关接口-前后端联调.ev4" SIZE="9373216"
+2019-03-07 22:14:21 [WARN] ID#79 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-9 消息相关接口-前后端联调.ev4" SIZE="9373216"
+2019-03-07 22:14:22 [WARN] ID#78 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-8 个人消息接口-2.ev4" SIZE="95185248"
+2019-03-07 22:14:23 [WARN] ID#80 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第14章  部署上线/14-1 阿里云(centos)的生产环境部署-1.ev4" SIZE="130146480"
+2019-03-07 22:14:24 [WARN] ID#78 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-8 个人消息接口-2.ev4" SIZE="95185248"
+2019-03-07 22:14:27 [WARN] ID#80 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第14章  部署上线/14-1 阿里云(centos)的生产环境部署-1.ev4" SIZE="130146480"
+2019-03-07 22:14:28 [WARN] ID#78 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-8 个人消息接口-2.ev4" SIZE="95185248"
+2019-03-07 22:14:30 [WARN] ID#80 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第14章  部署上线/14-1 阿里云(centos)的生产环境部署-1.ev4" SIZE="130146480"
+2019-03-07 22:14:30 [WARN] ID#81 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第14章  部署上线/14-2 阿里云(centos)的生产环境部署-2.ev4" SIZE="125442912"
+2019-03-07 22:14:33 [WARN] ID#81 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第14章  部署上线/14-2 阿里云(centos)的生产环境部署-2.ev4" SIZE="125442912"
+2019-03-07 22:14:37 [WARN] ID#81 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第14章  部署上线/14-2 阿里云(centos)的生产环境部署-2.ev4" SIZE="125442912"
+2019-03-07 22:15:47 [WARN] ID#68 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-6 获取回答的回复.ev4" SIZE="56627584"
+2019-03-07 22:15:51 [WARN] ID#68 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/第12章  问答相关功能开发/12-6 获取回答的回复.ev4" SIZE="56627584"
+2019-03-07 22:16:00 [WARN] ID#74 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-4 头像修改功能-前后端联调.ev4" SIZE="21174160"
+2019-03-07 22:16:11 [WARN] ID#72 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-2 基本信息修改-前端联调.ev4" SIZE="19185504"
+2019-03-07 22:17:03 [WARN] ID#58 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-2 小程序优化之UI优化.ev4" SIZE="145166928"
+2019-03-07 22:17:44 [WARN] ID#59 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-3 小程序优化之逻辑优化.ev4" SIZE="223624224"
+2019-03-07 22:17:46 [WARN] ID#59 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-3 小程序优化之逻辑优化.ev4" SIZE="223624224"
+2019-03-07 22:18:40 [WARN] ID#53 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/8-5 Django uWSGI部署.ev4" SIZE="153979440"
+2019-03-07 22:18:50 [WARN] ID#75 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-5 修改个人密码.ev4" SIZE="71099824"
+2019-03-07 22:22:23 [WARN] ID#69 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/第13章 个人中心相关功能开发/13-1 修改个人信息接口.ev4" SIZE="143920864"
+2019-03-07 22:34:22 [WARN] ID#11 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/2-8 小程序对接Django.ev4" SIZE="41647360"
+2019-03-07 22:34:22 [WARN] ID#12 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/2-9 小程序的发布流程.ev4" SIZE="25576752"
+2019-03-07 22:34:22 [WARN] ID#1 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/资料/Jarvis-master.zip" SIZE="445613481"
+2019-03-07 22:34:22 [WARN] ID#16 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-3 实现个人助手功能清单发布.ev4" SIZE="75242960"
+2019-03-07 22:34:22 [WARN] ID#19 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-6 Django图文消息应用.ev4" SIZE="173119520"
+2019-03-07 22:34:22 [WARN] ID#17 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-4 实现图文消息.ev4" SIZE="93571648"
+2019-03-07 22:34:22 [WARN] ID#14 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-10 综合实践之休闲娱乐-下.ev4" SIZE="63748272"
+2019-03-07 22:34:22 [WARN] ID#13 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-1 Request&Response对象.ev4" SIZE="145697280"
+2019-03-07 22:34:22 [WARN] ID#2 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/1-1 Django+小程序技术打造微信小程序助手.ev4" SIZE="89130336"
+2019-03-07 22:34:23 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529346990324450925}
+2019-03-07 22:34:23 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529346991388501593}
+2019-03-07 22:34:23 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529346992856975924}
+2019-03-07 22:34:23 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529346991171501739}
+2019-03-07 22:34:23 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529346993930436949}
+2019-03-07 22:34:23 [WARN] ID#3 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/10-1 课程总结.ev4" SIZE="137567600"
+2019-03-07 22:34:23 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529346991226758395}
+2019-03-07 22:34:23 [WARN] ID#1 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/资料/Jarvis-master.zip" SIZE="445613481"
+2019-03-07 22:34:23 [WARN] ID#2 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/1-1 Django+小程序技术打造微信小程序助手.ev4" SIZE="89130336"
+2019-03-07 22:34:23 [WARN] ID#13 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-1 Request&Response对象.ev4" SIZE="145697280"
+2019-03-07 22:34:23 [WARN] ID#14 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-10 综合实践之休闲娱乐-下.ev4" SIZE="63748272"
+2019-03-07 22:34:23 [WARN] ID#16 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-3 实现个人助手功能清单发布.ev4" SIZE="75242960"
+2019-03-07 22:34:23 [WARN] ID#19 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-6 Django图文消息应用.ev4" SIZE="173119520"
+2019-03-07 22:34:24 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529347157363162895}
+2019-03-07 22:34:24 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529347243771001819}
+2019-03-07 22:34:24 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529347233349336744}
+2019-03-07 22:34:24 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529347244591568532}
+2019-03-07 22:34:24 [WARN] ID#3 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/10-1 课程总结.ev4" SIZE="137567600"
+2019-03-07 22:34:24 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529347243807031128}
+2019-03-07 22:34:24 [WARN] ID#20 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-7 综合实践之生活服务-上.ev4" SIZE="105652720"
+2019-03-07 22:34:24 [WARN] ID#22 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-9  综合实践之休闲娱乐-上.ev4" SIZE="75114368"
+2019-03-07 22:34:24 [WARN] ID#25 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-3 小程序的状态管理.ev4" SIZE="115246928"
+2019-03-07 22:34:24 [WARN] ID#21 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-8 综合实践之生活服务-下.ev4" SIZE="91728304"
+2019-03-07 22:34:24 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529347384987504539}
+2019-03-07 22:34:24 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529347370739479899}
+2019-03-07 22:34:24 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529347383653387023}
+2019-03-07 22:34:25 [WARN] ID#13 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/3-1 Request&Response对象.ev4" SIZE="145697280"
+2019-03-07 22:34:25 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529347486394893761}
+2019-03-07 22:34:25 [WARN] ID#26 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-4 实现登录功能.ev4" SIZE="157356672"
+2019-03-07 22:34:25 [WARN] ID#28 - 您的账号可能已被百度限速(-3) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-6 复杂多变的用户状态管理.ev4" SIZE="66496832"
+2019-03-07 22:34:25 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529346992835007094}
+2019-03-07 22:34:25 [WARN] aria2.forceRemove error (1): Active Download not found for GID#39903c168ffcee97
+2019-03-07 22:34:25 [WARN] aria2.forceRemove error (1): Active Download not found for GID#e7f29b390753afa4
+2019-03-07 22:34:25 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529347550096719098}
+2019-03-07 22:34:25 [WARN] script log (默认): {"error_code":31326,"error_msg":"user is not authorized, hitcode:117","request_id":1529347637014397832}
+2019-03-07 22:34:26 [WARN] ID#12 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/2-9 小程序的发布流程.ev4" SIZE="25576752"
+2019-03-07 22:34:26 [WARN] ID#23 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/4-1 章节导学.ev4" SIZE="20230224"
+2019-03-07 22:34:28 [WARN] ID#12 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/2-9 小程序的发布流程.ev4" SIZE="25576752"
+2019-03-07 22:40:25 [WARN] ID#3 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/9-5 部署发布要点.ev4" SIZE="42440720"
+2019-03-07 22:57:17 [WARN] ID#16 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-9 综合实践：基于邮件通知的服务监控和告警系统.ev4" SIZE="264078064"
+2019-03-07 22:59:52 [WARN] ID#23 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/Django2.0+小程序技术打造微信小程序助手/7-2 Django 日志模块.ev4" SIZE="179486528"
+2019-03-07 23:05:23 [WARN] request error (0x200000001): https://pan.baidu.com/api/quota {"errno":1,"request_id":1529845768097818030}
+2019-03-08 01:06:44 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 
+2019-03-08 01:07:05 [WARN] request error (0x100000006): https://pan.baidu.com/api/quota 

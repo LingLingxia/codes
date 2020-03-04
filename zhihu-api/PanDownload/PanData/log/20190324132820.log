@@ -1,0 +1,29 @@
+2019-03-24 13:28:21 [INFO] pandownload version: 2.0.8 beta
+2019-03-24 13:28:25 [INFO] aria2 websocket connection opened (127.0.0.1:6808)
+2019-03-24 13:28:25 [INFO] aria2 version: 1.34.0
+2019-03-24 13:28:25 [INFO] aria2 json-rpc path: http://token:pandownload@127.0.0.1:6808/jsonrpc
+2019-03-24 13:28:25 [INFO] create main window
+2019-03-24 13:28:25 [INFO] verify cookie (601)
+2019-03-24 13:28:25 [INFO] verify cookie (575)
+2019-03-24 13:28:25 [INFO] verify cookie (571)
+2019-03-24 13:28:28 [INFO] user login success (1320229889): 810642693a
+2019-03-24 13:28:36 [INFO] user login success (4052464532): zji739
+2019-03-24 13:31:28 [WARN] rpc error (0): timeout
+2019-03-24 13:31:38 [WARN] get sign error: sign1=43c85190b2e509c7181fbcee87baa1f8e9ed49af sign2=9hhFNJVfRWjwBWBPBQiV81R1%2BzH3aW%2BFJULliZUBt3NlHpP3KXfRgQ%3D%3D errmsg=
+2019-03-24 13:31:38 [WARN] rpc error (0): timeout
+2019-03-24 13:31:39 [WARN] get sign error: sign1=43c85190b2e509c7181fbcee87baa1f8e9ed49af sign2=9hhFNJVfRWjwBWBPBQiV81R1%2BzH3aW%2BFJULliZUBt3NlHpP3KXfRgQ%3D%3D errmsg=
+2019-03-24 13:31:40 [WARN] get sign error: sign1=2da59b57a8aafc68bc3497f973ed4a51de2ba1d6 sign2=8E9HOZkMSW%2FzD2QbU1LA%2FAcu%2BWOsPWzZKkbijMBR5HpkQsTxfH%2FU0Q%3D%3D errmsg=
+2019-03-24 13:31:47 [WARN] rpc error (0): timeout
+2019-03-24 13:31:52 [WARN] rpc error (0): timeout
+2019-03-24 13:31:54 [WARN] rpc error (0): timeout
+2019-03-24 13:31:57 [WARN] rpc error (0): timeout
+2019-03-24 13:32:03 [WARN] rpc error (0): timeout
+2019-03-24 13:32:08 [WARN] rpc error (0): timeout
+2019-03-24 13:32:12 [WARN] aria2.forcePause error (1): GID#145e2839c1c0e364 cannot be paused now
+2019-03-24 13:32:12 [WARN] aria2.forcePause error (1): GID#1c8cc866685d19db cannot be paused now
+2019-03-24 13:32:12 [WARN] aria2.forcePause error (1): GID#6ac5d2c84da18cfa cannot be paused now
+2019-03-24 13:32:13 [INFO] close main window
+2019-03-24 13:32:17 [WARN] rpc error (0): timeout
+2019-03-24 13:32:17 [WARN] ID#9 - timeout(0) FILE="C:/Users/Administrator/Desktop/webp/6-3 如何编写一个 Plugin.vep" SIZE="176606167"
+2019-03-24 13:32:18 [INFO] websocket client stop
+2019-03-24 13:32:18 [INFO] exit

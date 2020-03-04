@@ -1,0 +1,47 @@
+2019-03-27 00:49:17 [INFO] pandownload version: 2.0.8 beta
+2019-03-27 00:49:19 [INFO] aria2 websocket connection opened (127.0.0.1:6808)
+2019-03-27 00:49:20 [INFO] aria2 version: 1.34.0
+2019-03-27 00:49:20 [INFO] aria2 json-rpc path: http://token:pandownload@127.0.0.1:6808/jsonrpc
+2019-03-27 00:49:20 [INFO] create main window
+2019-03-27 00:49:20 [INFO] verify cookie (575)
+2019-03-27 00:49:20 [INFO] verify cookie (571)
+2019-03-27 00:49:20 [INFO] verify cookie (601)
+2019-03-27 00:49:22 [INFO] user login success (3678112201): Nr
+2019-03-27 00:49:22 [INFO] user login success (1320229889): 810642693a
+2019-03-27 00:49:22 [INFO] user login success (4052464532): zji739
+2019-03-27 00:49:53 [WARN] rpc error (0): timeout
+2019-03-27 00:50:05 [WARN] rpc error (0): timeout
+2019-03-27 00:50:13 [WARN] rpc error (0): timeout
+2019-03-27 00:50:22 [WARN] rpc error (0): timeout
+2019-03-27 00:50:25 [WARN] aria2.removeDownloadResult error (1): Could not remove download result of GID#66e3355f25bf55f5
+2019-03-27 00:50:25 [WARN] aria2.removeDownloadResult error (1): Could not remove download result of GID#7310cb49545ee5f8
+2019-03-27 00:50:26 [WARN] aria2.forceRemove error (1): Active Download not found for GID#7c4bb1b2f173d30e
+2019-03-27 00:50:26 [WARN] aria2.forcePause error (1): GID#7c4bb1b2f173d30e cannot be paused now
+2019-03-27 00:50:26 [FATAL] Unhandled Exception!
+
+ExpCode:    0xC0000005
+ExpReason:  ACCESS_VIOLATION
+ExpFlags:   0
+ExpAddress: 0x0114D55E
+
+Registers:
+EAX=057BF88C EBX=057BF8A0 ECX=00000000
+EDX=00000000 ESI=057BF9A0 EDI=057BF9D0
+EIP=0114D55E ESP=057BF81C EBP=057BF898
+CS=0023 SS=002B DS=002B
+ES=002B FS=0053 GS=002B
+Flags=00010282
+
+Call stack:
+0114D55E (PanDownload): (filename not available): (function-name not available)
+0114D448 (PanDownload): (filename not available): (function-name not available)
+0114C40F (PanDownload): (filename not available): (function-name not available)
+01142EE9 (PanDownload): (filename not available): (function-name not available)
+0114262E (PanDownload): (filename not available): (function-name not available)
+01149178 (PanDownload): (filename not available): (function-name not available)
+0131C2D7 (PanDownload): (filename not available): (function-name not available)
+7674338A (kernel32): (filename not available): BaseThreadInitThunk
+775F9902 (ntdll): (filename not available): RtlInitializeExceptionChain
+775F98D5 (ntdll): (filename not available): RtlInitializeExceptionChain
+
+2019-03-27 00:50:26 [WARN] aria2.forceRemove error (1): Active Download not found for GID#7c4bb1b2f173d30e

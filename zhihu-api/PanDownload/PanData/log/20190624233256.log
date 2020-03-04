@@ -1,0 +1,91 @@
+2019-06-24 23:32:57 [INFO] pandownload version: 2.1.1 beta
+2019-06-24 23:32:58 [INFO] aria2 websocket connection opened (127.0.0.1:36805)
+2019-06-24 23:32:58 [INFO] aria2 version: 1.34.0
+2019-06-24 23:32:58 [INFO] aria2 json-rpc path: http://token:pandownload@127.0.0.1:36805/jsonrpc
+2019-06-24 23:32:59 [INFO] create main window
+2019-06-24 23:32:59 [INFO] verify cookie (600)
+2019-06-24 23:33:01 [INFO] user login success (4052464532): zji739
+2019-06-24 23:34:31 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:34:58 [WARN] rpc error (0): timeout
+2019-06-24 23:35:06 [WARN] rpc error (0): timeout
+2019-06-24 23:35:22 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:35:23 [WARN] rpc error (0): timeout
+2019-06-24 23:36:00 [WARN] ID#10 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/7-6 model场景分析-新增逻辑_batch.vep" SIZE="33723263"
+2019-06-24 23:36:34 [WARN] rpc error (0): timeout
+2019-06-24 23:37:13 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:38:03 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:38:45 [WARN] rpc error (0): timeout
+2019-06-24 23:38:52 [WARN] rpc error (0): timeout
+2019-06-24 23:38:54 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:40:02 [WARN] rpc error (0): timeout
+2019-06-24 23:40:47 [WARN] rpc error (0): timeout
+2019-06-24 23:41:26 [WARN] rpc error (0): timeout
+2019-06-24 23:41:33 [WARN] ID#10 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/7-6 model场景分析-新增逻辑_batch.vep" SIZE="33723263"
+2019-06-24 23:41:43 [WARN] rpc error (0): timeout
+2019-06-24 23:41:49 [WARN] ID#10 - SSL/TLS handshake failure: Error: 给函数提供的标志无效
+(80090308)(1) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/7-6 model场景分析-新增逻辑_batch.vep" SIZE="33723263"
+2019-06-24 23:42:18 [WARN] rpc error (0): timeout
+2019-06-24 23:42:39 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:43:08 [WARN] rpc error (0): timeout
+2019-06-24 23:43:43 [WARN] rpc error (0): timeout
+2019-06-24 23:43:48 [WARN] rpc error (0): timeout
+2019-06-24 23:43:51 [WARN] ID#21 - Timeout.(2) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/6-2 执行控制器中的方法_batch.vep" SIZE="81623070"
+2019-06-24 23:43:57 [WARN] ID#26 - Timeout.(2) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/5-6 调试模式以及代码冗余细.vep" SIZE="72431227"
+2019-06-24 23:44:30 [WARN] ID#20 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/6-3 执行autoResponse调度_batch.vep" SIZE="64868016"
+2019-06-24 23:44:57 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:45:28 [WARN] rpc error (0): timeout
+2019-06-24 23:45:38 [WARN] rpc error (0): timeout
+2019-06-24 23:45:43 [WARN] rpc error (0): timeout
+2019-06-24 23:45:47 [WARN] ID#24 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/5-8 路由定.vep" SIZE="66121367"
+2019-06-24 23:45:48 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:46:01 [WARN] ID#28 - No URI available.(2) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/5-4 框架执行流程初始化应用init分析 - 场景分.vep" SIZE="68266675"
+2019-06-24 23:46:24 [WARN] rpc error (0): timeout
+2019-06-24 23:46:30 [WARN] rpc error (0): timeout
+2019-06-24 23:46:39 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:47:12 [WARN] request error (0x10000001c): https://pan.baidu.com/rest/2.0/membership/speeds/freqctrl?method=get 
+2019-06-24 23:48:29 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:49:14 [WARN] rpc error (0): timeout
+2019-06-24 23:49:20 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:49:30 [WARN] rpc error (0): timeout
+2019-06-24 23:49:35 [WARN] rpc error (0): timeout
+2019-06-24 23:49:40 [WARN] rpc error (0): timeout
+2019-06-24 23:49:45 [WARN] rpc error (0): timeout
+2019-06-24 23:49:51 [WARN] ID#42 - 获取下载链接失败(-6) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/5-13 路由参数分析.vep" SIZE="82915603"
+2019-06-24 23:49:52 [WARN] ID#41 - 获取下载链接失败(-6) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/5-14 变量规.vep" SIZE="42150617"
+2019-06-24 23:49:52 [WARN] ID#37 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/5-18 route-check 检测URL路由.vep" SIZE="65134589"
+2019-06-24 23:50:42 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:52:33 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:53:24 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:54:14 [WARN] request error (0x10000001c): https://pan.baidu.com/rest/2.0/membership/speeds/freqctrl?method=get 
+2019-06-24 23:54:14 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:55:56 [WARN] aria2.removeDownloadResult error (1): Could not remove download result of GID#cd8429f73dc864b7
+2019-06-24 23:55:56 [WARN] aria2.removeDownloadResult error (1): Could not remove download result of GID#e6dc16006139dc19
+2019-06-24 23:55:56 [WARN] aria2.removeDownloadResult error (1): Could not remove download result of GID#7cdd7894f849f2fd
+2019-06-24 23:55:56 [WARN] aria2.removeDownloadResult error (1): Could not remove download result of GID#3e6be7ba717d886e
+2019-06-24 23:55:56 [WARN] aria2.removeDownloadResult error (1): Could not remove download result of GID#43f1d2ae15076818
+2019-06-24 23:55:56 [WARN] aria2.removeDownloadResult error (1): Could not remove download result of GID#05b668c47bffeec6
+2019-06-24 23:55:56 [WARN] aria2.removeDownloadResult error (1): Could not remove download result of GID#f1e1b7b48f00a957
+2019-06-24 23:55:56 [WARN] aria2.removeDownloadResult error (1): Could not remove download result of GID#64024b05c507eec1
+2019-06-24 23:55:56 [WARN] aria2.removeDownloadResult error (1): Could not remove download result of GID#531015d4d49711ad
+2019-06-24 23:55:56 [WARN] aria2.removeDownloadResult error (1): Could not remove download result of GID#8957c2b71ef9edd8
+2019-06-24 23:56:49 [WARN] request error (0x200000070): https://pan.baidu.com/api/sharedownload {"errno":112,"request_id":4058692598874323346,"server_time":1561391808}
+2019-06-24 23:57:44 [WARN] ID#46 - SSL/TLS handshake failure: Error: 给函数提供的标志无效
+(80090308)(1) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/5-1 【框架执行流程】初始化应用的数据设置.vep" SIZE="105557781"
+2019-06-24 23:58:35 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-24 23:58:45 [WARN] ID#45 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/5-10 路由规则预处理讲.vep" SIZE="95776875"
+2019-06-24 23:59:25 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-25 00:00:23 [WARN] ID#18 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/6-5 fastcgi_finish_request方法巧用_batch.vep" SIZE="15445413"
+2019-06-25 00:02:18 [WARN] ID#18 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/6-5 fastcgi_finish_request方法巧用_batch.vep" SIZE="15445413"
+2019-06-25 00:04:20 [WARN] ID#18 - The response status is not successful. status=503(29) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/6-5 fastcgi_finish_request方法巧用_batch.vep" SIZE="15445413"
+2019-06-25 00:14:05 [WARN] ID#46 - No URI available.(1) FILE="C:/Users/Administrator/Desktop/BAT资深工程师由浅入深分析Tp5和Tp6底层源码-v/5-1 【框架执行流程】初始化应用的数据设置.vep" SIZE="105557781"
+2019-06-25 00:17:06 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-25 00:18:24 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-25 00:19:14 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-25 00:21:05 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-25 00:21:56 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-25 00:22:46 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-25 00:23:59 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-25 00:30:01 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-25 00:30:52 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-25 00:36:09 [WARN] request error (0x10000001c): https://pan.baidu.com/api/quota 
+2019-06-25 00:39:07 [WARN] aria2 websocket connection closed (127.0.0.1:36805), code: 1006 (Abnormal close), reason: 

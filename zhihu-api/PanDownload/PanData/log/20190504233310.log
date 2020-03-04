@@ -1,0 +1,104 @@
+2019-05-04 23:33:10 [INFO] pandownload version: 2.1.0 beta
+2019-05-04 23:33:11 [INFO] aria2 websocket connection opened (127.0.0.1:6808)
+2019-05-04 23:33:11 [INFO] aria2 version: 1.34.0
+2019-05-04 23:33:11 [INFO] aria2 json-rpc path: http://token:pandownload@127.0.0.1:6808/jsonrpc
+2019-05-04 23:33:11 [INFO] create main window
+2019-05-04 23:33:11 [INFO] verify cookie (600)
+2019-05-04 23:33:13 [INFO] user login success (4052464532): zji739
+2019-05-04 23:37:14 [WARN] ID#13 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤一：ES6基础/06.项目：ES6实现图片切换特效/第2章 案例实现/2-3 需求分析.vep" SIZE="12768097"
+2019-05-04 23:39:38 [WARN] ID#35 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤一：ES6基础/05.ES6 class/第6章 封装形变类/6-1 封装形变类（1）.vep" SIZE="55466665"
+2019-05-04 23:40:27 [WARN] ID#62 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤一：ES6基础/05.ES6 class/第2章 Class 的基本语法/2-5 音乐播放器类实例.vep" SIZE="46689885"
+2019-05-04 23:41:19 [WARN] ID#88 - No URI available.(22) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤一：ES6基础/04.ES6 Promise/第2章 Promise详细介绍（难点，多听几遍，多练习）/2-16 小案例.vep" SIZE="75502945"
+2019-05-04 23:43:57 [WARN] ID#176 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤一：ES6基础/03.ES6扩展/第2章 字符串扩展/2-1 模版字符串.vep" SIZE="77564743"
+2019-05-04 23:44:29 [WARN] ID#204 - The response status is not successful. status=403(22) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤一：ES6基础/02.ES6变量的解构赋值/第2章 解构赋值/2-12 数值与布尔值的解构赋值.vep" SIZE="16715925"
+2019-05-04 23:46:16 [WARN] ID#233 - Write disk cache flush failure index=19(9) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/06.实战：Vue 完成分类、搜索页/第3章 项目构建打包/3-2 课程总结.vep" SIZE="28801002"
+2019-05-04 23:46:16 [WARN] ID#234 - Write disk cache flush failure index=6(9) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/06.实战：Vue 完成分类、搜索页/第3章 项目构建打包/3-1 项目构建打包.vep" SIZE="27768326"
+2019-05-04 23:46:16 [WARN] aria2 websocket connection closed (127.0.0.1:6808), code: 1006 (Abnormal close), reason: 
+2019-05-04 23:46:18 [WARN] aria2 websocket connection failed (127.0.0.1:6808), state: 3 (websocketpp.transport:2 - Underlying Transport Error)
+	local close code: 1006 (Abnormal close), local close reason: Underlying Transport Error
+	remote close code: 1006 (Abnormal close), remote close reason: 
+2019-05-04 23:46:20 [WARN] aria2 websocket connection failed (127.0.0.1:6808), state: 3 (websocketpp.transport:2 - Underlying Transport Error)
+	local close code: 1006 (Abnormal close), local close reason: Underlying Transport Error
+	remote close code: 1006 (Abnormal close), remote close reason: 
+2019-05-04 23:46:21 [WARN] rpc error (0): timeout
+2019-05-04 23:46:21 [WARN] rpc error (0): connection failed
+2019-05-04 23:46:21 [WARN] rpc error (0): connection failed
+2019-05-04 23:46:21 [WARN] rpc error (0): connection failed
+2019-05-04 23:46:21 [WARN] rpc error (0): connection failed
+2019-05-04 23:46:21 [WARN] rpc error (0): connection failed
+2019-05-04 23:46:21 [WARN] rpc error (0): connection failed
+2019-05-04 23:46:21 [WARN] rpc error (0): connection failed
+2019-05-04 23:46:27 [WARN] rpc error (0): connection failed
+2019-05-04 23:46:31 [WARN] rpc error (0): connection failed
+2019-05-04 23:46:36 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:27 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:27 [WARN] ID#272 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/04.实战：项目准备与骨架搭建/资料/资料.zip" SIZE="3560425"
+2019-05-04 23:47:27 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:27 [WARN] ID#296 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/03.项目：Vue搭建课程首页/第2章 环境配置/2-4 sketch设计稿介绍.vep" SIZE="20134703"
+2019-05-04 23:47:27 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:27 [WARN] ID#295 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/03.项目：Vue搭建课程首页/第3章 vue案例/3-1 实现header部分.vep" SIZE="465"
+2019-05-04 23:47:28 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:28 [WARN] ID#273 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/04.实战：项目准备与骨架搭建/第3章 项目骨架搭建/3-3 vue-router.vep" SIZE="58764377"
+2019-05-04 23:47:28 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:28 [WARN] ID#296 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/03.项目：Vue搭建课程首页/第2章 环境配置/2-4 sketch设计稿介绍.vep" SIZE="20134703"
+2019-05-04 23:47:29 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:29 [WARN] ID#274 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/04.实战：项目准备与骨架搭建/第3章 项目骨架搭建/3-2 Tabbar 组件.vep" SIZE="59740095"
+2019-05-04 23:47:29 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:29 [WARN] ID#297 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/03.项目：Vue搭建课程首页/第2章 环境配置/2-3 选择练习2.png" SIZE="3782187"
+2019-05-04 23:47:30 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:30 [WARN] ID#275 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/04.实战：项目准备与骨架搭建/第3章 项目骨架搭建/3-1 页面结构和根组件.vep" SIZE="461"
+2019-05-04 23:47:31 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:31 [WARN] ID#276 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/04.实战：项目准备与骨架搭建/第2章 项目准备/2-4 初始化项目.vep" SIZE="455"
+2019-05-04 23:47:31 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:31 [WARN] ID#299 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/03.项目：Vue搭建课程首页/第2章 环境配置/2-2 移动端项目配置.vep" SIZE="459"
+2019-05-04 23:47:31 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:31 [WARN] ID#298 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/03.项目：Vue搭建课程首页/第2章 环境配置/2-3 选择练习.png" SIZE="3782187"
+2019-05-04 23:47:32 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:32 [WARN] ID#277 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/04.实战：项目准备与骨架搭建/第2章 项目准备/2-3 公共资源的准备.vep" SIZE="38795951"
+2019-05-04 23:47:32 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:32 [WARN] ID#299 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/03.项目：Vue搭建课程首页/第2章 环境配置/2-2 移动端项目配置.vep" SIZE="459"
+2019-05-04 23:47:33 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:33 [WARN] ID#278 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/04.实战：项目准备与骨架搭建/第2章 项目准备/2-2 文件和目录结构.vep" SIZE="41572899"
+2019-05-04 23:47:33 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:33 [WARN] ID#301 - connection failed(0) FILE="C:/Users/Administrator/Desktop/Vue与React高级框架开发 2019版-v/步骤二：Vue项目实战/03.项目：Vue搭建课程首页/第1章 课程简介（掌握vue开发的基本流程）/1-1 课程介绍.vep" SIZE="10693893"
+2019-05-04 23:47:33 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:33 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:33 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:33 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:33 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:33 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:33 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:37 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:37 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:37 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:37 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:37 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:37 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:37 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:44 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:44 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:44 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:44 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:44 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:44 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:44 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:50 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:50 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:50 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:50 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:50 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:50 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:50 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:51 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:52 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:55 [INFO] close main window
+2019-05-04 23:47:55 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:55 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:55 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:55 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:55 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:55 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:55 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:55 [WARN] rpc error (0): connection failed
+2019-05-04 23:47:56 [INFO] websocket client stop
+2019-05-04 23:47:56 [INFO] exit

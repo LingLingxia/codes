@@ -10,7 +10,7 @@ const path = require('path');
 mongoose.connect(connectionStr,{useNewUrlParser: true},()=>{
   console.log('mongo链接成功')
 })
-mongoose.connection.on('error',console.error);
+mongoose.connection.on('error---------',console.error);
 
 app.use(koaBody({
   multipart:true,
