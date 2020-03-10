@@ -11,7 +11,7 @@ class AnswersCtl {
       .limit(perPage).skip(page * perPage);
   }
   async checkAnswerExist(ctx, next) {
-    const answer = await Answer.findById(ctx.params.id).select('+answerer');
+    const answer = await Answer.findById(ctx.params.id).select('+answerer');//返回的是一个类吗？
     if (!answer) { ctx.throw(404, '答案不存在'); }
     // 只有删改查答案时候检查此逻辑，赞、踩答案时候不检查
     if (ctx.params.questionId && ctx.params.questionId !== answer.questionId) {
@@ -23,7 +23,7 @@ class AnswersCtl {
   async findById(ctx) {
     const { fields = '' } = ctx.query;
     const selectFields = fields.split(';').filter(f => f).map(f => ' +' + f).join('');
-    const answer = await Answer.findById(ctx.params.id).select(selectFields).populate('answerer');
+    const answer = await Answer.findById(ctx.params.id).select(selectFields).populate('answerer');//populate是做什么的?
     ctx.body = answer;
   }
   async create(ctx) {
@@ -44,7 +44,7 @@ class AnswersCtl {
     ctx.verifyParams({
       content: { type: 'string', required: false },
     });
-    await ctx.state.answer.update(ctx.request.body);
+    await ctx.state.answer.update(ctx.request.body);//这句没明白，update为何可以调用，因为answer是一个models
     ctx.body = ctx.state.answer;
   }
   async delete(ctx) {

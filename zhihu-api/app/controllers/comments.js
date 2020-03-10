@@ -11,7 +11,8 @@ class CommentsCtl {
     ctx.body = await Comment
       .find({ content: q, questionId, answerId, rootCommentId })
       .limit(perPage).skip(page * perPage)
-      .populate('commentator replyTo');
+      .populate('commentator replyTo');//有很多场景都需要通过外键与另一张表建立关联，populate可以很方便的实现
+      //Query.populate(path, [select], [model], [match], [options])  不明白
   }
   async checkCommentExist(ctx, next) {
     const comment = await Comment.findById(ctx.params.id).select('+commentator');

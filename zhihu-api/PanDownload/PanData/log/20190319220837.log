@@ -1,9 +1,0 @@
-2019-03-19 22:08:37 [INFO] pandownload version: 2.0.8 beta
-2019-03-19 22:08:39 [INFO] aria2 websocket connection opened (127.0.0.1:6808)
-2019-03-19 22:08:39 [INFO] aria2 version: 1.34.0
-2019-03-19 22:08:39 [INFO] aria2 json-rpc path: http://token:pandownload@127.0.0.1:6808/jsonrpc
-2019-03-19 22:08:39 [INFO] create main window
-2019-03-19 22:08:39 [INFO] verify cookie (601)
-2019-03-19 22:08:39 [INFO] verify cookie (575)
-2019-03-19 22:08:39 [INFO] verify cookie (571)
-2019-03-19 22:08:42 [INFO] user login success (1320229889): 810642693a
