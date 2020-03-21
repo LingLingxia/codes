@@ -37,6 +37,9 @@
            .one .left {
                 float: left;
             }
+            .one .right{
+                margin-left: 300px;
+            }
         </style>
     </div>
 
@@ -59,7 +62,7 @@
     </div>
     <div class="three  wrap">
             <div class="left">
-              flex布局
+              flex布局 
             </div>
             <div class="right">
     
@@ -79,7 +82,7 @@
             </style>
         </div>
         <div class="four wrap">
-                <div class="left"> table-cell</div>
+                <div class="left"> table-cell设置的宽度会在内容区域不超过此宽度的时候生效   table-cell Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique minima veritatis dolor eum cumque illum. Eveniet cum ipsa culpa earum fugiat excepturi soluta error, amet officia! Non officiis adipisci quisquam!</div>
                  <div class="right"> table-cell</div>
                 <style scoped="scoped">
                     .four{
@@ -88,6 +91,7 @@
                     }
                     .four .left{
                         display: table-cell;
+                        white-space: nowrap;
     
                     }
                     .four .right{

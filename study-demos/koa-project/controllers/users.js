@@ -6,7 +6,10 @@ class UsersCtl {
     ctx.body = await User.find();
   }
   async findById(ctx){
-    const user = await User.findById(ctx.params.id);
+    const { fields } = ctx.query;
+    console.log(fields);
+    const selectFields = fields.split(';').filter(f=>f).map(f=>' +'+f).join('');//字段之间要加空格
+    const user = await User.findById(ctx.params.id).select(selectFields);
     if(!user){
       ctx.throw(404,'用户不存在');
     }
@@ -16,7 +19,7 @@ class UsersCtl {
       ctx.verifyParams({
         name:{type:'string',required:true},
         password:{type:'string',required:true},
-        avatar_url:{type:'string'},
+        avatar_url:{type:'string',required:false},
         gender:{type:'string',required:false},
         headline:{type:'string',required:false},
         locations:{type:'array',itemType:'string',required:false},
@@ -65,6 +68,46 @@ class UsersCtl {
         ctx.throw(403,'无权限');
       }
       await next();
+    }
+
+    //获取粉丝列表,实际上是一个请求用户列表的接口，限定条件为关注了ctx.params.id,
+    //不明白为什么这样写是包含关系而不是等于关系
+    async listFollowers(ctx,next){
+      const users = await User.find({followings:ctx.params.id});
+      ctx.body = users;
+    }
+    async listFollowings(ctx,next){
+      //不加populate的话 就只查出来一个id，查出来的还是这个user，但是会用用户信息填充user.followings
+       const user = await User.findById(ctx.params.id).select('+followings').populate('followings');
+       ctx.body = user.followings;
+       next();
+    }
+    async follow(ctx,next){
+      //followings是我关注的人
+     const me = await User.findById(ctx.state.user._id).select('+followings');
+     if(!me.followings.map(f=>f.toString()).includes(ctx.params.id)){
+       me.followings.push(ctx.params.id);
+       me.save()
+     }
+     console.log('成功');
+     ctx.status = 204;
+    }
+    async unfollow(ctx,next){//取关
+      const me = await User.findById(ctx.state.user._id).select('+followings');
+      const index = me.followings.map(f=>f.toString()).indexOf(ctx.params.id)
+      if(index>-1){
+        me.followings.splice(index,1);
+        me.save()
+      }
+      ctx.status = 204;
+    }
+    async checkUserExist(ctx,next){
+      const user = await User.findById(ctx.params.id);
+
+      if(!user){
+        ctx.throw(404,'用户不存在');
+      }
+    await next();//为什么不加这个await会返回404
     }
   }
   module.exports = new UsersCtl();

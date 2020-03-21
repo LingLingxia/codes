@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const { Schema,model } = mongoose;
 const userSchema = new Schema({
   __v:{type:Number,select:false},
-  name:{ type:String,required:true },
-  password:{type:String, required:true, select:false },
+  name:{ type:String,required:true},
+  password:{type:String, required:true },
   avatar_url:{type:String},
-  gender:{type:String,enum:['male','female'],default:'male',select:false},
+  gender:{type:String,enum:['male','female'],default:'male'},
   headline:{type:String,select:false},
   locations:{type:[{type:String}],select:false},
   business:{type:String,select:false},
@@ -27,6 +27,12 @@ const userSchema = new Schema({
     }],
     select: false,
   },
+  followings:{
+    type:[{
+      type:Schema.Types.ObjectId,ref:'User'//外健
+    }],
+    select:false
+  }
 })
 
  module.exports = model('User',userSchema);
