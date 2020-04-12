@@ -1,7 +1,7 @@
 //扩展运算符（spread）是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列。
 //1.用于函数参数解析    2.用于数组解析
 const numbers = [4, 38];
-add(...numbers) // 42
+//add(...numbers) // 42
 
 let a = [1,2,...[3,4]];//[1,2,3,4];
 
@@ -63,3 +63,19 @@ console.log(objArr1)//[{name:4}]
 
 
 //数组实例的copyWith
+
+//keys,values,entries的用法是因为返回的对象有iterator接口，for of可以用来迭代有iterator接口的对象
+var arr =[1,2,3,4,5];
+console.log(arr.keys(),arr.values(),arr.entries());
+for( index of arr.entries()){//每个item是一个数组
+    console.log(index);
+}
+
+//es6 的 find findIndex include的功能在es5中都由indexOf实现，但是es5不能判断NaN,（个人觉得问题不大）
+// 另一个升级就是更加语意化，简化了
+
+//数组实例的 flat()，flatMap()
+//console.log([1, 2, [3, 4,[6,7,[3]]]].flat(Infinity));//node居然报错？？浏览器正常
+[1,3].flatMap(x=>[x * 2]); //[2, 6]
+[1,3].flatMap(x=>[x,x * 2]); //[1,2,3,6]
+[1,3].map(x=>[x*2]);
