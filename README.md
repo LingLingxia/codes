@@ -1,7 +1,9 @@
 # 记录我的学习进程
-  - day-by-day/leetCode
-## 各技术栈学习笔记
+## 技术栈/书籍学习笔记
  - study-demos
 ## 可复用代码整理
 - day-by-day/some-util-js
-- 
+## 前端知识点
+- day-by-day/前端知识点整理
+## 本意是做点小玩意
+- some-projects
