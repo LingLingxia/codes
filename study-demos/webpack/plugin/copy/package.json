@@ -42,7 +42,7 @@
     "mocha": "^2.4.5",
     "ncp": "^2.0.0",
     "rimraf": "^2.6.2",
-    "standard-version": "^4.2.0"
+    "standard-version": "^8.0.1"
   },
   "homepage": "https://github.com/webpack-contrib/copy-webpack-plugin",
   "bugs": "https://github.com/webpack-contrib/copy-webpack-plugin/issues",
