@@ -9,7 +9,7 @@
   "dependencies": {
     "clean-webpack-plugin": "^1.0.0",
     "copy-webpack-plugin": "^4.6.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "toposort": "^2.0.2",
     "webpack": "^4.28.3"
   },
