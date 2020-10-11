@@ -25,7 +25,7 @@
     "globby": "^7.1.1",
     "cacache": "^10.0.4",
     "find-cache-dir": "^1.0.0",
-    "serialize-javascript": "^1.4.0",
+    "serialize-javascript": "^5.0.1",
     "is-glob": "^4.0.0",
     "loader-utils": "^1.1.0",
     "minimatch": "^3.0.4",
