@@ -32,3 +32,13 @@ Vector缺省情况 下自动增长原来一倍的数组长度，ArrayList是原�
 ## Queue结构的集合类： 
 
 Queue接口
+
+
+create table MyClass(
+ id int(4) not null primary key auto_increment,
+ name char(20) not null,
+ sex int(4) not null default '0',
+ degree double(16,2));
+
+ 
+ insert into MyClass values(1,'Tom',96.45),(2,'Joan',82.99), (2,'Wang', 96.59);
