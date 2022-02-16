@@ -1,36 +1,78 @@
-import java.lang.reflect.Array;
+
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 public class Solution64 {
     public static void main(String[] args) {
-        int[][] a = new int[1][1];
-        System.out.println(a[0][0]);
-        int[][] test = {{1,3,1},{1,5,1},{4,2,1}};
-        int ans = minPathSum(test);
-       System.out.println(ans);;
+        Solution s = new Solution();
+         s.simplifiedFractions(50);
+
     }
-    public static int minPathSum(int[][] grid) {
 
-      int x = Array.getLength(grid);
-      if(x==0) return 0;
-      int y = Array.getLength(grid[0]);
 
-      int[][] dp = new int[x][y];
+}
 
-        dp[0][0]= grid[0][0];
 
-        for(int i = 1;i<x;i++){
 
-            dp[i][0] = grid[i][0] + dp[i-1][0];
-        }
-        for(int j = 1;j<y;j++){
-            dp[0][j] = grid[0][j] + dp[0][j-1];
-        }
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
 
-        for(int i =1;i<x;i++){
-            for(int j = 1;j<y;j++){
-                dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1]) + grid[i][j];
+
+
+
+
+class Solution {
+    int [][] steps = new int[][]{
+            {0,1},{1,0},{0,-1},{-1,0}
+    };
+    public int numEnclaves(int[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+        boolean[][] visit = new boolean[m][n];
+        int ans = 0;
+
+        for(int i = 0;i<m;i++){
+            for(int j = 0;j<n;j++){
+                if(grid[i][j]==0 && !visit[i][j]){
+                    Deque<int[]> deque = new LinkedList<>();
+                    visit[i][j] =  true;
+                    deque.offerLast(new int[]{i,j});
+                    boolean valid = true;
+                    int sum = 0;
+                    while(!deque.isEmpty()){
+                        int [] current = deque.pollFirst();
+                        sum ++;
+                        for(int k = 0;k< steps.length;k++){
+                            int nx = steps[k][0] + current[0];
+                            int ny = steps[k][1] + current[1];
+                            if(nx>=0 && ny>=0 && nx <m && ny <n ){
+                                if(grid[nx][ny]==0 &&!visit[nx][ny]) {
+                                    visit[nx][ny] = true;
+                                    deque.offerLast(new int[]{nx, ny});
+                                }
+                            }else{
+                                valid = false;
+                            }
+                        }
+                    }
+                    if(valid){
+                        ans +=sum;
+                    }
+                }
             }
         }
-          return dp[x-1][y-1];
+        return ans;
     }
 }
