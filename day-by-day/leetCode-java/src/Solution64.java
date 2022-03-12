@@ -1,4 +1,6 @@
 
+import com.sun.deploy.util.ArrayUtil;
+
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -7,14 +9,12 @@ import java.util.regex.Pattern;
 public class Solution64 {
     public static void main(String[] args) {
         Solution s = new Solution();
-         s.simplifiedFractions(50);
 
+       System.out.println(s.smallestEquivalentString("parker",
+               "morris",
+               "parser"));
     }
-
-
 }
-
-
 
 class TreeNode {
     int val;
@@ -29,50 +29,69 @@ class TreeNode {
     }
 }
 
-
-
-
-
 class Solution {
-    int [][] steps = new int[][]{
-            {0,1},{1,0},{0,-1},{-1,0}
-    };
-    public int numEnclaves(int[][] grid) {
-        int m = grid.length;
-        int n = grid[0].length;
-        boolean[][] visit = new boolean[m][n];
-        int ans = 0;
-
-        for(int i = 0;i<m;i++){
-            for(int j = 0;j<n;j++){
-                if(grid[i][j]==0 && !visit[i][j]){
-                    Deque<int[]> deque = new LinkedList<>();
-                    visit[i][j] =  true;
-                    deque.offerLast(new int[]{i,j});
-                    boolean valid = true;
-                    int sum = 0;
-                    while(!deque.isEmpty()){
-                        int [] current = deque.pollFirst();
-                        sum ++;
-                        for(int k = 0;k< steps.length;k++){
-                            int nx = steps[k][0] + current[0];
-                            int ny = steps[k][1] + current[1];
-                            if(nx>=0 && ny>=0 && nx <m && ny <n ){
-                                if(grid[nx][ny]==0 &&!visit[nx][ny]) {
-                                    visit[nx][ny] = true;
-                                    deque.offerLast(new int[]{nx, ny});
-                                }
-                            }else{
-                                valid = false;
-                            }
-                        }
-                    }
-                    if(valid){
-                        ans +=sum;
-                    }
-                }
+    public boolean[] distanceLimitedPathsExist(int n, int[][] edgeList, int[][] queries) {
+        Arrays.sort(edgeList, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[2] - o2[2];
             }
+        });
+        Node[] nodes = new Node[queries.length];
+        for(int i = 0;i< queries.length;i++){
+             nodes[i] = new Node(queries[i],i);
+        }
+        Arrays.sort(nodes, new Comparator<Node>() {
+            @Override
+            public int compare(Node o1, Node o2) {
+                return o1.q[2] - o2.q[2];
+            }
+        });
+        DisjointSet set = new DisjointSet(n);
+        int k = 0;
+        boolean[] ans = new boolean[queries.length];
+        for(int i = 0;i< nodes.length;i++){
+               while(k< edgeList.length && edgeList[k][2] < nodes[i].q[2]){
+                   int x = edgeList[k][0];
+                   int y = edgeList[k][1];
+                   set.unicom(x,y);
+                   k++;
+               }
+              ans[nodes[i].index] =  set.isConnected(queries[i][0],queries[i][1]);
         }
         return ans;
     }
+    class Node{
+        int[] q ;
+        int index;
+        Node(int[] q,int index){
+            this.q = q;
+            this.index = index;
+        }
+    }
+
+    class DisjointSet{
+        int[] parent;
+        int n;
+        DisjointSet(int n){
+            this.n = n;
+            this.parent = new int[n];
+            for(int i = 0;i<n;i++){
+                parent[i] = i;
+            }
+        }
+        void unicom(int x,int y){
+            parent[find(x)] = find(y);
+        }
+        boolean isConnected(int x,int y){
+             return find(x) == find(y);
+        }
+        int find(int node){
+            if(parent[node]!=node){
+                parent[node] = find(parent[node]);
+            }
+            return parent[node];
+        }
+    }
+
 }
