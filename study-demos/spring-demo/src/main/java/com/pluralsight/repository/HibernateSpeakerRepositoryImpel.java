@@ -1,10 +1,11 @@
 package com.pluralsight.repository;
 
 import com.pluralsight.model.Speaker;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class HibernateSpeakerRepositoryImpel implements SpeakerRepository {
 
     public List<Speaker> findAll(){
