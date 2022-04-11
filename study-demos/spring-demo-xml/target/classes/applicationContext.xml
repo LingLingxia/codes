@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean name="speakerRepository" class="com.pluralsight.repository.HibernateSpeakerRepositoryImpel"/>
+
+
+<!--     1. wired by setPropertyFunction-->
+<!--    <bean name="speakerService" class="com.pluralsight.service.SpeakerServiceImpl">-->
+<!--        <property name="speakerRepository" ref="speakerRepository"></property>-->
+<!--    </bean>-->
+
+<!--      2.  wired by constructor-all-args-->
+<!--    <bean name="speakerService" class="com.pluralsight.service.SpeakerServiceImpl">-->
+<!--        <constructor-arg index="0" ref="speakerRepository"></constructor-arg>-->
+<!--    </bean>-->
+
+<!--       3. autowired   -->
+<!--        if use autowired=byName,should add a no args construstor ,and this setFunction Name should follow the name of the bean-->
+        <bean name="speakerService" class="com.pluralsight.service.SpeakerServiceImpl" autowire="byType"/>
+
+</beans>
