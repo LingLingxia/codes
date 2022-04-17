@@ -4,3 +4,11 @@
 /**/yarn.lock
 /**/package-lock.json
 .vscode
+
+/**/.idea/
+
+.idea/
+
+dist/
+
+node_modules/
