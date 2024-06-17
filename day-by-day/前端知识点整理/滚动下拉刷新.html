@@ -5,8 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .scroll-wrap{
+            height: 500px;
+            overflow: scroll;
+            width: 200px;
+            }
+            .scroll-wrap::-webkit-scrollbar{
+            display: none;
+            }
+
+            .scroll-item{
+            height: 100px;
+            margin: 10px;
+            background-color: pink;
+            }
+    </style>
 </head>
 <body>
-    
+ import React, { useEffect, useRef, useState } from "react";
+
+
+function debounce(fn,time = 400){
+    let timeout = null;
+    return function(...arg){
+        clearTimeout(timeout);
+        timeout = setTimeout(()=>{
+            fn.apply(this,arg);
+        },time)
+    }
+}
+
+function throttle(fn, time = 400){
+    let lastTime = 0;
+    return function(...arg){
+        let now = Date.now();
+        if(now - lastTime>=time){
+            fn.apply(this,arg);
+            lastTime = now
+        }
+    }
+}
+
+
+const ScrollRefresh = ()=>{
+    const [list,setList] = useState([1,2,3,4,5]);
+    const scrollRef = useRef(null);
+    const handleScroll = ()=>{
+        // scrollRef.clientHeight
+        // scrollRef.scrollTop
+        // scrollRef.scrollHeight
+        const node = scrollRef.current;
+        if(node.scrollTop + node.clientHeight + 50 >= node.scrollHeight){
+            let newList = [...list];
+            for(let i = 1;i<=5;i++){
+                newList.push(list[list.length - 1] + i);
+            }
+            setList(newList);
+        }
+    }
+    return <div className="scroll-wrap" ref={scrollRef} onScroll={debounce(handleScroll)}>
+         {
+            list.map((item,index)=>{
+                return <div className="scroll-item" key={index}>{item} </div>
+            })
+         }
+    </div>
+}
+
+export default ScrollRefresh;
 </body>
 </html>

@@ -59,57 +59,44 @@
       },false);
 
       //节流函数版本1 简易版
-      // function throttle(fn,time = 200){
-      //   var pending = false;
-      //   return  function (){
-      //     var self = this;
-      //     var arg = arguments;
-      //      if(!pending){
-      //        pending = true;
-      //        setTimeout(() => {
-      //          fn.apply(self,[...arg]);
-      //          pending = false;
-      //        }, time);
-      //      }
-      //   }
-      // }
-
-  function throttle(func, wait = 200, options) {
-  let time, context, args, result;
-  let previous = 0;
-  if (!options) options = {};
-
-  let later = function() {
-    //previous = options.leading === false ? 0 : new Date().getTime();
-    previous = +new Date();
-    //console.log(previous);
-    time = null;
-    func.apply(context, args);
-    if (!time) context = args = null;
-  };
-
-  let throttled = function() {
-    let now = new Date().getTime();
-    //if (!previous && options.leading === false) previous = now;
-    let remaining = wait - (now - previous);//剩下多长时间  
-    context = this;
-    args = arguments;
-    if (remaining <= 0 || remaining > wait) {//如果剩下的时间小于0或者剩下的时间大于需要等待的时间
-      if (time) {
-        clearTimeout(time);//清除计时器
-        time = null;
+      function throttle(fn,time = 200){
+        var pending = false;
+        return  function (){
+          var self = this;
+          var arg = arguments;
+           if(!pending){
+             pending = true;
+             setTimeout(() => {
+               fn.apply(self,[...arg]);
+               pending = false;
+             }, time);
+           }
+        }
       }
-      previous = now;//重新赋值以前的时间
-      func.apply(context, args); //直接执行
-      if (!time) context = args = null;
-     }
-     else if (!time) {//如果time是没有值的,就执行这个
-      time = setTimeout(later, remaining);
-    }
-  };
-  return throttled;
+
+
+
+// 2024 new edition 
+function debounce(fn,time){
+  let timeout;
+  return function(...arg){
+    clearTimeout(timeout)
+     timeout =  setTimeout(()=>{
+      fn.apply(this,arg);
+    },time)
+  }
 }
 
+function throttle(fn,time){
+  let lastTime = 0;
+  return function(...arg){
+    const now = Date.now();
+    if(now - lastTime >= time){
+      fn.apply(this,arg);
+      lastTime = now;
+    }
+  }
+}
     </script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+        width: 800px;
+        overflow: hidden;
+        height: 200px;
+
+
+        }
+        .container{
+        animation:transform 0.4s ease-in-out;
+        white-space: nowrap;
+        }
+        .slider{
+        display: inline-block;
+        width: 800px;
+        background-color: aquamarine;
+        height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        import React, { useState } from "react";
+
+const Slider = ()=>{
+
+    const [list] = useState(["picture1","picture2","picture3"])
+    const [index,setIndex]= useState(0);
+    const updateIndex = (direction)=>{
+        const newIndex = index+direction;
+        if(newIndex>=0 && newIndex<list.length){
+            setIndex(newIndex)
+        }
+    }
+    return <>
+    <div className="wrap">
+      <div className="container" id="container" 
+        style={{transform: `translateX(-${100 * index}%)`}}
+      >
+        {
+            list.map((item,ind)=>{
+                return <div key={ind} className={`slider ${ind==index?"active":"" }`}> {item}</div>
+            })
+        }
+      </div>
+    </div>
+    <div>
+    <button onClick={()=>updateIndex(-1)}>left</button>
+    <button onClick={()=>updateIndex(1)}>right</button>
+    </div>
+
+    </>
+}
+export default Slider;
+    </script>
+    
+</body>
+</html>
