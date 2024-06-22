@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "lodash": "^4.17.19",
-    "vue": "^2.5.2",
+    "uri-js": "^4.4.1",
+    "url": "^0.11.3",
+    "vue": "^2.7.16",
     "vue-router": "^3.0.1",
     "vuedraggable": "^2.21.0"
   },

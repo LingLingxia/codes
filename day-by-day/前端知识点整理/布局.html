@@ -104,13 +104,13 @@
             每排三个，左对齐
 
             <style>
-                .todo-wrap{
+                .todo-wrap1{
                     text-align: left;
                     display: flex;
                     flex-wrap: wrap;
 
                     }
-                    .todo-item{
+                    .todo-item1{
                     flex-grow: 0;
                     flex-shrink: 0;
                     flex-basis: calc(33.3% - 20px);
@@ -120,6 +120,74 @@
                     justify-content: space-between;
 
                     }
+
+            </style>
+
+            <div class="todo-wrap1">  
+                <div class="todo-item1">
+                    <span> item </span>
+                    <button > delete</button>
+                </div>
+                <div class="todo-item1">
+                    <span> item </span>
+                    <button > delete</button>
+                </div>
+                <div class="todo-item1">
+                    <span> item </span>
+                    <button > delete</button>
+                </div>
+                <div class="todo-item1">
+                    <span> item </span>
+                    <button > delete</button>
+                </div>
+                <div class="todo-item1">
+                    <span> item </span>
+                    <button > delete</button>
+                </div>
+                <div class="todo-item1">
+                    <span> item </span>
+                    <button > delete</button>
+                </div>
+                <div class="todo-item1">
+                    <span> item </span>
+                    <button > delete</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            每排三个，左对齐 grid写法
+
+            <style>
+              .todo-wrap{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: 20px;
+                justify-content: start;
+                column-gap: 10px;
+              }
+              /* grid写法实现左右对齐 */
+              /* .todo-item{
+                border: 1px solid black;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 20px;
+                justify-content: space-between;
+              }
+              .todo-item span{
+                justify-self: start;
+              }
+              .todo-item button{
+                justify-self: end;
+              } */
+              
+              /* flex 写法实现左右对齐 */
+              .todo-item{
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid black;
+              }
 
             </style>
 
