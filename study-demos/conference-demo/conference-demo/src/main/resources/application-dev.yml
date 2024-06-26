@@ -1,5 +1,0 @@
-server:
-  port: 5001
-
-app:
-  version: 1.0.3

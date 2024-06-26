@@ -1,5 +1,0 @@
-server:
-  port: 8080
-
-app:
-  version: 1.0.2

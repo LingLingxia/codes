@@ -44,7 +44,7 @@ db.languages.countDocuments()
 ```
 
 ## find
-- find the first
+- find the first （can pass parameter）
 ```
 db.languages.findOne()
 ```
@@ -97,16 +97,26 @@ db.languages.updateMany({"type":"object oriented"},{$set:{"compiled":true}})
 ```
 
 ## delete
-- remove by name
+- remove by name (old function, not recommended)
 ```
 db.languages.remove({"name":"scala"})
 ```
-- remove by type
+- remove by type(old function, not recommended)
 ```
 db.languages.remove({"type":"object oriented"})
 ```
 
-- remove all
+- remove all(old function, not recommended)
 ```
 db.languages.remove({})
+```
+
+```
+deleteOne function
+deleteMany function
+```
+
+# replace
+```
+db.languages.replaceOne({"name":"scala"},languageObject);
 ```
