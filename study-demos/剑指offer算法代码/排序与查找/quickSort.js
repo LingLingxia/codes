@@ -1,39 +1,60 @@
 //快速排序
 var a=[0,5,7,9,4,34,6,77,4,3,4];
 var b=[3,2];
+const a2 = [...a];
+const b2 = [...b];
 
-quickSortArr(a);
-console.log(a);
-quickSortArr(b);
-console.log(b);
+console.log(quickSortArr(a));
+console.log(quickSortArr(b));
+
+advancedQuickSort(a2,0,a2.length-1);
+advancedQuickSort(b2,0,b2.length-1);
+console.log(a2);
+console.log(b2);
 function quickSortArr(arr){
-    //省略类型检查
-    quickSort(arr,0,arr.length-1);
+    //省略类型检查 ,非常简单，一看即懂啊！就是后面要递归调用quickSort容易忘记
+    if(arr.length<=1) return arr;
+    const pivot = Math.floor(Math.random() * arr.length);
+    const left = [];
+    const right = [];
+    const equal = [];
+    for(let i = 0;i<arr.length;i++){
+        if(arr[i]===pivot){
+            equal.push(arr[i]);
+        }else if(arr[i]<arr[pivot]){
+            left.push(arr[i]);
+        }else{
+            right.push(arr[i])
+        }
+       
+    }
+    return [...quickSortArr(left),...equal,...quickSortArr(right)];
 }
 
-function quickSort(arr,start,end){
-   
-    if(start>=end) return ;
-    var index= start+ Math.floor(Math.random() * (end - start +1));
-    swap(arr,index,end);
-    var small= start-1;
-    for(index= start;index <end;index ++){
-        if(arr[index]<arr[end]){
-            small++;
-            if(small!=index){
-                 swap(arr,index,small);
-            }
+//原地排序 ,太难了，真服了
+
+function advancedQuickSort(arr,left,right){
+    if(left>=right) return ;
+    const pivot = left + Math.floor(Math.random() * (right - left + 1));
+    swap(arr,pivot,right);
+    let i = left;
+    let j = right-1;
+    while(i<=j){
+        if(arr[i]<arr[right]){
+            i++;
+        }else{
+            swap(arr,i,j);
+            j--
         }
     }
-    small++;
-    swap(arr,small,end);
-    quickSort(arr,start,small-1);
-    quickSort(arr,small+1,end);
+    swap(arr,i,right)
+    advancedQuickSort(arr,left,i-1);
+    advancedQuickSort(arr,i+1,right);
 }
 
+function swap(arr,i,j){
+    const tmp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = tmp;
 
-  function swap(arr,r1,r2){
-       var tmp=arr[r1];
-       arr[r1]=arr[r2];
-       arr[r2]=tmp;
-   }
+}

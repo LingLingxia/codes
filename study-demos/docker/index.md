@@ -13,7 +13,7 @@ docker pull hello-world
 docker run hello-world
 ```
 
-## list all containers (ps: 是 processes 的缩写，用于列出 Docker 容器)
+## list all containers (ps用于列出 Docker 容器)
 ```
 docker ps -a
 ```
@@ -33,7 +33,7 @@ docker build . -t myimage:v1
 ## run container 
 - docker run：运行 Docker 容器的命令。
 - -d：在后台（detached mode）运行容器，即使没有输入流也可以保持容器运行。
-- -p 8080:8080：指定端口映射，将主机的端口 8080 映射到容器内部的端口 8080。这样，外部可以通过访问主机的 8080 端口来访问容器中运行的服务。
+- -p 8080:8080：指定端口映射，主机端口8080: docker端口8080。 这样，外部可以通过访问主机的 8080 端口来访问容器中运行的服务。
 - myimage:v1：指定要运行的 Docker 镜像及其标签。这里的 myimage:v1 是之前通过 docker build 构建的镜像，:v1 表示使用版本为 v1 的镜像。
 
 ```
