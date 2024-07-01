@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);
+            width: 60%;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .grid-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            pointer-events: none;
+            box-sizing: border-box;
+        }
+
+        .grid-item:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+    </style>
+    <title>Grid Table Layout</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Cell 1</div>
+        <div class="grid-item">Cell 2</div>
+        <div class="grid-item">Cell 3</div>
+        <div class="grid-item">Cell 4</div>
+        <div class="grid-item">Cell 5</div>
+        <div class="grid-item">Cell 6</div>
+        <div class="grid-item">Cell 7</div>
+        <div class="grid-item">Cell 8</div>
+        <div class="grid-item">Cell 9</div>
+    </div>
+</body>
+</html>

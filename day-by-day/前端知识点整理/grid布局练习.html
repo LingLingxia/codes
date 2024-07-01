@@ -11,19 +11,26 @@
             grid-template-columns: 200px 1fr;
             column-gap: 10px;
         }
-        .container div{
+        .border div{
             border: 1px solid black;
-            text-align: center;
+     
         }
         .container2{
             display: grid;
             column-gap: 10px;
             grid-template-rows: repeat(3,50px);
-            grid-template-columns: repeat(3,33.3%);
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
 
         }
-        .container2 div{  
-            border: 1px solid black;
+        .container2 :first-child{
+            grid-column-start: 1;
+            grid-column-end: span 2;
+        }
+        .container2 div:nth-of-type(7){
+            display: 100px;
+            align-self: right;
+            justify-self: end;
         }
         .grid-container-1{
             display: grid;
@@ -53,17 +60,54 @@
             border: 1px solid green;
         }
 
+        .grid-container-4{
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 100px;
+        }
+
+        @media (max-width: 600px){
+            .grid-container-4{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3,100px);
+            }
+            
+        }
+
+        .flex-5{
+            display: flex;
+        }
+        .flex-5 div{
+            height: 100px;
+        }
+        .flex-5 .left{
+            flex-basis: 200px;
+        }
+        .flex-5 .right{
+            flex-basis: 200px;
+        }
+        .flex-5 .center{
+            flex-grow: 1;
+        }
+        @media (max-width: 600px){
+            .flex-5 {
+                flex-basis: 100%;
+                flex-direction: column;
+            }
+        }
+
+
 
     </style>
 </head>
 <body>
     <div>header</div>
-    <div class="container">
+    <div class="container border">
         <div>left</div>
         <div>right</div>
     </div>
 
-    <div class="container2">
+    <div class="container2 border">
         <div>1</div>
         <div>2</div>
         <div>3</div>
@@ -74,16 +118,33 @@
         <div>8</div>
         <div>9</div>
     </div>
-    <div class="grid-container-1">
+    <div class="grid-container-1 border">
         <header>Header</header>
         <div class="fixed-width">Fixed Width</div>
         <div class="flexible-width">Flexible Width</div>
     </div>
-    <div class="grid-container-3">
+    <div class="grid-container-3 border">
         <header>Header</header>
         <aside>Sidebar</aside>
         <main>Main Content</main>
         <footer>Footer</footer>
+    </div>
+    <div class="grid-container-4 border">
+        <div class="left">
+
+        </div>
+        <div class="center">
+
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+
+    <div class="flex-5 border">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
     </div>
 </body>
 </html>

@@ -1,12 +1,15 @@
 ## start
 ```
 start_mongo
+db.version()
+show dbs
+
 ```
 
 ## use password to link 
-- MzM5Mi1oYW5uYWhs is a password given by mongodb
+- Mz**************** is a password given by mongodb
 ```
-mongosh -u root -p MzM5Mi1oYW5uYWhs --authenticationDatabase admin local
+mongosh -u root -p Mz****************  --authenticationDatabase admin local
 ```
 
 ## create or switch db
@@ -119,4 +122,9 @@ deleteMany function
 # replace
 ```
 db.languages.replaceOne({"name":"scala"},languageObject);
+```
+
+# exit
+```
+exit
 ```
