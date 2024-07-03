@@ -48,7 +48,10 @@ app.post("/login", (req, res) => {
         data: user
     }, 'access', { expiresIn: 60 * 60 });
 
-    // Store access token in session
+    // 1. Store access token in session
+    // will set sessionKey in client cookie , session it self will be stored in server memory
+    // 2. store in clientSide   let tkn = req.header("Authorization");  js add this header manually 
+    //3. store in clientCookie only . set secure cookie in clientSide 
     req.session.authorization = {
         accessToken
     }

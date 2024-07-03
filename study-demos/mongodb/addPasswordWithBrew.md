@@ -37,3 +37,12 @@ db.createUser({
  ```
 mongosh --username appUser --password backend --authenticationDatabase myDatabase
 ```
+
+## start and stop
+```
+brew services start mongodb/brew/mongodb-community
+brew services stop mongodb/brew/mongodb-community
+brew services restart mongodb/brew/mongodb-community
+brew services list
+
+```

@@ -49,3 +49,18 @@ app.use(session({ secret: "fingerpint", resave: true, saveUninitialized: true })
 
 ### restful api design 
 - please reach to ./restful-auth/routes/users.js
+
+### use hash function to encrypt password
+
+- encrypt
+
+```
+const bcrypt = require("bcrypt");
+let hashedPwd = bcrypt.hashSync(userPassword,saltRounds);// store it to DB
+
+```
+
+- decrypt
+```
+let result = await bcrypt.compare(userPassword,hashedPwd);
+```
