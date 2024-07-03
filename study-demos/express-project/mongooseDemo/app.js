@@ -1,7 +1,7 @@
 
 const mongoose = require("mongoose");
 const Employee = require("./employee");
-const uri = require("./dbconfig")
+const uri = require("../config/dbconfig")
 
 mongoose.connect(uri,{"dbName":"employeeDB"});
 
