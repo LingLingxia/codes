@@ -31,7 +31,7 @@ app.get('/getelementatindex/:mystr/:idx', async (req, res, next) => {
         next( new Error("Index greater than string length"))
     }
 });
-app.use((err, req, res, next) => {
+app.use((err, req, res, next) => {// next must be added
     // Set default values for status code and status if not provided in the error object
     err.statusCode = err.statusCode || 500;
     err.status = err.status || "Error";
