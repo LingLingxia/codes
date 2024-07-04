@@ -39,7 +39,7 @@ router.use((req,res,next)=>{
 var api = express.Router();
 api.use(bodyparser.json());
 api.use(cookieParser('a'));
-api.use('/register',(req,res,next)=>{
+api.post('/register',(req,res)=>{
   const params = req.body;
   fs.readFile('./db.json','utf8',(err,data)=>{
       const userInfo = JSON.parse(data)||{};
@@ -59,7 +59,7 @@ api.use('/register',(req,res,next)=>{
   });
 });
 
-api.use('/login',(req,res,next)=>{
+api.post('/login',(req,res)=>{
     const params = req.body;
     
     req.secret = 'a';
@@ -75,7 +75,7 @@ api.use('/login',(req,res,next)=>{
     });
 })
 
-api.use('/cookieLogin',function(req,res){
+api.post('/cookieLogin',function(req,res){
     var json = req.signedCookies;
     var name = json&&json.user&&json.user.split('-');
     if(!name||name.length!=2) {
