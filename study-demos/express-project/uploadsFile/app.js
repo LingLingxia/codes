@@ -8,14 +8,26 @@ const port = 3000;
 // Set up storage for uploaded files
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, 'uploads/'); // Specify the upload directory ,must have uploads dictionary when use
+    cb(null, 'uploads/'); // Specify the upload directory ,must have uploads directory when use
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname); // Use the original file name
   },
 });
 
-const upload = multer({ storage: storage });
+const upload = multer({ 
+  storage: storage,
+  limits:{
+    fileSize: 1024 * 1024 * 5//5MB limit
+  },
+  fileFilter:(req,file,cb)=>{
+    if(file.mimetype==="image/png" || file.mimetype === "image/jpeg"){
+      cb(null,true)
+    }else{
+      cb(new Error("invalid file type"))
+    }
+  }
+});
 
 
 
