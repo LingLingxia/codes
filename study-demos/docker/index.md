@@ -50,3 +50,9 @@ docker ps
 ```
 docker stop $(docker ps -q)
 ```
+## docker with ibm cloud
+```
+docker build . -t hostname/$MY_NAMESPACE/uploadapp
+docker push hostname/$MY_NAMESPACE/uploadapp
+ibmcloud ce application create --name uploadapp --image hostname/${SN_ICR_NAMESPACE}/uploadapp --registry-secret icr-secret --port 3000
+```
