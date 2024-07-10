@@ -28,20 +28,21 @@
             align-items: center;
             position: relative;
             box-sizing: border-box;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
         }
 
-        .grid-item::after {
+        /* .grid-item::after {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            border-bottom: 1px solid black;
-            border-right: 1px solid black;
+
             pointer-events: none;
             box-sizing: border-box;
-        }
+        } */
 
         .grid-item:nth-child(odd) {
             background-color: #f9f9f9;

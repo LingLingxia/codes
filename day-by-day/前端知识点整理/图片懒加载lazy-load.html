@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="image.jpg" alt="Lazy loaded image" loading="lazy"/>
+    
+    <img data-src="image.jpg" class="lazyload">
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            const images = document.querySelectorAll("img.lazyload");
+            const observer = new IntersectionObserver((entries)=>{
+                entries.forEach(entry=>{
+                    if(entry.isIntersecting){
+                        const img = entry.target;
+                        // data-src will be transformed to dataset.src
+                        img.src = img.dataset.src;
+                        img.classList.remove("lazyload");
+                        img.onerror = ()=>{
+                            img.src = "fallback-image.jpg";
+                        }
+                        observer.unobserve(img);
+
+                    }
+                })
+            })
+            images.forEach(img=>observer.observe(img));
+        })
+    </script>
+</body>
+</html>
