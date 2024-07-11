@@ -56,3 +56,7 @@ docker build . -t hostname/$MY_NAMESPACE/uploadapp
 docker push hostname/$MY_NAMESPACE/uploadapp
 ibmcloud ce application create --name uploadapp --image hostname/${SN_ICR_NAMESPACE}/uploadapp --registry-secret icr-secret --port 3000
 ```
+
+
+## npm install --production
+- 生成的 Docker 镜像中只会包含生产环境所需的依赖，从而减轻镜像的体积。
