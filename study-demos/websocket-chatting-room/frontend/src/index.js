@@ -5,8 +5,9 @@ import App from './App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//trash strict mode!!! run twice !!! so my event listener register twice!!!
 root.render(
-  <React.StrictMode>
+
     <App />
-  </React.StrictMode>
+
 );
