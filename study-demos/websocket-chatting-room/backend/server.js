@@ -5,11 +5,24 @@ const socketIo = require("socket.io");
 const cors = require("cors");
 
 const app = express();
+// you can also add http handle logic ,and use cors for http request
+/**
+ * app.use(cors());
+
+// 使用自定义配置
+app.use(cors({
+  origin: 'https://example.com', // 只允许来自 https://example.com 的请求
+  methods: ['GET', 'POST'], // 允许的 HTTP 方法
+  allowedHeaders: ['Content-Type', 'Authorization'], // 允许的请求头
+  credentials: true, // 允许带上凭证（如 Cookie）
+  exposedHeaders: ['Authorization'], // 允许浏览器访问的响应头
+}));
+ */
 const server = http.createServer(app); 
 const io = socketIo(server,{
     cors:{
         origin:"http://localhost:5001",
-        methods:["GET","POST"] //为什么这里是GET和POST
+        methods:["GET","POST"] 
     }
 });
 const eventF = {
