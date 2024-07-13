@@ -15,3 +15,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### chatting room 
+this is a chatting room frontend app 
+
+### update webpack config
+``` npm run eject ``` or ```craco```
