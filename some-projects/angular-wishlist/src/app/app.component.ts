@@ -23,10 +23,10 @@ export class AppComponent {
   get visibleItems() :WishItem[] {
      return this.items.filter(filters[Number(this.listFilter)])
   }
-  addNewWish(){
-    this.items.push(new WishItem(this.newWishText));
-    this.newWishText = "";
-  }
+  // addNewWish(){
+  //   this.items.push(new WishItem(this.newWishText));
+  //   this.newWishText = "";
+  // }
   toggleItem(item:WishItem){
     item.isComplete = !item.isComplete;
     console.log(item);
