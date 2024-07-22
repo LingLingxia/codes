@@ -5,7 +5,7 @@
           id="" 
           class="form-select"
           [(ngModel)]="listFilter"
-          (ngModelChange)="filter()"
+          (ngModelChange)="updateFilter($event)"
         >
           <option value="0">All</option>
           <option value="1">UnFulfilled</option>

@@ -4,7 +4,7 @@
   ></add-wish-form>
   <div class="row mt-3">
       <wish-filter
-        (filterChange)="filter = $event"
+      [(filter)] = "filter"
       ></wish-filter>
   </div>
   <div class="row mt-3">
