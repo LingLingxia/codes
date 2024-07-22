@@ -3,23 +3,13 @@
       (addWish)="items.push($event)"
   ></add-wish-form>
   <div class="row mt-3">
-     <!-- (ngModelChange)="filterChanged($event)" 监听model变化，$event 等于 listFilter 的值 -->
-    <div class="col-sm-2">
-      <select 
-        name="select" 
-        id="" 
-        class="form-select"
-        [(ngModel)]="listFilter"
-      >
-        <option value="0">All</option>
-        <option value="1">UnFulfilled</option>
-        <option value="2 ">Fulfilled</option>
-      </select>
-    </div>
+      <wish-filter
+        (filterChange)="filter = $event"
+      ></wish-filter>
   </div>
   <div class="row mt-3">
       <wish-list
-        [wishes] = "visibleItems"
+        [wishes] = "items.filter(filter)"
       ></wish-list> 
   </div>
 

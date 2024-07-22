@@ -1,0 +1,14 @@
+     <!-- (ngModelChange)="filterChanged($event)" 监听model变化，$event 等于 listFilter 的值 -->
+     <div class="col-sm-2">
+        <select 
+          name="select" 
+          id="" 
+          class="form-select"
+          [(ngModel)]="listFilter"
+          (ngModelChange)="filter()"
+        >
+          <option value="0">All</option>
+          <option value="1">UnFulfilled</option>
+          <option value="2 ">Fulfilled</option>
+        </select>
+      </div>
