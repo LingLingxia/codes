@@ -7,7 +7,7 @@ import { WishListComponent } from './wish-list/wish-list.component';
 import { AddWishFormComponent } from './add-wish-form/add-wish-form.component';
 import { WishFilterComponent } from './wish-filter/wish-filter.component';
 import { WishListItemComponent } from './wish-list-item/wish-list-item.component';
-import {EventService} from "./../shared/services/EventServices";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,7 @@ import {EventService} from "./../shared/services/EventServices";
     BrowserModule,
     FormsModule
   ],
-  providers: [EventService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
