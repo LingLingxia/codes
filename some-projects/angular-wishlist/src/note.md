@@ -16,3 +16,8 @@ ng new my-angular-app --routing --style=scss --strict
 ```
 ng generate component my-component
 ```
+
+## create service
+```
+ng generate service Wish
+```
