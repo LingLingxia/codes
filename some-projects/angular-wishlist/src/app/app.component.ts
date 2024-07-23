@@ -19,8 +19,13 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.wishService.getWishes().subscribe((data:any)=>{
+    this.wishService.getWishes().subscribe({
+      next:(data:any)=>{
         this.items = data;
+      },
+      error:(error: any) =>{
+        console.log(error)
+      }
     })
   }
 
