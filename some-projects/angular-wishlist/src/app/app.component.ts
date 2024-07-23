@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WishItem } from 'src/shared/models/wishItem';
-
+import events from "./../shared/services/EventServices";
 
 @Component({
   selector: 'app-root',
@@ -13,6 +13,13 @@ export class AppComponent {
     new WishItem("Get Coffee",true),
     new WishItem("Find grass that cuts itself")
   ];
+
+  constructor(){
+    events.listen("removeWish",(wish:any)=>{
+      let index = this.items.indexOf(wish);
+      this.items.splice(index,1);
+    })
+  }
 
   // //this is like a watch function in vue
   // get visibleItems() :WishItem[] {

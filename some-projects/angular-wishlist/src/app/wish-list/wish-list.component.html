@@ -2,10 +2,9 @@
     There are no html to display
   </div>
    <ng-template #showItems>
-    <ul class="wish-list">
+    <ul class="wish-list col-sm-4">
       <wish-list-item *ngFor="let wish of wishes"
-        [wishText]="wish.wishText"
-        [(fulfilled)]="wish.isComplete"
+        [wish]="wish"
       ></wish-list-item>
       <!-- <li *ngFor="let item of wishes;index as ii">
         <div class="form-check">
