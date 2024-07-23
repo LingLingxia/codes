@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WishItem } from 'src/shared/models/wishItem';
-import events from "./../shared/services/EventServices";
+import {EventService} from "./../shared/services/EventServices";
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ export class AppComponent {
     new WishItem("Find grass that cuts itself")
   ];
 
-  constructor(){
+  constructor(events: EventService){
     events.listen("removeWish",(wish:any)=>{
       let index = this.items.indexOf(wish);
       this.items.splice(index,1);
@@ -32,6 +32,5 @@ export class AppComponent {
   filter:any = ()=>{}
   toggleItem(item:WishItem){
     item.isComplete = !item.isComplete;
-    console.log(item);
   }
 }
