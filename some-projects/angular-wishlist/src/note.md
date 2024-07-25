@@ -21,3 +21,13 @@ ng generate component my-component
 ```
 ng generate service Wish
 ```
+
+## create module
+```
+ng generate module wish
+```
+
+## create component inside wish
+```
+ng generate component wish -m wish
+```

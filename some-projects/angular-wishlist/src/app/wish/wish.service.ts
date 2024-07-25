@@ -25,7 +25,7 @@ export class WishService {
         }
     });
     //assets/wishes.json?format=json
-    return this.http.get("assets/wishes1.json",options).pipe(catchError(this.handleError));
+    return this.http.get("assets/wishes.json",options).pipe(catchError(this.handleError));
   }
 
   private handleError(error:HttpErrorResponse){
