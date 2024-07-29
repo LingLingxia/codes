@@ -40,8 +40,14 @@
                 class="text-danger"
                 *ngIf="contactForm.get('senderEmail')?.hasError('email')"
             >
-                    Please input valid email
+                    Please input valid email format
             </small>
+            <small
+                class="text-danger"
+                *ngIf="contactForm.get('senderEmail')?.hasError('invalidEmailValidator')"
+                >
+                        Invalid host name
+                </small>
             </div>
         </div>
         <div class="mb-3">
