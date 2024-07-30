@@ -31,3 +31,11 @@ ng generate module wish
 ```
 ng generate component wish -m wish
 ```
+
+
+## create a module , component , service
+```
+ng generate module products
+ng generate component products/productslist -m products
+ng generate service products/products
+```

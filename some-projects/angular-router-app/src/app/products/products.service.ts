@@ -15,4 +15,8 @@ export class ProductsService {
   getAllProducts(){
     return of(this.data); //this is only for test ,because normal http request will return a Observable object
   }
+
+  getProduct(id:number){
+    return of(this.data.find(product=>product.id===id));
+  }
 }
