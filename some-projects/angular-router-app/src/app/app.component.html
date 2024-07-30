@@ -300,10 +300,16 @@
       visibility: hidden;
     }
   }
+  .toolbar a{
+    color: white;
+    margin-right: 10px;
+  }
 </style>
 
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
+  <a routerLink="">Home</a>
+  <a href="#" (click)="$event.preventDefault(); goToSecond()"> Second</a>
   <img
     width="40"
     alt="Angular Logo"
