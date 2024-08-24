@@ -11,7 +11,7 @@
     "copy-webpack-plugin": "^4.6.0",
     "lodash": "^4.17.19",
     "toposort": "^2.0.2",
-    "webpack": "^4.28.3"
+    "webpack": "^5.94.0"
   },
   "devDependencies": {
     "uglifyjs-webpack-plugin": "^2.2.0",
